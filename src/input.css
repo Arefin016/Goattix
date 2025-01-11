@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-inter bg-blackv1 text-white;
+}
+/* custom.css */
+.button {
+  @apply inline-block px-10 py-4 bg-white text-[18px] font-medium leading-normal text-gray-900 rounded-full border border-white transition-all duration-300 ease-in-out;
+}
+
+.button:hover {
+  @apply text-white bg-transparent;
+}
+
+.menu li a.active {
+  @apply text-white relative;
+}
+
+.menu li a.active:before {
+  content: "";
+  @apply absolute bottom-[-16px] left-1/2 transform -translate-x-1/2 w-5 h-1.5 bg-white rounded-lg;
+}
+.hero--area:before {
+  content: "";
+  @apply absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.4)] z-[-1];
+}
+.owl-dots {
+  @apply mt-[-35px] relative z-[1] text-center flex justify-center gap-4;
+}
+.owl-dots button {
+  @apply h-4 w-4 rounded-full !bg-[rgba(255,255,255,0.26)];
+}
+.owl-dots button.active {
+  @apply !bg-white;
+}
+.button--arrow svg path {
+  @apply duration-300 ease-in-out;
+}
+.button--arrow:hover svg path {
+  stroke: white;
+}
+.upcoming-events-area .row {
+  @apply ml-[-25px] mr-[-25px];
+}
+.upcoming-events-area .row [class*="col-"] {
+  @apply pl-[25px] pr-[25px];
+}
+.event-card:hover .img-area img {
+  @apply scale-[1.1];
+}
+.find--events--area .row {
+  @apply ml-[-75px] mr-[-75px];
+}
+.find--events--area .row [class*="col-"] {
+  @apply pl-[75px] pr-[75px];
+}
+.accordion-header:after {
+  content: "+";
+  @apply absolute top-[25px] right-[42px] h-[40px] w-[40px] rounded-full bg-white text-blackv1 text-[28px] flex items-center justify-center;
+}
+.accordion-header.active:after {
+  content: "-";
+}
+.nice-select {
+  @apply bg-blackv2 border-blackv2 rounded-[10px] h-[64px] leading-[64px];
+}
+.nice-select .current {
+  @apply text-[18px] font-medium;
+}
+.nice-select .list {
+  @apply bg-blackv2;
+}
+.nice-select .option.focus,
+.nice-select .option.selected.focus,
+.nice-select .option:hover {
+  @apply bg-[rgba(255,255,255,0.06)];
+}
+.nice-select:after {
+  @apply w-2 h-2 right-7;
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .custom--scrollbar::-webkit-scrollbar,
+  .iti__country-list::-webkit-scrollbar,
+  .nice-select .list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom--scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-[10px];
+  }
+  .custom--scrollbar::-webkit-scrollbar-thumb,
+  .iti__country-list::-webkit-scrollbar-thumb,
+  .nice-select .list::-webkit-scrollbar-thumb {
+    @apply bg-gray-300;
+    border-radius: 10px;
+  }
+}
+.tab-link.active {
+  @apply text-white;
+}
+.tab-link:after {
+  content: "";
+  @apply absolute bottom-0 left-1/2 -translate-x-[50%] h-[3px] w-[44px] bg-transparent rounded-lg duration-300 ease-in-out;
+}
+.tab-link.active:after {
+  @apply bg-white;
+}
+.my-event-single:hover .event-img {
+  transform: scale(1.1);
+}
+.your-event--details .nice-select {
+  @apply w-[485px] rounded-[100px] h-[72px] leading-[72px] px-[28px];
+}
+.event--table tr:last-child {
+  border-bottom: none;
+}
+.event--table tr td:last-child {
+  border-right: none;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+.custom--checkbox input {
+  display: none;
+}
+.custom--checkbox label {
+  position: relative;
+  padding-left: 40px;
+}
+.custom--checkbox label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+.custom--checkbox input:checked + label:before {
+  background-color: #fff;
+}
+.custom--checkbox input:checked + label:after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #111;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.iti__country-list {
+  @apply bg-blackv2 border-[rgba(255,255,255,0.20)] rounded-[12px];
+}
+.custom-radio input {
+  @apply hidden;
+}
+.custom-radio label {
+  @apply relative block pl-16;
+}
+.custom-radio label:before {
+  content: "";
+  @apply absolute left-0 top-1/2 -translate-y-[50%] w-[44px] h-[44px] border-[4px] border-white rounded-full;
+}
+.custom-radio input:checked + label:after {
+  content: "";
+  @apply absolute left-[11px] top-[1.2px] h-[22px] w-[22px] bg-white rounded-full;
+}
+.edit-venue--area .nice-select {
+  @apply h-[72px] leading-[72px] w-full border border-white bg-transparent;
+}
+.nice-select .list {
+  height: 250px;
+  overflow-y: auto;
+}
+.pagination--wrapper li.active {
+  @apply bg-blackv1 text-white;
+}
+
+/* ====nahid::start=== */
+
+.sidebar--menu--active .active {
+  @apply text-white relative;
+}
+
+.sidebar--menu--active .active:before {
+  content: "";
+  @apply absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-[20px] h-[4px] bg-white rounded-lg;
+}
+/* ====nahid::end=== */
+
+/*===Responsive=== */
+
+@media (max-width: 640px) {
+  .owl-dots {
+    @apply mt-[-30px];
+  }
+  .owl-dots button {
+    @apply h-2 w-2;
+  }
+
+  .button {
+    @apply px-6 py-2 text-sm;
+  }
+  .accordion-header:after {
+    content: "+";
+    @apply absolute top-[17px] right-[10px] h-[30px] w-[30px] rounded-full bg-white text-blackv1 text-[25px] flex items-center justify-center;
+  }
+
+  /* Events */
+  .events-filter .nice-select {
+    height: 40px;
+    line-height: 40px;
+  }
+  .events-filter .nice-select {
+    @apply bg-blackv2 border-blackv2 rounded-[4px] !h-[40px] !leading-[40px];
+  }
+  .nice-select .current {
+    @apply text-[14px] font-normal;
+  }
+
+  .nice-select:after {
+    @apply w-2 h-2 right-3;
+  }
+
+  /* Events */
+
+  /* attendee::start */
+  .custom--checkbox label:before {
+    width: 15px;
+    height: 15px;
+  }
+  .custom--checkbox input:checked + label:after {
+    top: 3px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+  }
+
+  .custom--checkbox label {
+    position: relative;
+    padding-left: 25px;
+  }
+
+  .your-event--details .nice-select {
+    @apply min-w-[250px]  w-full rounded-xl h-12 leading-[48px] px-8;
+  }
+  .your-event--details .nice-select:after {
+    right: 1rem;
+  }
+  /* attendee::end */
+
+  /* checkout:start */
+  .custom-radio label {
+    @apply relative block pl-8;
+  }
+
+  .custom-radio label:before {
+    height: 25px;
+    width: 25px;
+    border-width: 2px;
+  }
+  .custom-radio input:checked + label:after {
+    left: 5px;
+    top: 2.3px;
+    height: 15px;
+    width: 15px;
+  }
+  /* checkout:end */
+
+  /* create event:start */
+
+  .time-zone .nice-select {
+    background-color: transparent !important;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+  }
+  .nice-select .current {
+    @apply text-[14px] font-normal;
+  }
+
+  .nice-select:after {
+    @apply w-2 h-2 right-3;
+  }
+  /* create event:end */
+
+  /* edit venue:start */
+  .edit-venue--area .nice-select {
+    @apply min-w-[250px] rounded-md w-full h-12 leading-[48px] px-5;
+  }
+  /* edit venue:end */
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+  .owl-dots {
+    @apply mt-[-32px];
+  }
+  .owl-dots button {
+    @apply h-3 w-3;
+  }
+  .button {
+    @apply px-8 py-3 text-base;
+  }
+
+  .accordion-header:after {
+    content: "+";
+    @apply absolute top-[18px] right-[10px] h-[30px] w-[30px] rounded-full bg-white text-blackv1 text-[30px] flex items-center justify-center;
+  }
+
+  /* Events */
+  .events-filter .nice-select {
+    @apply bg-blackv2 border-blackv2 rounded-[6px] h-[40px] leading-[40px];
+  }
+  .nice-select .current {
+    @apply text-[15px] font-medium;
+  }
+
+  .nice-select:after {
+    @apply w-2 h-2 right-4;
+  }
+  /* Events */
+
+  /* Attendee::start */
+  .your-event--details .nice-select {
+    @apply min-w-[250px] max-w-[250px] w-full rounded-xl h-12 leading-[48px] px-8;
+  }
+  .your-event--details .nice-select:after {
+    right: 1rem;
+  }
+  /* Attendee::end */
+
+  /* checkout:start */
+  .custom-radio label {
+    @apply relative block pl-10;
+  }
+
+  .custom-radio label:before {
+    height: 30px;
+    width: 30px;
+    border-width: 2px;
+  }
+  .custom-radio input:checked + label:after {
+    left: 6.4px;
+    top: 3px;
+    height: 18px;
+    width: 18px;
+  }
+  /* checkout:end */
+
+  /* edit venue:start */
+  .edit-venue--area .nice-select {
+    @apply min-w-[250px] rounded-xl w-full h-14 leading-[48px] px-5;
+  }
+  /* edit venue:end */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accordion-header:after {
+    content: "+";
+    @apply absolute top-[28px] right-[10px] h-[34px] w-[34px] rounded-full bg-white text-blackv1 text-[27px] flex items-center justify-center;
+  }
+
+  /* Events */
+  .events-filter .nice-select {
+    @apply bg-blackv2 border-blackv2 rounded-[8px] h-[45px] leading-[45px];
+  }
+  .nice-select .current {
+    @apply text-[16px] font-medium;
+  }
+
+  .nice-select:after {
+    @apply w-2 h-2 right-5;
+  }
+  /* Events */
+
+  /* Attendee::start */
+  .your-event--details .nice-select {
+    @apply min-w-[350px] max-w-[350px] w-full rounded-full h-12 leading-[48px] px-8;
+  }
+  .your-event--details .nice-select:after {
+    right: 1rem;
+  }
+  /* Attendee::end */
+
+  /* edit venue:start */
+  .edit-venue--area .nice-select {
+    @apply min-w-[250px] rounded-xl w-full h-14 leading-[48px] px-5;
+  }
+  /* edit venue:end */
+
+  .custom-radio label {
+    @apply relative block pl-10;
+  }
+
+  .custom-radio label:before {
+    height: 35px;
+    width: 35px;
+    border-width: 2px;
+  }
+  .custom-radio input:checked + label:after {
+    left: 7.5px;
+    top: 2px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1521px) {
+  /* Attendee::start */
+  .your-event--details .nice-select {
+    @apply min-w-[350px] max-w-[450px] w-full rounded-full h-16 leading-[64px] px-8;
+  }
+  .your-event--details .nice-select:after {
+    right: 1.8rem;
+  }
+  /* Attendee::end */
+}
+
+/*============custom============*/
+@media (min-width: 450px) {
+  .attendee-filters {
+    flex-direction: row;
+  }
+  .coupon {
+    flex-diretion: column;
+  }
+  .ssl-btns {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 767px) {
+  .custom-radio label {
+    @apply relative block pl-10;
+  }
+
+  .custom-radio label:before {
+    height: 27px;
+    width: 27px;
+    border-width: 2px;
+  }
+  .custom-radio input:checked + label:after {
+    left: 6px;
+    top: 3px;
+    height: 15px;
+    width: 15px;
+}
+}
+/*============custom============*/
+
+/*===Responsive=== */

@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendee and Check</title>
+    <!-- all css links  -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- start header  -->
+    <header
+      class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
+    >
+      <div class="container relative">
+        <div class="2xl:row lg:items-center flex items-center justify-between">
+          <div class="2xl:col-3">
+            <!-- logo  -->
+            <a href="index.html">
+              <img
+                class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
+                src="./assets/images/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="2xl:col-6 hidden xl:flex">
+            <ul class="menu flex items-center gap-8 2xl:gap-12">
+              <li>
+                <a
+                  href="index.html"
+                  class="active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="events.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="promoters.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Promoters</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blogs.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="2xl:col-3 hidden xl:flex 2xl:block">
+            <div class="text-right">
+              <a href="login.html" class="button">Sign in</a>
+            </div>
+          </div>
+
+          <!-- hamburger icons::start -->
+          <div class="transition duration-500 xl:hidden">
+            <div id="openMenu" class="transition duration-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3 6h18M3 12h18M3 18h18"
+                  stroke="#8F8F8F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- hamburger icons::end -->
+        </div>
+      </div>
+      <!-- sidebar::start -->
+      <div
+        id="menu-sidebar"
+        class="bg-blackv1 absolute top-0 h-[100vh] right-0 pt-8 px-6 w-[220px] translate-x-full duration-500 transition-all md:w-[270px]"
+      >
+        <div>
+          <div class="transition duration-500">
+            <svg
+              id="closeMenu"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 6L6 18M6 6l12 12"
+                stroke="#8F8F8F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
+          <div class="sidebar--menu--active">
+            <a
+              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="index.html"
+              >Home</a
+            >
+          </div>
+          <a
+            href="events.html"
+            class="text-sm md:text-base text-menuColor"
+            href="index.html"
+            >Events</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >About Us</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >Permotors</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >Blogs</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >Contact Us</a
+          >
+        </div>
+
+        <div class="pt-6 pl-5">
+          <div>
+            <a
+              href="login.html"
+              class="text-sm md:text-base font-medium bg-white px-10 py-3 rounded-full text-black"
+              >Sign in</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- sidebar::end -->
+    </header>
+    <!-- end header  -->
+    <main>
+      <!-- start attendee and check area  -->
+      <section
+        class="atendee-check--area pt-24 md:pt-28 lg:pt-40 xl:pt-48 2xl:pt-[207px] 2xl:pb-[100px]"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- request camera permission  -->
+              <div
+                class="request-camera--permission p-7 md:p-10 lg:p-12 2xl:p-14 bg-blackv2 rounded-[20px]"
+              >
+                <div
+                  id="requestPermissionContainer"
+                  class="flex flex-col items-center"
+                >
+                  <img
+                    class="w-[50px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[76px] lg:h-[90px]"
+                    src="./assets/images/qr-camera.svg"
+                    alt=""
+                  />
+                  <a
+                    href="javascript:void(0);"
+                    id="cameraButton"
+                    class="text-sm px-4 py-2 md:px-6 md:py-3 lg:px-10 lg:py-4 md:text-base lg:text-lg 2xl:py-4 2xl:px-11 bg-white border border-white text-blackv1 duration-300 ease-in-out hover:bg-transparent hover:text-white rounded-[100px] 2xl:text-[20px] font-medium mt-9 text-nowrap"
+                    >Request Camera Permission</a
+                  >
+                </div>
+
+                <div
+                  id="videoContainer"
+                  class="h-[300px] overflow-hidden w-full flex items-center justify-center hidden"
+                >
+                  <video
+                    id="video"
+                    class="h-full w-[300px] sm:w-[350px] md:w-[450px] lg:w-[600px] rounded-lg"
+                    autoplay
+                  ></video>
+                </div>
+              </div>
+
+              <!-- total tickets and checked in  -->
+              <div
+                class="total-tickets--checkedin flex items-center justify-between xl:justify-end 2xl:gap-[96px] mt-[30px] gap-8"
+              >
+                <p
+                  class="md:text-lg lg:text-xl xl:text-2xl 2xl:text-[26px] text-[rgba(255,255,255,0.6)]"
+                >
+                  Total Tickets:
+                  <span class="text-white ml-2 md:ml-5">50,000</span>
+                </p>
+                <p
+                  class="md:text-lg lg:text-xl xl:text-2xl 2xl:text-[26px] text-[rgba(255,255,255,0.6)]"
+                >
+                  Total Checked-In:
+                  <span class="text-white ml-2 md:ml-5">10,045</span>
+                </p>
+              </div>
+              <!-- your event details  -->
+              <h1
+                class="mt-7 xl:mt-0 xl:my-0 text-2xl md:text-3xl lg:text-4xl 2xl:text-[42px] font-medium mb-5 md:mb-8 lg:mb-12 xl:mb-14"
+              >
+                Your Event Details
+              </h1>
+              <!-- event filters  -->
+              <div
+                class="your-event--details gap-5 flex flex-col lg:flex-row lg:items-center lg:justify-between"
+              >
+                <div
+                  class="flex flex-col md:flex-row lg:items-center gap-5 xl:gap-10 w-full attendee-filters"
+                >
+                  <!-- select  -->
+                  <div class="relative">
+                    <select>
+                      <option value="" disabled selected>
+                        Search by Purchase name
+                      </option>
+                      <option value="purchase1">Purchase 1</option>
+                      <option value="purchase2">Purchase 2</option>
+                    </select>
+                  </div>
+                  <!-- search  -->
+                  <div class="w-full 2xl:w-[485px] relative md:w-full">
+                    <input
+                      class="w-full h-12 xl:h-16 2xl:h-[72px] focus:outline-none rounded-[100px] border border-white 2xl:pr-[90px] pl-8 text-white bg-transparent"
+                      type="text"
+                      placeholder="Search Events"
+                    />
+                    <button class="absolute top-1/2 -translate-y-[50%] right-8">
+                      <svg
+                        class="size-6 md:size-auto"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.0763 17.5695L19.9858 17.7058L20.1015 17.8215L24.7025 22.4225C25.3322 23.0522 25.3322 24.0728 24.7025 24.7025L24.7024 24.7026C24.0737 25.3322 23.0513 25.3322 22.4226 24.7026L22.4225 24.7025L17.8215 20.1015L17.7058 19.9858L17.5695 20.0763C16.1682 21.006 14.4909 21.55 12.6875 21.55C7.80089 21.55 3.825 17.5741 3.825 12.6875C3.825 7.80089 7.80089 3.825 12.6875 3.825C17.5741 3.825 21.55 7.80089 21.55 12.6875C21.55 14.4909 21.006 16.1682 20.0763 17.5695ZM12.6875 6.14375C9.07892 6.14375 6.14375 9.07892 6.14375 12.6875C6.14375 16.2961 9.07892 19.2312 12.6875 19.2312C16.2961 19.2312 19.2312 16.2961 19.2312 12.6875C19.2312 9.07892 16.2961 6.14375 12.6875 6.14375Z"
+                          fill="white"
+                          stroke="black"
+                          stroke-width="0.4"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- print export  -->
+                <div class="flex items-center gap-4 lg:gap-10">
+                  <p
+                    class="text-sm md:text-base lg:text-xl xl:text-[22px] gap-2 font-medium flex items-center lg:gap-5 cursor-pointer"
+                  >
+                    <img
+                      class="size-6 md:size-8 lg:size-10"
+                      src="./assets/images/printer.svg"
+                      alt=""
+                    />
+                    Print
+                  </p>
+                  <p class="h-5 w-[2px] bg-[rgba(255,255,255,0.34)]"></p>
+                  <p
+                    class="text-sm md:text-base lg:text-xl xl:text-[22px] font-medium cursor-pointer"
+                  >
+                    Export Data
+                  </p>
+                </div>
+              </div>
+              <!-- event table  -->
+              <div
+                class="event--table mt-4 xl:mt-12 rounded-md md:rounded-lg lg:rounded-xl 2xl:rounded-[16px] overflow-hidden border border-[rgba(255,255,255,0.20)]"
+              >
+                <div class="overflow-x-auto">
+                  <table class="w-full">
+                    <!-- thead  -->
+                    <thead>
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <th
+                          class="lg:text-left py-4 px-4 text-center xl:px-8 2xl:py-6 2xl:px-9 text-sm md:text-base lg:text-lg xl:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input itemref="SrNo" type="checkbox" checked />
+                            <label for="SrNo">Sr.No</label>
+                          </div>
+                        </th>
+                        <th
+                          class="lg:text-left py-4 px-4 text-center xl:px-8 2xl:py-6 2xl:px-9 text-sm md:text-base lg:text-lg xl:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          Ticket Type
+                        </th>
+                        <th
+                          class="xl:px-8 lg:text-left py-4 px-4 text-center 2xl:py-6 2xl:px-9 text-sm md:text-base lg:text-lg xl:text-[20px]text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          Primary Information
+                        </th>
+                        <th
+                          class="xl:px-8 lg:text-left py-4 px-4 text-center 2xl:py-6 2xl:px-9 text-sm md:text-base lg:text-lg xl:text-[20px]text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          Security Code
+                        </th>
+                        <th
+                          class="xl:px-8 lg:text-left py-4 px-4 text-center 2xl:py-6 2xl:px-9 text-sm md:text-base lg:text-lg xl:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          Status
+                        </th>
+                        <th
+                          class="xl:px-8 lg:text-left py-4 px-4 text-center 2xl:py-6 2xl:px-9 text-sm md:text-base lg:text-lg xl:text-[20px]text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          Check In
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="">
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-120" type="checkbox" checked />
+                            <label for="AB-120">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-122" type="checkbox" checked />
+                            <label for="AB-122">AB-122</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Devid Joseph</p>
+                          <p>devidjoseph@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#FF2929]">Cancelled</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="inline-block text-sm md:text-base bg-transparent text-white rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:px-7 lg:py-3 xl:py-[10px] xl:px-[30px] border border-white font-medium"
+                          >
+                            Undo Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-1201" type="checkbox" checked />
+                            <label for="AB-1201">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-1202" type="checkbox" checked />
+                            <label for="AB-1202">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-122" type="checkbox" checked />
+                            <label for="AB-122">AB-122</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Devid Joseph</p>
+                          <p>devidjoseph@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#FF2929]">Cancelled</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="inline-block text-sm md:text-base bg-transparent text-white rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:px-7 lg:py-3 xl:py-[10px] xl:px-[30px] border border-white font-medium"
+                          >
+                            Undo Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-1203" type="checkbox" checked />
+                            <label for="AB-1203">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-1204" type="checkbox" checked />
+                            <label for="AB-1204">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-120" type="checkbox" checked />
+                            <label for="AB-120">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="border-b border-[rgba(255,255,255,0.20)] text-nowrap"
+                      >
+                        <td
+                          class="sr-no xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <div class="custom--checkbox relative">
+                            <input id="AB-120" type="checkbox" checked />
+                            <label for="AB-120">AB-120</label>
+                          </div>
+                        </td>
+                        <td
+                          class="ticket-type xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>T5879347-5-8998FH</p>
+                          <p>[#6534] - Tier 1</p>
+                        </td>
+                        <td
+                          class="info xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>Hiraa Ali</p>
+                          <p>hiraali12@gmail.com</p>
+                        </td>
+                        <td
+                          class="security-code xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px]text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p>0938F33F</p>
+                        </td>
+                        <td
+                          class="status xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <p class="text-[#5CF662]">Completed</p>
+                        </td>
+                        <td
+                          class="check-in xl:text-left py-3 px-4 xl:py-6 xl:px-9 text-xs md:text-sm lg:text-base text-center xl:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                        >
+                          <a
+                            href="#"
+                            class="text-sm md:text-base inline-block bg-white text-blackv1 rounded-[100px] px-4 py-1 md:px-6 md:py-2 lg:py-3 xl:py-[10px] lg:px-7 xl:px-[30px] border border-white font-medium"
+                          >
+                            Check-In
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- pagination  -->
+              <div
+                class="mt-6 mb-6 md:mb-10 pagination--wrapper bg-white text-blackv1 rounded-[100px] flex items-center justify-center px-4 py-2 md:px-6 md:py-4 md:mt-10 flex-wrap overflow-x-hidden"
+              >
+                <ul class="flex items-center gap-2 md:gap-3 lg:gap-5">
+                  <li class="hidden md:flex items-center gap-2 cursor-pointer">
+                    First
+                    <p
+                      class="h-8 w-8 bg-blackv1 rounded-full flex items-center justify-center"
+                    >
+                      <img src="./assets/images/arrow-double.svg" alt="" />
+                    </p>
+                  </li>
+                  <li
+                    class="flex items-center gap-2 cursor-pointer text-xs md:text-sm lg:text-base"
+                  >
+                    Back
+                    <p
+                      class="size-5 md:size-8 text-xs md:text-base bg-blackv1 rounded-full flex items-center justify-center"
+                    >
+                      <img
+                        class="h-full w-full object-cover"
+                        src="./assets/images/arrow.svg"
+                        alt=""
+                      />
+                    </p>
+                  </li>
+                  <!-- pages  -->
+                  <li
+                    class="size-6 md:size-8 text-xs md:text-base flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] active duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    1
+                  </li>
+                  <li
+                    class="size-6 md:size-8 text-xs md:text-base flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    2
+                  </li>
+                  <li
+                    class="size-6 md:size-8 text-xs md:text-base flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    3
+                  </li>
+                  <li
+                    class="size-6 md:size-8 text-xs md:text-base flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    4
+                  </li>
+                  <li
+                    class="size-6 md:size-8 text-xs md:text-base hidden md:flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    5
+                  </li>
+                  <li
+                    class="size-6 md:size-8 text-xs md:text-base hidden md:flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    6
+                  </li>
+                  <li
+                    class="hidden w-8 h-8 lg:flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    7
+                  </li>
+                  <li
+                    class="hidden w-8 h-8 lg:flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    8
+                  </li>
+                  <li
+                    class="hidden w-8 h-8 lg:flex items-center justify-center rounded-full border border-[D9D9D9] text-[#7B7B7B] duration-300 ease-in-out hover:bg-blackv1 hover:text-white cursor-pointer"
+                  >
+                    9
+                  </li>
+                  <li
+                    class="flex items-center gap-2 cursor-pointer text-xs md:text-sm lg:text-base"
+                  >
+                    <p
+                      class="size-5 md:size-8 text-xs md:text-base bg-blackv1 rounded-full flex items-center justify-center"
+                    >
+                      <img
+                        class=""
+                        src="./assets/images/angle-right.svg"
+                        alt=""
+                      />
+                    </p>
+                    Next
+                  </li>
+
+                  <li class="hidden md:flex items-center gap-2 cursor-pointer">
+                    <p
+                      class="size-6 md:size-8 text-xs md:text-base bg-blackv1 rounded-full flex items-center justify-center"
+                    >
+                      <img src="./assets/images/pagination-last.png" alt="" />
+                    </p>
+                    Last
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end attendee and check area  -->
+    </main>
+
+    <!-- start footer  -->
+    <footer class="py-6 md:py-10 2xl:py-[58px] bg-blackv2 overflow-hidden">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class=" ">
+            <a href="index.html">
+              <img
+                class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
+                src="./assets/images/logo.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class=" ">
+            <ul class="flex items-center gap-2 md:gap-6 justify-end">
+              <li>
+                <a href="#" class="size-8 md:size-10 inline-block">
+                  <svg
+                    class="h-full w-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="41"
+                    height="42"
+                    viewBox="0 0 41 42"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.9879 0.910205C16.0191 0.930151 12.1451 2.12543 8.85478 4.34506C5.56449 6.56468 3.00538 9.70905 1.50037 13.3817C-0.00464106 17.0545 -0.3881 21.0908 0.398395 24.9813C1.18489 28.8717 3.10608 32.4419 5.91954 35.2415C8.73299 38.041 12.3126 39.9444 16.2067 40.7114C20.1008 41.4785 24.1348 41.0748 27.7997 39.5513C31.4645 38.0278 34.5961 35.4528 36.799 32.1512C39.002 28.8496 40.1777 24.9694 40.1777 21.0002C40.1627 15.6591 38.0276 10.5426 34.2416 6.77528C30.4556 3.00799 25.3287 0.898408 19.9879 0.910205ZM30.8641 16.8814C30.8742 17.1035 30.8783 17.3255 30.8783 17.5476C30.8869 19.4819 30.511 21.3985 29.7724 23.1862C29.0338 24.9739 27.9472 26.5969 26.5758 27.9609C25.2044 29.3249 23.5756 30.4027 21.784 31.1315C19.9924 31.8603 18.0738 32.2257 16.1397 32.2064C13.3277 32.2037 10.575 31.3981 8.20515 29.8844C8.60895 29.9247 9.01274 29.945 9.44076 29.945C11.7704 29.9572 14.0358 29.1817 15.8692 27.7442C14.7901 27.727 13.7432 27.3734 12.8746 26.7327C12.006 26.0921 11.3589 25.1963 11.0236 24.1704C11.3454 24.228 11.6719 24.2551 11.9988 24.2512C12.4599 24.2533 12.9191 24.192 13.3636 24.0693C12.1934 23.84 11.1391 23.2113 10.3812 22.2905C9.6233 21.3698 9.20878 20.2142 9.20857 19.0215V18.9609C9.92737 19.3616 10.7321 19.5833 11.5546 19.6072C10.4591 18.881 9.68284 17.7632 9.38479 16.4831C9.08674 15.203 9.28953 13.8574 9.95158 12.7219C11.2541 14.3175 12.8771 15.6218 14.7155 16.5504C16.5539 17.4791 18.5668 18.0115 20.6239 18.113C20.448 17.355 20.4461 16.567 20.6181 15.808C20.7902 15.0491 21.1319 14.339 21.6175 13.731C22.1031 13.123 22.7201 12.6326 23.4222 12.297C24.1243 11.9614 24.8932 11.7892 25.6713 11.7932C26.3778 11.7929 27.077 11.9358 27.7266 12.2135C28.3763 12.4911 28.9629 12.8975 29.4509 13.4084C30.6133 13.1916 31.7274 12.7676 32.7398 12.1565C32.3526 13.3564 31.5434 14.3751 30.4624 15.0238C31.489 14.8955 32.4911 14.6165 33.4363 14.1958C32.7499 15.2404 31.8781 16.1507 30.8641 16.8814Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="size-8 md:size-10 inline-block">
+                  <svg
+                    class="h-full w-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="41"
+                    height="42"
+                    viewBox="0 0 41 42"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.894 41.0902C24.8674 41.0902 28.7516 39.9119 32.0554 37.7044C35.3592 35.4969 37.9341 32.3591 39.4547 28.6882C40.9753 25.0172 41.3731 20.9778 40.5979 17.0807C39.8227 13.1837 37.9094 9.60407 35.0997 6.79443C32.2901 3.9848 28.7104 2.07135 24.8133 1.29617C20.9162 0.520994 16.8768 0.918912 13.2059 2.43948C9.53489 3.96004 6.39725 6.53505 4.18973 9.83883C1.98221 13.1426 0.803955 17.0267 0.803955 21.0002C0.803955 23.6384 1.32359 26.2507 2.33321 28.6882C3.34282 31.1256 4.82264 33.3404 6.68816 35.2059C8.55369 37.0714 10.7684 38.5512 13.2059 39.5608C15.6433 40.5705 18.2557 41.0902 20.894 41.0902ZM13.0408 29.0362H16.8117V16.9017H13.0408V29.0362ZM12.6892 12.9642C12.6876 13.3992 12.8151 13.8249 13.0557 14.1874C13.2962 14.5499 13.6389 14.8328 14.0404 15.0004C14.4418 15.168 14.884 15.2128 15.3109 15.1289C15.7377 15.045 16.1301 14.8361 16.4383 14.529C16.7465 14.222 16.9566 13.8304 17.042 13.4039C17.1275 12.9773 17.0845 12.5351 16.9184 12.133C16.7522 11.731 16.4705 11.3871 16.1089 11.1452C15.7473 10.9034 15.3221 10.7744 14.887 10.7744C14.3057 10.7749 13.7482 11.0054 13.3364 11.4157C12.9245 11.826 12.6919 12.3828 12.6892 12.9642ZM27.1701 29.0362H30.939V22.3863C30.939 19.1116 30.2338 16.6006 26.4147 16.6006C25.6972 16.5734 24.9858 16.7422 24.3572 17.0891C23.7285 17.436 23.2063 17.9479 22.8467 18.5693H22.7945V16.9017H19.1783V29.0362H22.9472V23.0293C22.9472 21.4422 23.2505 19.9152 25.2113 19.9152C27.1721 19.9152 27.1721 21.7235 27.1721 23.1298L27.1701 29.0362Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="size-8 md:size-10 inline-block">
+                  <svg
+                    class="h-full w-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="41"
+                    height="42"
+                    viewBox="0 0 41 42"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M40.3951 21.0002C40.3951 24.9736 39.2168 28.8577 37.0093 32.1615C34.8018 35.4653 31.6642 38.0403 27.9932 39.5608C24.3222 41.0814 20.2828 41.4793 16.3857 40.7041C12.4887 39.929 8.90894 38.0155 6.0993 35.2059C3.28966 32.3962 1.3763 28.8166 0.601127 24.9196C-0.174051 21.0225 0.223775 16.9831 1.74434 13.3121C3.2649 9.64118 5.83989 6.50345 9.14367 4.29593C12.4475 2.08841 16.3317 0.910156 20.3051 0.910156C25.6333 0.910156 30.7433 3.02682 34.5109 6.79443C38.2785 10.562 40.3951 15.672 40.3951 21.0002ZM15.2826 8.28327C13.242 8.2854 11.2855 9.09638 9.84199 10.5387C8.3985 11.9811 7.58583 13.9371 7.58211 15.9777V26.0227C7.58583 28.0633 8.3985 30.0192 9.84199 31.4616C11.2855 32.9039 13.242 33.7149 15.2826 33.717H25.3276C27.3682 33.7149 29.3247 32.9039 30.7682 31.4616C32.2117 30.0192 33.0243 28.0633 33.0281 26.0227V15.9777C33.0243 13.9371 32.2117 11.9811 30.7682 10.5387C29.3247 9.09638 27.3682 8.2854 25.3276 8.28327H15.2826ZM20.3051 27.69C18.9822 27.6888 17.6894 27.2956 16.59 26.5597C15.4906 25.8239 14.6341 24.7786 14.1286 23.556C13.6232 22.3335 13.4916 20.9886 13.7504 19.6913C14.0092 18.394 14.6469 17.2025 15.5827 16.2675C16.5186 15.3325 17.7106 14.6959 19.0082 14.4383C20.3057 14.1806 21.6506 14.3136 22.8727 14.8201C24.0947 15.3266 25.1392 16.184 25.874 17.284C26.6089 18.3841 27.0011 19.6773 27.0011 21.0002C26.9995 22.775 26.2933 24.4766 25.0377 25.7311C23.7822 26.9855 22.0799 27.69 20.3051 27.69ZM27.0011 15.636C26.7366 15.6352 26.4783 15.5559 26.2589 15.4082C26.0395 15.2605 25.8689 15.0512 25.7687 14.8064C25.6685 14.5616 25.6432 14.2926 25.6961 14.0334C25.7489 13.7742 25.8774 13.5364 26.0655 13.3504C26.2535 13.1644 26.4925 13.0385 26.7522 12.9884C27.0119 12.9383 27.2806 12.9663 27.5243 13.0691C27.768 13.1719 27.9757 13.3448 28.1211 13.5657C28.2665 13.7867 28.3431 14.0458 28.3411 14.3103C28.3379 14.6634 28.1953 15.0009 27.9443 15.2493C27.6933 15.4977 27.3542 15.6366 27.0011 15.636ZM24.9921 21.0002C24.9933 21.9274 24.7194 22.8343 24.2051 23.6058C23.6908 24.3774 22.9592 24.9791 22.1029 25.3348C21.2466 25.6904 20.304 25.784 19.3944 25.6038C18.4848 25.4236 17.6491 24.9777 16.993 24.3224C16.3369 23.6672 15.8899 22.8321 15.7086 21.9227C15.5273 21.0134 15.6197 20.0706 15.9743 19.2138C16.3289 18.357 16.9296 17.6247 17.7005 17.1094C18.4714 16.5942 19.3778 16.3193 20.3051 16.3193C20.9204 16.3182 21.5299 16.4384 22.0986 16.6732C22.6673 16.9079 23.1842 17.2527 23.6195 17.6875C24.0549 18.1223 24.4002 18.6388 24.6357 19.2072C24.8713 19.7756 24.9923 20.3849 24.9921 21.0002Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="2xl:mt-[52px] mt-6 md:mt-10">
+          <div
+            class="flex flex-col xl:flex-row justify-center gap-3 xl:gap-32 xl:justify-normal item-center 2xl:gap-[244px]"
+          >
+            <div>
+              <p
+                class="2xl:w-[474px] text-sm md:text-base text-center xl:text-start"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Malesuada amet nibh sed diam.
+              </p>
+            </div>
+            <div>
+              <a
+                href="mailto:Business@goattix.com "
+                class="flex items-center justify-center gap-3 md:gap-5 xl:gap-7 text-sm md:text-base"
+              >
+                <div
+                  class="flex items-center justify-center bg-[#292929] rounded-full p-2 xl:p-4"
+                >
+                  <svg
+                    class="size-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="14"
+                    viewBox="0 0 21 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.51634 5.97092L9.51479 5.96998C9.43565 5.92188 9.11346 5.7209 8.64545 5.42897C7.92819 4.98157 6.86843 4.32052 5.81618 3.66871C4.94848 3.13122 4.08717 2.6008 3.43184 2.20456C3.10443 2.00659 2.82692 1.84119 2.62523 1.72491C2.52478 1.667 2.44057 1.61978 2.3774 1.58647C2.34629 1.57007 2.31645 1.555 2.29054 1.54332C2.2779 1.53763 2.26171 1.53071 2.24427 1.52462C2.244 1.52453 2.24366 1.52441 2.24324 1.52426C2.23396 1.52096 2.18867 1.50487 2.13287 1.50487C1.93816 1.50487 1.7446 1.56285 1.59863 1.70525C1.45153 1.84874 1.38839 2.0432 1.38839 2.24516C1.38839 2.48237 1.49847 2.64979 1.62739 2.76383C1.7181 2.84408 1.83449 2.90922 1.91014 2.95156C1.92599 2.96043 1.94005 2.9683 1.95172 2.9751L1.95177 2.97513C2.45936 3.27086 3.92278 4.18613 5.48128 5.16086C5.79758 5.35869 6.1178 5.55896 6.43474 5.757C7.37182 6.34255 8.27837 6.90739 8.96465 7.32807C9.30757 7.53828 9.59694 7.71339 9.80816 7.83734C9.91345 7.89913 10.0016 7.94954 10.0681 7.98558C10.101 8.00343 10.1317 8.01941 10.1581 8.0319C10.1711 8.03808 10.1861 8.04487 10.2016 8.05095C10.2119 8.05498 10.2427 8.06703 10.2808 8.07285L10.2815 8.07296C10.4815 8.10309 10.6713 8.02001 10.7877 7.95897C10.894 7.90323 10.9954 7.834 11.0594 7.79034C11.0701 7.78303 11.0798 7.77644 11.0882 7.77075C11.8404 7.29507 12.5933 6.8126 13.3469 6.32968C14.9401 5.30877 16.5366 4.28579 18.1358 3.32034L18.1359 3.32024C18.1777 3.29498 18.2249 3.26726 18.2754 3.23762C18.4317 3.14587 18.6194 3.0357 18.7743 2.92297C18.8789 2.8469 18.9857 2.75789 19.0689 2.6568C19.1501 2.55803 19.2332 2.41788 19.2332 2.24516C19.2332 2.04353 19.1704 1.84901 19.0233 1.70536C18.8773 1.56276 18.6836 1.50487 18.4887 1.50487C18.434 1.50487 18.3899 1.52018 18.3798 1.5237L18.3788 1.52405C18.361 1.53015 18.3448 1.53709 18.3322 1.54273C18.3065 1.55429 18.2775 1.56907 18.2477 1.58491C18.1872 1.61711 18.1071 1.66259 18.0122 1.71817C17.8215 1.82982 17.5597 1.98872 17.2504 2.17939C16.6312 2.56106 15.8152 3.07405 14.9838 3.60022C13.8356 4.32689 12.6321 5.09512 11.8959 5.56505C11.576 5.76929 11.3443 5.91718 11.2438 5.98083L11.2438 5.98077L11.2384 5.98432C10.7392 6.31559 10.0703 6.31219 9.5469 5.98976L9.51634 5.97092ZM0.3 12.8552V1.23282C0.3 0.94737 0.382205 0.712427 0.515253 0.554369C0.643127 0.402459 0.835119 0.3 1.11089 0.3H19.4224C19.6846 0.3 19.8783 0.399141 20.0105 0.55223C20.1465 0.70987 20.2333 0.944459 20.2333 1.23282V12.8552C20.2333 13.3308 19.8852 13.7 19.4224 13.7H1.11089C0.646561 13.7 0.3 13.3359 0.3 12.8552Z"
+                      fill="white"
+                      stroke="#292929"
+                      stroke-width="0.6"
+                    />
+                  </svg>
+                </div>
+                <p>Business@goattix.com</p>
+              </a>
+            </div>
+            <div>
+              <p class="text-sm md:text-base leading-normal text-center">
+                © 2021 ibgme.ae. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer  -->
+
+    <!-- get tickets popup  -->
+    <div
+      class="overlay fixed top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.6)] z-[50] backdrop-blur opacity-0 invisible duration-300 ease-in-out"
+    ></div>
+    <div
+      class="fixed top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] bg-white rounded-[16px] w-[1166px] z-50 overflow-hidden opacity-0 invisible duration-300 ease-in-out"
+      id="getTicketPopup"
+    >
+      <form
+        action="#"
+        class="max-h-[calc(100vh-90px)] overflow-y-auto custom--scrollbar pt-20 pb-10 px-[52px] relative"
+      >
+        <!-- table  -->
+        <div>
+          <div>
+            <!-- table head  -->
+            <div
+              class="table--head flex items-center justify-between bg-blackv1 py-6 px-12 rounded-tl-[11px] rounded-tr-[11px]"
+            >
+              <p class="text-[18px] font-medium">Tickets</p>
+              <p class="text-[18px] font-medium">Price</p>
+              <p class="text-[18px] font-medium">Quantity</p>
+              <p class="text-[18px] font-medium">Total Price</p>
+              <p class="text-[18px] font-medium">Remove</p>
+            </div>
+            <div class="table--row--wrapp">
+              <!-- table row  -->
+              <div
+                class="table--row flex items-center px-12 py-8 border-b-[1px] border-[rgba(0,0,0,0.10)]"
+              >
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] flex items-center gap-[10px] w-[22%]"
+                >
+                  <img
+                    class="w-[26px] h-[26px]"
+                    src="./assets/images/ticket.svg"
+                    alt=""
+                  />
+                  18+ to Get In
+                </p>
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[21%]"
+                >
+                  $50.00
+                </p>
+                <!-- quantity  -->
+                <div class="quantity flex items-center w-[24.5%]">
+                  <button
+                    class="minus h-[42px] w-[42px] rounded-full disabled:opacity-50"
+                    disabled
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        width="32"
+                        height="32"
+                        rx="16"
+                        fill="black"
+                        fill-opacity="0.08"
+                      />
+                      <path
+                        d="M11.4766 16H21.8813"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    class="w-[56px] bg-transparent text-[18px] font-medium text-blackv1 text-center focus:outline-none"
+                    value="0"
+                    type="tel"
+                    readonly
+                  />
+                  <button
+                    class="plus h-[42px] w-[42px] rounded-full disabled:opacity-50"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        width="32"
+                        height="32"
+                        rx="16"
+                        fill="black"
+                        fill-opacity="0.08"
+                      />
+                      <path
+                        d="M11.4287 15.999H20.1906"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16 11.4277L16 20.1896"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[28%]"
+                >
+                  $150.00
+                </p>
+                <p class="cursor-pointer">
+                  <img
+                    class="h-[27px] w-[27px]"
+                    src="./assets/images/delete.svg"
+                    alt=""
+                  />
+                </p>
+              </div>
+              <!-- table row  -->
+              <div
+                class="table--row flex items-center px-12 py-8 border-b-[1px] border-[rgba(0,0,0,0.10)]"
+              >
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] flex items-center gap-[10px] w-[22%]"
+                >
+                  <img
+                    class="w-[26px] h-[26px]"
+                    src="./assets/images/ticket.svg"
+                    alt=""
+                  />
+                  18+ to Get In
+                </p>
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[21%]"
+                >
+                  $50.00
+                </p>
+                <!-- quantity  -->
+                <div class="quantity flex items-center w-[24.5%]">
+                  <button
+                    class="minus h-[42px] w-[42px] rounded-full disabled:opacity-50"
+                    disabled
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        width="32"
+                        height="32"
+                        rx="16"
+                        fill="black"
+                        fill-opacity="0.08"
+                      />
+                      <path
+                        d="M11.4766 16H21.8813"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    class="w-[56px] bg-transparent text-[18px] font-medium text-blackv1 text-center focus:outline-none"
+                    value="0"
+                    type="tel"
+                    readonly
+                  />
+                  <button
+                    class="plus h-[42px] w-[42px] rounded-full disabled:opacity-50"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        width="32"
+                        height="32"
+                        rx="16"
+                        fill="black"
+                        fill-opacity="0.08"
+                      />
+                      <path
+                        d="M11.4287 15.999H20.1906"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16 11.4277L16 20.1896"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[28%]"
+                >
+                  $150.00
+                </p>
+                <p class="cursor-pointer">
+                  <img
+                    class="h-[27px] w-[27px]"
+                    src="./assets/images/delete.svg"
+                    alt=""
+                  />
+                </p>
+              </div>
+              <!-- table row  -->
+              <div
+                class="table--row flex items-center px-12 py-8 border-b-[1px] border-[rgba(0,0,0,0.10)]"
+              >
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] flex items-center gap-[10px] w-[22%]"
+                >
+                  <img
+                    class="w-[26px] h-[26px]"
+                    src="./assets/images/ticket.svg"
+                    alt=""
+                  />
+                  18+ to Get In
+                </p>
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[21%]"
+                >
+                  $50.00
+                </p>
+                <!-- quantity  -->
+                <div class="quantity flex items-center w-[24.5%]">
+                  <button
+                    class="minus h-[42px] w-[42px] rounded-full disabled:opacity-50"
+                    disabled
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        width="32"
+                        height="32"
+                        rx="16"
+                        fill="black"
+                        fill-opacity="0.08"
+                      />
+                      <path
+                        d="M11.4766 16H21.8813"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    class="w-[56px] bg-transparent text-[18px] font-medium text-blackv1 text-center focus:outline-none"
+                    value="0"
+                    type="tel"
+                    readonly
+                  />
+                  <button
+                    class="plus h-[42px] w-[42px] rounded-full disabled:opacity-50"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <rect
+                        width="32"
+                        height="32"
+                        rx="16"
+                        fill="black"
+                        fill-opacity="0.08"
+                      />
+                      <path
+                        d="M11.4287 15.999H20.1906"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16 11.4277L16 20.1896"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <p
+                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[28%]"
+                >
+                  $150.00
+                </p>
+                <p class="cursor-pointer">
+                  <img
+                    class="h-[27px] w-[27px]"
+                    src="./assets/images/delete.svg"
+                    alt=""
+                  />
+                </p>
+              </div>
+            </div>
+            <!-- total amount & quantity  -->
+            <div class="flex items-center justify-end gap-7 mt-7">
+              <p class="flex items-center gap-3 text-[rgba(0,0,0,0.68)]">
+                Qty: <span class="text-[20px] font-medium text-blackv1">6</span>
+              </p>
+              <p class="h-[15px] w-[1px] bg-[rgba(0,0,0,0.29)]"></p>
+              <p class="flex items-center gap-3 text-[rgba(0,0,0,0.6)]">
+                Total Amount:
+                <span class="text-[20px] font-medium text-blackv1"
+                  >$450.00</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- attendee box  -->
+        <div class="py-[30px] px-[50px] relative mt-[50px] rounded-[16px]
+        bg-[#F2F2F2] text-blackv1>
+        <h3 class="text-[24px] font-medium leading-normal mb-[6px]">
+          Attendee1
+        </h3>
+        <div class="row">
+          <div class="col-12 md:col-6 mt-5">
+            <label for="name" class="text-[18px] mb-5 inline-block">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="w-full h-[72px] rounded-[12px] border border-blackv1 focus:outline-none px-5"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="col-12 md:col-6 mt-5">
+            <label for="name" class="text-[18px] mb-5 inline-block"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="name"
+              class="w-full h-[72px] rounded-[12px] border border-blackv1 focus:outline-none px-5"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- close--attendee  -->
+        <p
+          class="close--attendee absolute top-[23px] right-[23px] cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 0C5.364 0 0 5.364 0 12C0 18.636 5.364 24 12 24C18.636 24 24 18.636 24 12C24 5.364 18.636 0 12 0ZM17.16 17.16C16.692 17.628 15.936 17.628 15.468 17.16L12 13.692L8.532 17.16C8.064 17.628 7.308 17.628 6.84 17.16C6.372 16.692 6.372 15.936 6.84 15.468L10.308 12L6.84 8.532C6.372 8.064 6.372 7.308 6.84 6.84C7.308 6.372 8.064 6.372 8.532 6.84L12 10.308L15.468 6.84C15.936 6.372 16.692 6.372 17.16 6.84C17.628 7.308 17.628 8.064 17.16 8.532L13.692 12L17.16 15.468C17.616 15.924 17.616 16.692 17.16 17.16Z"
+              fill="black"
+              fill-opacity="0.24"
+            />
+          </svg>
+        </p>
+
+        <!-- close--attendee  -->
+        <p
+          class="close--getTicket absolute top-[23px] right-[51px] cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_503_392)">
+              <path
+                d="M16.9997 2.83398C9.16551 2.83398 2.83301 9.16648 2.83301 17.0007C2.83301 24.8348 9.16551 31.1673 16.9997 31.1673C24.8338 31.1673 31.1663 24.8348 31.1663 17.0007C31.1663 9.16648 24.8338 2.83398 16.9997 2.83398ZM23.0913 23.0923C22.5388 23.6448 21.6463 23.6448 21.0938 23.0923L16.9997 18.9982L12.9055 23.0923C12.353 23.6448 11.4605 23.6448 10.908 23.0923C10.3555 22.5398 10.3555 21.6473 10.908 21.0948L15.0022 17.0007L10.908 12.9065C10.3555 12.354 10.3555 11.4615 10.908 10.909C11.4605 10.3565 12.353 10.3565 12.9055 10.909L16.9997 15.0032L21.0938 10.909C21.6463 10.3565 22.5388 10.3565 23.0913 10.909C23.6438 11.4615 23.6438 12.354 23.0913 12.9065L18.9972 17.0007L23.0913 21.0948C23.6297 21.6332 23.6297 22.5398 23.0913 23.0923Z"
+                fill="black"
+                fill-opacity="0.22"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_503_392">
+                <rect width="34" height="34" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </p>
+        <div class="flex justify-end">
+          <button
+            class="mt-9 inline-block py-4 px-[60px] border border-blackv1 bg-blackv1 text-[20px] font-medium rounded-[100px] duration-300 ease-in-out hover:bg-transparent hover:text-blackv1"
+            type="submit"
+          >
+            Checkout
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- all js scripts  -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

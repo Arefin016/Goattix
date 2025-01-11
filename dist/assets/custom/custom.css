@@ -1,0 +1,46 @@
+.venue-details .nice-select{
+    background-color: transparent !important;
+    height: 75px !important;
+    display: flex;
+    align-items: center;
+}
+.organizer-details .nice-select{
+    background-color: transparent !important;
+    height: 75px !important;
+    display: flex;
+    align-items: center;
+}
+.time-zone .nice-select{
+    background-color: transparent !important;
+    height: 75px !important;
+    display: flex;
+    align-items: center;
+}
+.event-website-link .nice-select{
+    background-color: transparent !important;
+    height: 75px !important;
+    display: flex;
+    align-items: center;
+}
+.ticket-price .nice-select{
+    background-color: transparent !important;
+   height: 75px !important;
+   display: flex;
+   align-items: center;
+}
+
+.bottom-active-button{
+    background-color: #111;
+    color: white;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    .time-zone .nice-select{
+        background-color: transparent !important;
+        height: 50px !important;
+        display: flex;
+        align-items: center;
+    }
+}
+
