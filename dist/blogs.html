@@ -178,6 +178,215 @@
           Creating Marketing Campaign
         </h2>
       </section>
+      <!-- This is the  -->
+      <section
+        class="bg-[#111] text-white flex items-center justify-center w-[1600px] ml-[200px] mr-[122px]"
+      >
+        <div class="p-0 mt-[59px]">
+          <section class="flex flex-row gap-[162px] justify-between">
+            <!-- Left Section -->
+            <div class="space-y-6">
+              <!-- Campaign Name -->
+              <div>
+                <label
+                  for="campaign-name"
+                  class="block text-white font-inter text-lg font-normal leading-normal mb-5"
+                  >Campaign Name</label
+                >
+                <input
+                  type="text"
+                  id="campaign-name"
+                  placeholder="Enter your name"
+                  class="w-[734px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+                />
+              </div>
+
+              <!-- Select List -->
+              <div>
+                <label
+                  for="select-list"
+                  class="block text-white font-inter text-lg font-normal leading-normal mb-5 pt-[30px]"
+                  >Select List</label
+                >
+                <input
+                  type="email"
+                  id="select-list"
+                  placeholder="Enter your email"
+                  class="w-[734px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+                />
+              </div>
+
+              <!-- Campaign Type -->
+              <div class="pt-[111px]">
+                <h2
+                  class="mb-[42px] text-white font-inter text-[28px] font-medium leading-normal"
+                >
+                  Select Campaign Type
+                </h2>
+                <div class="flex items-center space-x-[166px]">
+                  <label
+                    class="flex items-center space-x-[26px] cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="campaign-type"
+                      class="form-radio text-white h-[48px] w-[48px]"
+                      checked
+                    />
+                    <span
+                      class="text-white font-inter text-base font-normal leading-normal"
+                      >Email</span
+                    >
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="campaign-type"
+                      class="form-radio text-white h-[48px] w-[48px]"
+                    />
+                    <span
+                      class="text-white font-inter text-base font-normal leading-normal"
+                      >SMS</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div>
+                <label
+                  for=""
+                  class="block mb-5 text-white font-inter text-base font-normal leading-normal"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Enter the subject"
+                  class="w-[734px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+                />
+              </div>
+
+              <!-- Body -->
+              <div class="mb-[30px]">
+                <label
+                  for="body"
+                  class="block mb-2 pt-[30px] text-white font-inter text-base font-normal leading-normal"
+                  >Body</label
+                >
+                <textarea
+                  id="body"
+                  rows="4"
+                  placeholder=""
+                  class="w-[734px] h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
+                ></textarea>
+                <!-- Button -->
+                <div class="flex justify-center mt-[30px] mb-[221px]">
+                  <form>
+                    <label
+                      for="upload-image"
+                      class="w-[360px] py-[19px] rounded-[72px] bg-white text-[#111] text-center font-inter text-base font-medium leading-normal cursor-pointer block"
+                    >
+                      Select Image
+                    </label>
+                    <input
+                      type="file"
+                      id="upload-image"
+                      class="hidden"
+                      accept="image/*"
+                      onchange="handleImageUpload(event)"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="space-y-6">
+              <!-- Schedule Campaign -->
+              <div class="bg-[#111] text-white rounded-md">
+                <p
+                  class="block text-white font-inter text-lg font-normal leading-normal mb-[32px]"
+                >
+                  Schedule Campaign
+                </p>
+                <div class="flex items-center justify-between">
+                  <!-- Start Now Option -->
+                  <div class="flex items-center space-x-[26px]">
+                    <div class="flex justify-between">
+                      <input
+                        type="radio"
+                        id="start-now"
+                        name="schedule"
+                        class="form-radio text-white h-[48px] w-[48px]"
+                      />
+                      <label
+                        for="start-now"
+                        class="text-white font-inter text-lg font-normal leading-normal"
+                        >Start Now</label
+                      >
+                    </div>
+                    <input
+                      type="radio"
+                      id="start-now"
+                      name="schedule"
+                      class="form-radio text-white h-[48px] w-[48px] ml-[126px]"
+                    />
+                  </div>
+
+                  <!-- Month Dropdown -->
+                  <div class="relative">
+                    <select
+                      class="w-[157px] h-[72px] pt-[25px] pb-[28px] pl-5 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
+                    >
+                      <option>Month</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <!-- Add other months -->
+                    </select>
+                  </div>
+
+                  <!-- Year Dropdown -->
+                  <div class="relative ml-[30px] mr-[30px]">
+                    <select
+                      class="w-[157px] h-[72px] py-2 px-3 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
+                    >
+                      <option>Year</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <!-- Add other years -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Preview -->
+              <div class="">
+                <h2
+                  class="mb-[28px] pt-[216px] text-white font-inter text-[18px] font-normal leading-normal ml-2"
+                >
+                  preview
+                </h2>
+                <div class="w-full h-[618px] bg-[#1C1C1C] rounded-lg"></div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="flex justify-center pt-[131px] pb-[111px]">
+                <button
+                  type="submit"
+                  class="w-[360px] py-[19px] rounded-[72px] bg-white text-[#111] text-center font-inter text-base font-medium leading-normal cursor-pointer block"
+                >
+                  Create Campaign
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </main>
 
     <!-- start footer  -->
