@@ -170,30 +170,33 @@
     <!-- end header  -->
 
     <main>
-      <!--  -->
+      <!--This is title section start  -->
       <section class="mt-20">
         <h2
-          class="text-white mt-[189px] ml-[200px] font-inter text-[42px] font-medium leading-normal"
+          class="text-white lg:mt-[189px] lg:ml-[200px] ml-[15px] font-inter lg:text-[42px] text-[24px] font-medium leading-normal"
         >
           Creating Marketing Campaign
         </h2>
       </section>
+      <!-- This is title section end -->
+
+
       <!-- This is the body section  -->
-      <section class="flex gap-[162px] ml-[200px] mt-[59px]">
+      <section class="flex lg:flex-row flex-col lg:gap-[162px] gap-16 lg:ml-[200px] ml-[15px] lg:mt-[59px] mt-[40px]">
         <!-- Left Section -->
         <div class="space-y-6">
           <!-- Campaign Name -->
-          <div>
+          <div class="">
             <label
               for="campaign-name"
-              class="block text-white font-inter text-lg font-normal leading-normal mb-5"
+              class="block text-white font-inter lg:text-lg text-[16px] font-normal leading-normal mb-5"
               >Campaign Name</label
             >
             <input
               type="text"
               id="campaign-name"
               placeholder="Enter your name"
-              class="w-[734px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
@@ -201,30 +204,30 @@
           <div>
             <label
               for="select-list"
-              class="block text-white font-inter text-lg font-normal leading-normal mb-5 pt-[30px]"
+              class="block text-white font-inter lg:text-lg text-[16px] font-normal leading-normal mb-5 lg:pt-[30px]"
               >Select List</label
             >
             <input
               type="email"
               id="select-list"
               placeholder="Enter your email"
-              class="w-[734px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
           <!-- Campaign Type -->
-          <div class="pt-[111px]">
+          <div class="lg:pt-[111px] pt-[40px]">
             <h2
-              class="mb-[42px] text-white font-inter text-[28px] font-medium leading-normal"
+              class="lg:mb-[42px] mb-4 text-white font-inter lg:text-[28px] text-[16px] font-medium leading-normal"
             >
               Select Campaign Type
             </h2>
-            <div class="flex items-center space-x-[166px]">
-              <label class="flex items-center space-x-[26px] cursor-pointer">
+            <div class="flex flex-row  items-center lg:space-x-[166px] space-x-[70px]">
+              <label class="flex items-center lg:space-x-[26px] space-x-2 cursor-pointer">
                 <input
                   type="radio"
                   name="campaign-type"
-                  class="form-radio text-white h-[48px] w-[48px]"
+                  class="form-radio text-white lg:h-[48px] lg:w-[48px]"
                   checked
                 />
                 <span
@@ -232,11 +235,11 @@
                   >Email</span
                 >
               </label>
-              <label class="flex items-center space-x-[26px] cursor-pointer">
+              <label class="flex items-center lg:space-x-[26px] space-x-2 cursor-pointer">
                 <input
                   type="radio"
                   name="campaign-type"
-                  class="form-radio text-white h-[48px] w-[48px]"
+                  class="form-radio text-white lg:h-[48px] lg:w-[48px]"
                 />
                 <span
                   class="text-white font-inter text-base font-normal leading-normal"
@@ -257,29 +260,29 @@
               type="text"
               id="subject"
               placeholder="Enter the subject"
-              class="w-[734px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] w-[288px] lg:h-[79px] h-[48px]  pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
           <!-- Body -->
-          <div class="mb-[30px]">
+          <div class="lg:mb-[30px]">
             <label
               for="body"
-              class="block mb-2 pt-[30px] text-white font-inter text-base font-normal leading-normal"
+              class="block mb-2 lg:pt-[30px] text-white font-inter text-base font-normal leading-normal"
               >Body</label
             >
             <textarea
               id="body"
               rows="4"
               placeholder=""
-              class="w-[734px] h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] w-[288px] lg:h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
             ></textarea>
             <!-- Button -->
-            <div class="flex justify-center mt-[30px] mb-[221px]">
+            <div class="flex justify-center lg:mt-[30px] mt-4 lg:mb-[221px] lg:mr-0 mr-[15px]">
               <form>
                 <label
                   for="upload-image"
-                  class="w-[360px] py-[19px] rounded-[72px] bg-white text-[#111] text-center font-inter text-base font-medium leading-normal cursor-pointer block"
+                  class="lg:w-[360px] w-[288px] py-[19px] rounded-[72px] bg-white text-[#111] text-center font-inter text-base font-medium leading-normal cursor-pointer block"
                 >
                   Select Image
                 </label>
@@ -300,38 +303,42 @@
           <!-- Schedule Campaign -->
           <div class="bg-[#111] text-white rounded-md">
             <p
-              class="block text-white font-inter text-lg font-normal leading-normal mb-[32px]"
+              class="block text-white font-inter lg:text-lg text-[16px] font-normal leading-normal mb-[32px]"
             >
               Schedule Campaign
             </p>
-            <div class="flex items-center justify-between">
+            <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between">
               <!-- Start Now Option -->
-              <div class="flex items-center space-x-[26px]">
-                <div class="flex items-center gap-6 justify-between">
+              <div class="flex lg:flex-row flex-col lg:items-center lg:space-x-[26px] gap-6">
+                <div class="flex flex-row items-center gap-6">
                   <input
                     type="radio"
                     id="start-now"
                     name="schedule"
-                    class="form-radio text-white h-[48px] w-[48px]"
+                    class="form-radio text-white lg:h-[48px] lg:w-[48px]"
                     checked
                   />
                   <label
                     for="start-now"
-                    class="text-white font-inter text-lg font-normal leading-normal"
+                    class="text-white font-inter lg:text-lg text-[16px] font-normal leading-normal"
                     >Start Now</label
                   >
-                <input
-                  type="radio"
-                  id="start-now"
-                  name="schedule"
-                  class="form-radio text-white h-[48px] w-[48px] ml-[126px]"
-                />
+                
               </div>
 
-              <!-- Month Dropdown -->
-              <div class="relative">
+              <!-- Month Dropdown start -->
+              <div class="flex flex-row justify-center items-center lg:mt-0 mt-8 lg:pr-0 mr-[205px]">
+                
+                  <input
+              type="radio"
+              id="start-now"
+              name="schedule"
+              class="form-radio text-white lg:h-[48px] lg:w-[48px] ml-[126px]"
+            />
+                
+              <div class="relative lg:ml-5">
                 <select
-                  class="w-[157px] pl-5 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
+                  class="lg:w-[157px] w-[100px] pl-5 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
                 >
                   <option>Month</option>
                   <option>January</option>
@@ -341,11 +348,11 @@
                   <!-- Add other months -->
                 </select>
               </div>
-
-              <!-- Year Dropdown -->
-              <div class="relative ml-[30px] mr-[30px]">
+              <!-- Month Dropdown end -->
+              <!-- Year Dropdown start -->
+              <div class="relative lg:ml-[30px] lg:mr-[30px]">
                 <select
-                  class="w-[157px] px-3 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
+                  class="lg:w-[157px] px-3 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
                 >
                   <option>Year</option>
                   <option>2023</option>
@@ -355,24 +362,26 @@
                   <!-- Add other years -->
                 </select>
               </div>
+              <!-- Year Dropdown end -->
+              </div>
             </div>
           </div>
 
           <!-- Preview -->
           <div class="">
             <h2
-              class="mb-[28px] pt-[216px] text-white font-inter text-[18px] font-normal leading-normal ml-2"
+              class="mb-[28px] lg:pt-[216px] pt-[40px] text-white font-inter text-[18px] font-normal leading-normal ml-2"
             >
               preview
             </h2>
-            <div class="w-full h-[618px] bg-[#1C1C1C] rounded-lg"></div>
+            <div class="lg:w-full w-[288px] h-[618px] bg-[#1C1C1C] rounded-[20px]"></div>
           </div>
 
           <!-- Buttons -->
-          <div class="flex justify-center pt-[131px] pb-[111px]">
+          <div class="flex justify-center lg:pt-[131px] pt-10 lg:pb-[111px] pb-10">
             <button
               type="submit"
-              class="w-[360px] py-[19px] rounded-[72px] bg-white text-[#111] text-center font-inter text-base font-medium leading-normal cursor-pointer block"
+              class="lg:w-[360px] w-[288px] lg:mr-0 mr-[15px] py-[19px] rounded-[72px] bg-white text-[#111] text-center font-inter text-base font-medium leading-normal cursor-pointer block"
             >
               Create Campaign
             </button>
