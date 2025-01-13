@@ -209,6 +209,13 @@ body {
 }
 /* ====nahid::end=== */
 
+/* ===arefin::start== */
+/* .blogs-month-select{
+  @apply !w-32
+} */
+/* ===arefin::end== */
+
+
 /*===Responsive=== */
 
 @media (max-width: 640px) {
