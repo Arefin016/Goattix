@@ -204,280 +204,529 @@
         </section>
         <!-- This is the button section end -->
       </section>
+
       <!-- This is the table section start -->
-      <section class="p-8 w-[1165px] lg:ml-[201px] lg:mb-[140px] event--table">
+      <div class="lg:ml-[201px] lg:mb-[140px] ml-[15px] lg:mr-0 mr-[15px]">
         <h1
-          class="text-white font-inter font-medium leading-normal text-[42px] mb-6 mt-[94px]"
+          class="text-white font-inter font-medium leading-normal lg:text-[42px] text-[24px] mb-6 lg:mt-[94px] mt-[30px]"
         >
           Your Lists
         </h1>
         <div
-          class="w-[1165px] mx-auto mt-[119px] border border-[rgba(255,255,255,0.2)] rounded-t-lg overflow-x-auto text-nowrap"
+          class="event--table mt-7 md:mt-10 lg:mt-16 xl:mt-20 2xl:mt-[110px] rounded-lg md:rounded-xl lg:rounded-[16px] overflow-hidden border border-[rgba(255,255,255,0.20)] w-full 2xl:w-4/5"
         >
-          <table
-            class="min-w-full border border-[rgba(255,255,255,0.2)] rounded-t-lg"
-          >
-            <thead
-              class="bg-[#1C1C1C] border border-[rgba(255,255,255,0.2)] first:rounded-tl-lg last:rounded-tr-lg"
-            >
-              <tr>
-                <th
-                  class="pt-[25px] pb-[21px] pl-[35px] text-left border border-gray-700 first:rounded-tl-lg last:rounded-tr-lg w-[360px] text-white font-inter text-[20px] font-medium leading-normal"
-                >
-                  List
-                </th>
-                <th
-                  class="pt-[25px] pb-[21px] pl-[35px] text-left border border-gray-700 w-[292px] text-white font-inter text-[20px] font-medium leading-normal"
-                >
-                  Category
-                </th>
-                <th
-                  class="pt-[25px] pb-[21px] pl-[35px] text-left border border-gray-700 w-[292px] text-white font-inter text-[20px] font-medium leading-normal"
-                >
-                  Update
-                </th>
-                <th
-                  class="pt-[25px] pb-[21px] pl-[35px] text-left border border-gray-700 first:rounded-tl-lg last:rounded-tr-lg w-[292px] text-white font-inter text-[20px] font-medium leading-normal"
-                >
-                  Delete
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Row 1 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  18+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-[rgba(255,255,255,0.2)]">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+          <div class="overflow-x-auto text-nowrap">
+            <table class="min-w-full w-full">
+              <!-- thead  -->
+              <thead>
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <th
+                    class="text-left py-4 px-4 md:px-9 text-[16px] md:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    List
+                  </th>
+                  <th
+                    class="text-left py-4 px-4 md:px-9 text-[16px] md:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    Category
+                  </th>
+                  <th
+                    class="text-left py-4 px-4 md:px-9 text-[16px] md:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
                   >
                     Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                  </th>
+                  <th
+                    class="text-left py-4 px-4 md:px-9 text-[16px] md:text-[20px] text-white bg-blackv2 border-r border-[rgba(255,255,255,0.20)]"
                   >
                     Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 2 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  20+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- First Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p>18+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 3 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  18+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 4 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  22+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- First Row End -->
+
+                <!-- Second Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p>20+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 5 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  16+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 6 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  21+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Second Row End -->
+
+                <!-- Third Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p>21+ line slip tier</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 7 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  23+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 8 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  19+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Third Row End -->
+
+                <!-- Fourth Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p>18+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 9 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  17+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              <!-- Row 10 -->
-              <tr>
-                <td
-                  class="pt-[21px] pb-[21px] pl-[35px] border border-gray-700 text-white font-inter text-[18px] font-normal leading-[28.444px]"
-                >
-                  25+ to Get In
-                </td>
-                <td class="px-4 py-3 border border-gray-700"></td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Fourth Row End -->
+
+                <!-- Fifth Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Update
-                  </button>
-                </td>
-                <td class="px-4 py-3 border border-gray-700">
-                  <button
-                    class="bg-white pt-[14px] pb-[14px] pl-[49px] ml-[33px] pr-[49px] rounded-full text-[#111] text-center font-inter text-[24px] font-medium leading-normal"
+                    <p>18+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Fifth Row End -->
+
+                <!-- Sixth Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>20+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Sixth Row End -->
+
+                <!-- seventh Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>21+ line slip tier</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- seventh Row End -->
+
+                <!-- Eight Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>18+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Eight Row End -->
+
+                <!-- Ninth Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>18+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Ninth Row End -->
+
+                <!-- Tenth Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>20+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Tenth Row End -->
+
+                <!-- Eleven Row Start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>21+ line slip tier</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Eleven Row End -->
+
+                <!-- Twelve row start -->
+                <tr class="border-b border-[rgba(255,255,255,0.20)]">
+                  <!-- Ticket Type Column -->
+                  <td
+                    class="ticket-type text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p>18+ to Get In</p>
+                  </td>
+
+                  <!-- Info Column -->
+                  <td
+                    class="info text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <p></p>
+                  </td>
+
+                  <!-- Security Code Column -->
+                  <td
+                    class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Update
+                    </button>
+                  </td>
+
+                  <!-- Status Column -->
+                  <td
+                    class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
+                  >
+                    <button
+                      class="bg-white lg:pt-[14px] pt-[10px] lg:pb-[14px] pb-[10px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <!-- Twelve row end -->
+              </tbody>
+            </table>
+          </div>
         </div>
-      </section>
+      </div>
       <!-- This is the table section end -->
     </main>
 
