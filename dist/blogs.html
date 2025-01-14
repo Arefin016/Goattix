@@ -182,7 +182,7 @@
 
       <!-- This is the body section  -->
       <section
-        class="flex lg:flex-row flex-col lg:gap-[162px] gap-16 lg:ml-[200px] ml-[15px] lg:mt-[59px] mt-[40px]"
+        class="flex lg:flex-row flex-col lg:gap-[162px] gap-16 lg:ml-[200px] ml-[15px] lg:mt-[59px] mt-4"
       >
         <!-- Left Section -->
         <div class="space-y-6">
@@ -197,7 +197,7 @@
               type="text"
               id="campaign-name"
               placeholder="Enter your name"
-              class="lg:w-[734px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
@@ -212,19 +212,19 @@
               type="email"
               id="select-list"
               placeholder="Enter your email"
-              class="lg:w-[734px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
           <!-- Campaign Type -->
-          <div class="lg:pt-[111px] pt-[40px]">
+          <div class="lg:pt-[111px] pt-3">
             <h2
               class="lg:mb-[42px] mb-4 text-white font-inter lg:text-[28px] text-[16px] font-medium leading-normal"
             >
               Select Campaign Type
             </h2>
             <div
-              class="flex flex-row items-center lg:space-x-[166px] space-x-[70px]"
+              class="flex flex-row items-center lg:space-x-[166px] space-x-5"
             >
               <label
                 class="flex items-center lg:space-x-[26px] space-x-2 cursor-pointer"
@@ -232,7 +232,7 @@
                 <input
                   type="radio"
                   name="campaign-type"
-                  class="form-radio text-white lg:h-[48px] h-6 lg:w-[48px] w-6"
+                  class="form-radio text-white lg:h-[48px] h-4 lg:w-[48px] w-4"
                   checked
                 />
                 <span
@@ -246,7 +246,7 @@
                 <input
                   type="radio"
                   name="campaign-type"
-                  class="form-radio text-white lg:h-[48px] h-6 lg:w-[48px] w-6"
+                  class="form-radio text-white lg:h-[48px] h-4 lg:w-[48px] w-4"
                 />
                 <span
                   class="text-white font-inter text-base font-normal leading-normal"
@@ -267,7 +267,7 @@
               type="text"
               id="subject"
               placeholder="Enter the subject"
-              class="lg:w-[734px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
@@ -282,7 +282,7 @@
               id="body"
               rows="4"
               placeholder=""
-              class="lg:w-[734px] w-[288px] lg:h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
             ></textarea>
             <!-- Button -->
             <div
@@ -338,7 +338,7 @@
 
               <!-- Month & Year Dropdown -->
               <div
-                class="flex flex-nowrap lg:gap-x-5 gap-x-2 items-center mt-5 lg:mt-0"
+                class="flex flex-nowrap lg:gap-x-5 gap-x-5 items-center mt-5 lg:mt-0"
               >
                 <input
                   type="radio"
@@ -348,7 +348,7 @@
                 />
                 <div class="relative">
                   <select
-                    class="lg:w-40 w-32 h-12 pl-4 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
+                    class="lg:w-40 w-[75px] h-[20px] lg:h-16 pl-4 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
                   >
                     <option>Month</option>
                     <option>January</option>
@@ -359,7 +359,7 @@
                 </div>
                 <div class="relative">
                   <select
-                    class="lg:w-40 w-32 h-12 pl-4 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
+                    class="lg:w-40 w-[75px] h-[20px] lg:h-16 pl-4 bg-black border border-white rounded-md text-white font-inter text-sm outline-none appearance-none"
                   >
                     <option>Year</option>
                     <option>2023</option>
@@ -371,6 +371,8 @@
               </div>
             </div>
           </div>
+          <!-- This is the test part start -->
+          <!-- This is the test part end-->
 
           <!-- Preview -->
           <div class="">
@@ -380,7 +382,7 @@
               Preview
             </h2>
             <div
-              class="w-full max-w-[288px] lg:max-w-full lg:h-[618px] h-[100px] bg-[#1C1C1C] rounded-[20px]"
+              class="max-w-[288px] lg:max-w-full md:w-[736px] lg:h-[618px] h-[100px] bg-[#1C1C1C] rounded-[20px]"
             ></div>
           </div>
 
