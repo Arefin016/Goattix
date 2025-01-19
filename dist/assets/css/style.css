@@ -3517,10 +3517,6 @@ body{
     margin-top: 1.25rem;
   }
 
-  .sm\:mt-\[120px\]{
-    margin-top: 120px;
-  }
-
   .sm\:mt-6{
     margin-top: 1.5rem;
   }
@@ -3834,10 +3830,6 @@ body{
 
   .md\:mt-8{
     margin-top: 2rem;
-  }
-
-  .md\:mt-\[150px\]{
-    margin-top: 150px;
   }
 
   .md\:mt-\[30px\]{
@@ -4409,6 +4401,10 @@ body{
     margin-left: 122px;
   }
 
+  .lg\:ml-\[15px\]{
+    margin-left: 15px;
+  }
+
   .lg\:ml-\[200px\]{
     margin-left: 200px;
   }
@@ -4531,10 +4527,6 @@ body{
 
   .lg\:mt-\[94px\]{
     margin-top: 94px;
-  }
-
-  .lg\:ml-\[15px\]{
-    margin-left: 15px;
   }
 
   .lg\:flex{
@@ -5244,10 +5236,6 @@ body{
     margin-bottom: 56px;
   }
 
-  .xl\:ml-\[15px\]{
-    margin-left: 15px;
-  }
-
   .xl\:mt-0{
     margin-top: 0px;
   }
@@ -5706,6 +5694,14 @@ body{
     margin-bottom: 80px;
   }
 
+  .\32xl\:ml-\[200px\]{
+    margin-left: 200px;
+  }
+
+  .\32xl\:mt-16{
+    margin-top: 4rem;
+  }
+
   .\32xl\:mt-20{
     margin-top: 5rem;
   }
@@ -5772,22 +5768,6 @@ body{
 
   .\32xl\:mt-\[95px\]{
     margin-top: 95px;
-  }
-
-  .\32xl\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .\32xl\:ml-\[15px\]{
-    margin-left: 15px;
-  }
-
-  .\32xl\:ml-\[200px\]{
-    margin-left: 200px;
-  }
-
-  .\32xl\:mt-16{
-    margin-top: 4rem;
   }
 
   .\32xl\:block{
@@ -6245,15 +6225,5 @@ body{
 
   .\32xl\:leading-\[1\.2\]{
     line-height: 1.2;
-  }
-}
-
-@media (min-width: 1920px){
-  .\33xl\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .\33xl\:ml-\[15px\]{
-    margin-left: 15px;
   }
 }
