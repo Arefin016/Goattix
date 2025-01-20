@@ -5018,10 +5018,6 @@ body{
     padding-bottom: 11rem;
   }
 
-  .lg\:pb-6{
-    padding-bottom: 1.5rem;
-  }
-
   .lg\:pb-7{
     padding-bottom: 1.75rem;
   }
@@ -5348,10 +5344,6 @@ body{
 
   .xl\:w-10\/12{
     width: 83.333333%;
-  }
-
-  .xl\:w-3\/12{
-    width: 25%;
   }
 
   .xl\:w-8\/12{

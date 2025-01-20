@@ -72,7 +72,7 @@
               <li>
                 <a
                   href="my-events.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Host</a
                 >
               </li>
@@ -220,37 +220,37 @@
           <!-- date and time picker  -->
           <div class="xl:row space-y-4 lg:space-y-0">
             <div class="w-full col flex flex-col gap-5">
-              <label for="start-date">Start Date</label>
+              <label for="start-date">Name of Day</label>
               <input
-                class="px-4 md:px-5 start-date bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                placeholder="DD - MM - YYY"
+                class="px-5 bg-transparent w-full py-[14px] md:py-6 rounded-lg focus:outline-none md:rounded-xl text-sm md:text-base text-gray-400 border border-white"
+                placeholder="Type here"
                 type="text"
-                name=""
-                id="start-date"
+                name="event-title"
+                id="event-title"
               />
             </div>
             <div class="w-full col flex flex-col gap-5">
-              <label for="start-time">Start Time</label>
+              <label for="start-time">On</label>
               <input
                 class="px-4 md:px-5 start-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                placeholder="HH - MM"
+                placeholder="DD-MM-YYYY"
                 type="text"
                 name=""
                 id="start-time"
               />
             </div>
             <div class="w-full col flex flex-col gap-5">
-              <label for="end-date">End Date</label>
+              <label for="end-date">From</label>
               <input
                 class="px-4 md:px-5 start-date bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                placeholder="DD - MM - YYY"
+                placeholder="HH - MM"
                 type="text"
                 name=""
                 id="end-date"
               />
             </div>
             <div class="w-full col flex flex-col gap-5">
-              <label for="end-time">End Time</label>
+              <label for="end-time">To</label>
               <input
                 class="px-4 md:px-5 end-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
                 placeholder="HH - MM"
@@ -262,23 +262,7 @@
           </div>
 
           <!-- timezone picker -->
-          <div
-            class="flex flex-col md:flex-row gap-6 w-full pt-7 h-full items-end"
-          >
-            <div class="xl:w-9/12 w-full h-full flex flex-col gap-5">
-              <label for="time-zone">Time Zone</label>
-              <div class="relative time--zone">
-                <select
-                  class="w-full rounded-xl border-white border text-sm md:text-base"
-                  id="timezone"
-                  name="timezone"
-                >
-                  <option value="">Select a timezone...</option>
-                  <!-- Populate options with JavaScript -->
-                </select>
-              </div>
-            </div>
-          </div>
+
           <!-- recurring events and add exception -->
           <div
             class="flex flex-col gap-4 md:gap-8 lg:gap-10 pt-4 lg:pt-14 w-full"
@@ -310,30 +294,26 @@
                     class="xl:row pb-4 md:pb-6 space-y-4 xl:space-y-0 pt-2 md:pt-0"
                   >
                     <div class="col">
-                      <div
-                        class="text-sm md:text-base w-full new-venue-selector venue-details h-full flex flex-col gap-3 md:gap-5"
-                      >
-                        <label for="time-zone">Happens</label>
-                        <div class="relative">
-                          <select class="w-full bg-white">
-                            <option selected>Once</option>
-                            <option value="1">Houston</option>
-                            <option value="2">Austin</option>
-                            <option value="3">Dallas</option>
-                            <option value="4">San Antonio</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
                       <div class="w-full flex flex-col gap-3 md:gap-5">
-                        <label for="event-title">On</label>
+                        <label for="event-title">Name of Day</label>
                         <input
                           class="px-5 bg-transparent w-full py-[14px] md:py-6 rounded-lg focus:outline-none md:rounded-xl text-sm md:text-base text-gray-400 border border-white"
                           placeholder="Type here"
                           type="text"
                           name="event-title"
                           id="event-title"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="w-full flex flex-col gap-3 md:gap-5">
+                        <label for="event-title">On</label>
+                        <input
+                          class="px-4 md:px-5 start-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                          placeholder="DD-MM-YYYY"
+                          type="text"
+                          name=""
+                          id="start-time"
                         />
                       </div>
                     </div>
@@ -351,41 +331,13 @@
                     </div>
                     <div class="col">
                       <div class="w-full col flex flex-col gap-3 md:gap-5">
-                        <label for="end-time-recurring-evente">End</label>
+                        <label for="end-time-recurring-evente">To</label>
                         <input
                           class="px-5 focus:outline-none end-time bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
                           placeholder="HH - MM"
                           type="text"
                           name=""
                           id="end-time-recurring-event"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="xl:row">
-                    <div class="col">
-                      <div class="w-full col flex flex-col gap-3 md:gap-5">
-                        <label for="start-date-recurring-event">Days</label>
-                        <input
-                          class="px-5 focus:outline-none start-date bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                          placeholder="DD - MM - YYY"
-                          type="text"
-                          name=""
-                          id="start-date-recurring-event"
-                        />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div
-                        class="w-full col flex flex-col gap-3 md:gap-5 mt-4 md:mt-0"
-                      >
-                        <label for="start-date-recurring-event">End</label>
-                        <input
-                          class="px-5 text-sm md:text-base end-date bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                          placeholder="DD - MM - YYY"
-                          type="text"
-                          name=""
-                          id="end-date-recurring-event"
                         />
                       </div>
                     </div>
@@ -455,18 +407,6 @@
             </div>
             <!-- add exception -->
             <div class="flex flex-col gap-4">
-              <label
-                class="inline-flex h-full items-center gap-4 cursor-pointer relative"
-              >
-                <input
-                  id="add-exception-checkbox"
-                  type="checkbox"
-                  class="appearance-none font-bold flex justify-center items-center size-4 md:size-6 lg:size-7 text-sm md:text-base border border-white rounded md:rounded-md lg:text-xl bg-transparent checked:bg-white checked:border-white text-black checked:after:content-['✔'] focus:outline-none"
-                />
-                <span class="text-sm md:ml-2 md:text-base font-normal"
-                  >Event not Occur: Add Exception</span
-                >
-              </label>
               <ul
                 id="add-exception-parent-div"
                 class="pb-4 row opacity-0 h-0 xl:pt-4"
@@ -506,106 +446,11 @@
                   </div>
                 </li>
               </ul>
-              <div
-                class="flex flex-col-reverse gap-4 md:flex-row items-start justify-between"
-              >
-                <div class="flex gap-3 xl:w-8/12 items-start">
-                  <svg
-                    class="size-5 md:size-auto"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 29 29"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.948 20.5143H15.2522V13.2518H12.948V20.5143ZM14.0272 11.5893C14.4355 11.5893 14.7661 11.4629 15.0189 11.2101C15.2717 10.9573 15.398 10.6365 15.398 10.2476C15.398 9.80039 15.2717 9.45525 15.0189 9.21219C14.7661 8.96913 14.4355 8.84761 14.0272 8.84761C13.5994 8.84761 13.264 8.96913 13.021 9.21219C12.7779 9.45525 12.6564 9.79066 12.6564 10.2184C12.6564 10.6268 12.7828 10.9573 13.0355 11.2101C13.2883 11.4629 13.6189 11.5893 14.0272 11.5893ZM14.0272 26.6976C12.3355 26.6976 10.7411 26.3816 9.24388 25.7497C7.74666 25.1177 6.43902 24.2427 5.32096 23.1247C4.20291 22.0066 3.32791 20.699 2.69596 19.2018C2.06402 17.7046 1.74805 16.1101 1.74805 14.4184C1.74805 12.7073 2.06402 11.108 2.69596 9.62052C3.32791 8.13302 4.20291 6.83025 5.32096 5.71219C6.43902 4.59414 7.74666 3.71427 9.24388 3.07261C10.7411 2.43094 12.3355 2.11011 14.0272 2.11011C15.7189 2.11011 17.3182 2.43094 18.8251 3.07261C20.3321 3.71427 21.6397 4.59414 22.748 5.71219C23.8564 6.83025 24.7314 8.13788 25.373 9.63511C26.0147 11.1323 26.3355 12.7268 26.3355 14.4184C26.3355 16.1296 26.0147 17.7289 25.373 19.2164C24.7314 20.7039 23.8515 22.0018 22.7335 23.1101C21.6154 24.2184 20.3078 25.0934 18.8105 25.7351C17.3133 26.3768 15.7189 26.6976 14.0272 26.6976Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <p
-                    class="text-xs md:text-sm font-light text-gray-300 w-10/12"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
-
-                <button
-                  id="add-acception-btn"
-                  class="opacity-0 w-fit flex h-fit gap-3 text-black text-nowrap px-6 border-white border transition-all duration-300 py-2.5 rounded-full bg-white items-center"
-                >
-                  <span
-                    class="text-nowrap font-medium lg:text-lg text-sm md:text-base"
-                    >Add Exception</span
-                  >
-                  <svg
-                    class="hover:stroke-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="15"
-                    viewBox="0 0 14 15"
-                    fill="none"
-                  >
-                    <path
-                      class="hover:stroke-slate-50"
-                      d="M1.19531 7.58252H12.6953"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      class="hover:stroke-slate-50"
-                      d="M7.19531 1.58252L7.19531 13.0825"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <div class="w-full flex flex-col gap-4">
-              <div class="flex flex-col gap-3 md:gap-5">
-                <label for="">Recurrence Description</label>
-                <input
-                  class="px-5 bg-transparent w-full py-[14px] md:py-5 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                  placeholder="Type here"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-
-              <div class="flex gap-3 items-start">
-                <svg
-                  class="size-5 md:size-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                >
-                  <path
-                    d="M12.948 20.5143H15.2522V13.2518H12.948V20.5143ZM14.0272 11.5893C14.4355 11.5893 14.7661 11.4629 15.0189 11.2101C15.2717 10.9573 15.398 10.6365 15.398 10.2476C15.398 9.80039 15.2717 9.45525 15.0189 9.21219C14.7661 8.96913 14.4355 8.84761 14.0272 8.84761C13.5994 8.84761 13.264 8.96913 13.021 9.21219C12.7779 9.45525 12.6564 9.79066 12.6564 10.2184C12.6564 10.6268 12.7828 10.9573 13.0355 11.2101C13.2883 11.4629 13.6189 11.5893 14.0272 11.5893ZM14.0272 26.6976C12.3355 26.6976 10.7411 26.3816 9.24388 25.7497C7.74666 25.1177 6.43902 24.2427 5.32096 23.1247C4.20291 22.0066 3.32791 20.699 2.69596 19.2018C2.06402 17.7046 1.74805 16.1101 1.74805 14.4184C1.74805 12.7073 2.06402 11.108 2.69596 9.62052C3.32791 8.13302 4.20291 6.83025 5.32096 5.71219C6.43902 4.59414 7.74666 3.71427 9.24388 3.07261C10.7411 2.43094 12.3355 2.11011 14.0272 2.11011C15.7189 2.11011 17.3182 2.43094 18.8251 3.07261C20.3321 3.71427 21.6397 4.59414 22.748 5.71219C23.8564 6.83025 24.7314 8.13788 25.373 9.63511C26.0147 11.1323 26.3355 12.7268 26.3355 14.4184C26.3355 16.1296 26.0147 17.7289 25.373 19.2164C24.7314 20.7039 23.8515 22.0018 22.7335 23.1101C21.6154 24.2184 20.3078 25.0934 18.8105 25.7351C17.3133 26.3768 15.7189 26.6976 14.0272 26.6976Z"
-                    fill="white"
-                  />
-                </svg>
-                <p class="text-xs md:text-sm font-light text-gray-300 w-10/12">
-                  Use this field if you want to override the auto-generated
-                  description of event recurrence
-                </p>
-              </div>
             </div>
           </div>
         </div>
 
         <!-- banner image container -->
-
         <div id="banner-main-wrapper">
           <h3
             class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-5 md:pb-8 lg:pb-10"
