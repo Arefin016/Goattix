@@ -18,76 +18,104 @@
   <body>
     <!-- start header  -->
     <header
-    class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
-  >
-    <div class="container relative">
-      <div class="2xl:row lg:items-center flex items-center justify-between">
-        <div class="2xl:col-3">
-          <!-- logo  -->
-          <a href="index.html">
-            <img
-              class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
-              src="./assets/images/logo.svg"
-              alt="logo"
-            />
-          </a>
-        </div>
-        <div class="2xl:col-6 hidden xl:flex">
-          <ul class="menu flex items-center gap-8 2xl:gap-12">
-            <li>
-              <a
-                href="index.html"
-                class="active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="events.html"
-                class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
-                >Events</a
-              >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="promoters.html"
-                class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
-                >Promoters</a
-              >
-            </li>
-            <li>
-              <a
-                href="blogs.html"
-                class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="2xl:col-3 hidden xl:flex 2xl:block">
-          <div class="text-right">
-            <a href="login.html" class="button">Sign in</a>
+      class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
+    >
+      <div class="container relative">
+        <div class="2xl:row lg:items-center flex items-center justify-between">
+          <div class="2xl:col-3">
+            <!-- logo  -->
+            <a href="index.html">
+              <img
+                class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
+                src="./assets/images/logo.svg"
+                alt="logo"
+              />
+            </a>
           </div>
-        </div>
+          <div class="2xl:col-6 hidden xl:flex">
+            <ul class="menu flex items-center gap-8 2xl:gap-12">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="events.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="organizer.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Organizer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="promoters.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Promoters</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="my-events.html"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Host</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="2xl:col-3 hidden xl:flex 2xl:block">
+            <div class="text-right">
+              <a href="login.html" class="button">Sign in</a>
+            </div>
+          </div>
 
-        <!-- hamburger icons::start -->
-        <div class="transition duration-500 xl:hidden">
-          <div id="openMenu" class="transition duration-500">
+          <!-- hamburger icons::start -->
+          <div class="transition duration-500 xl:hidden">
+            <div id="openMenu" class="transition duration-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3 6h18M3 12h18M3 18h18"
+                  stroke="#8F8F8F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- hamburger icons::end -->
+        </div>
+      </div>
+      <!-- sidebar::start -->
+      <div
+        id="menu-sidebar"
+        class="bg-blackv1 absolute top-0 h-[100vh] right-0 pt-8 px-6 w-[220px] translate-x-full duration-500 transition-all md:w-[270px]"
+      >
+        <div>
+          <div class="transition duration-500">
             <svg
+              id="closeMenu"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -95,7 +123,7 @@
               fill="none"
             >
               <path
-                d="M3 6h18M3 12h18M3 18h18"
+                d="M18 6L6 18M6 6l12 12"
                 stroke="#8F8F8F"
                 stroke-width="2"
                 stroke-linecap="round"
@@ -104,81 +132,59 @@
             </svg>
           </div>
         </div>
-        <!-- hamburger icons::end -->
-      </div>
-    </div>
-    <!-- sidebar::start -->
-    <div
-      id="menu-sidebar"
-      class="bg-blackv1 absolute top-0 h-[100vh] right-0 pt-8 px-6 w-[220px] translate-x-full duration-500 transition-all md:w-[270px]"
-    >
-      <div>
-        <div class="transition duration-500">
-          <svg
-            id="closeMenu"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M18 6L6 18M6 6l12 12"
-              stroke="#8F8F8F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
-        <div class="sidebar--menu--active">
+        <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
+          <div class="sidebar--menu--active">
+            <a
+              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="index.html"
+              >Home</a
+            >
+          </div>
           <a
-            class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+            href="events.html"
+            class="text-sm md:text-base text-menuColor"
             href="index.html"
-            >Home</a
+            >Events</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >About Us</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >Permotors</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >Blogs</a
+          >
+          <a class="text-sm md:text-base text-menuColor" href="index.html"
+            >Contact Us</a
           >
         </div>
-        <a
-          href="events.html"
-          class="text-sm md:text-base text-menuColor"
-          href="index.html"
-          >Events</a
-        >
-        <a class="text-sm md:text-base text-menuColor" href="index.html"
-          >About Us</a
-        >
-        <a class="text-sm md:text-base text-menuColor" href="index.html"
-          >Permotors</a
-        >
-        <a class="text-sm md:text-base text-menuColor" href="index.html"
-          >Blogs</a
-        >
-        <a class="text-sm md:text-base text-menuColor" href="index.html"
-          >Contact Us</a
-        >
-      </div>
 
-      <div class="pt-6 pl-5">
-        <div>
-          <a
-            href="login.html"
-            class="text-sm md:text-base font-medium bg-white px-10 py-3 rounded-full text-black"
-            >Sign in</a
-          >
+        <div class="pt-6 pl-5">
+          <div>
+            <a
+              href="login.html"
+              class="text-sm md:text-base font-medium bg-white px-10 py-3 rounded-full text-black"
+              >Sign in</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- sidebar::end -->
-  </header>
+      <!-- sidebar::end -->
+    </header>
     <!-- end header  -->
 
     <main class="mt-24 xl:mt-52 pb-28 overflow-x-hidden">
-      <div class="container time-zone flex flex-col space-y-7 md:space-y-9 lg:space-y-10 xl:space-y-14">
+      <div
+        class="container time-zone flex flex-col space-y-7 md:space-y-9 lg:space-y-10 xl:space-y-14"
+      >
         <!-- add new event input container -->
         <div>
-          <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-7 lg:pb-10">Add New Event</h3>
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-7 lg:pb-10"
+          >
+            Add New Event
+          </h3>
 
           <div class="w-full flex flex-col gap-4 md:gap-7">
             <div class="w-full flex flex-col gap-3 md:gap-5">
@@ -205,7 +211,9 @@
 
         <!-- event time and date container -->
         <div>
-          <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10">
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10"
+          >
             Event Time & Date
           </h3>
 
@@ -254,7 +262,9 @@
           </div>
 
           <!-- timezone picker -->
-          <div class="flex flex-col md:flex-row gap-6 w-full pt-7 h-full items-end">
+          <div
+            class="flex flex-col md:flex-row gap-6 w-full pt-7 h-full items-end"
+          >
             <div class="xl:w-9/12 w-full h-full flex flex-col gap-5">
               <label for="time-zone">Time Zone</label>
               <div class="relative time--zone">
@@ -281,7 +291,9 @@
             </div>
           </div>
           <!-- recurring events and add exception -->
-          <div class="flex flex-col gap-4 md:gap-8 lg:gap-10 pt-4 lg:pt-14 w-full">
+          <div
+            class="flex flex-col gap-4 md:gap-8 lg:gap-10 pt-4 lg:pt-14 w-full"
+          >
             <!-- recurring events -->
             <div class="flex flex-col md:gap-8">
               <label
@@ -305,7 +317,9 @@
                   id="recurring-event-wrapper"
                   class="fle p-1 recurring-event-wrapper h-full transition-all duration-300 flex-col gap-8"
                 >
-                  <div class="xl:row pb-4 md:pb-6 space-y-4 xl:space-y-0 pt-2 md:pt-0">
+                  <div
+                    class="xl:row pb-4 md:pb-6 space-y-4 xl:space-y-0 pt-2 md:pt-0"
+                  >
                     <div class="col">
                       <div
                         class="text-sm md:text-base w-full new-venue-selector venue-details h-full flex flex-col gap-3 md:gap-5"
@@ -323,7 +337,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="w-full flex flex-col gap-3 md:gap-5 ">
+                      <div class="w-full flex flex-col gap-3 md:gap-5">
                         <label for="event-title">On</label>
                         <input
                           class="px-5 bg-transparent w-full py-[14px] md:py-6 rounded-lg focus:outline-none md:rounded-xl text-sm md:text-base text-gray-400 border border-white"
@@ -347,7 +361,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="w-full col flex flex-col gap-3 md:gap-5 ">
+                      <div class="w-full col flex flex-col gap-3 md:gap-5">
                         <label for="end-time-recurring-evente">End</label>
                         <input
                           class="px-5 focus:outline-none end-time bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
@@ -373,7 +387,9 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="w-full col flex flex-col gap-3 md:gap-5 mt-4 md:mt-0">
+                      <div
+                        class="w-full col flex flex-col gap-3 md:gap-5 mt-4 md:mt-0"
+                      >
                         <label for="start-date-recurring-event">End</label>
                         <input
                           class="px-5 text-sm md:text-base end-date bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
@@ -388,10 +404,12 @@
                 </li>
               </ul>
 
-              <div class="flex flex-col-reverse gap-3 md:flex-row items-start justify-between my-5 w-full">
-                <div class="flex gap-3 w-full xl:w-10/12 items-start  ">
+              <div
+                class="flex flex-col-reverse gap-3 md:flex-row items-start justify-between my-5 w-full"
+              >
+                <div class="flex gap-3 w-full xl:w-10/12 items-start">
                   <svg
-                  class="size-5 md:size-auto"
+                    class="size-5 md:size-auto"
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
                     height="25"
@@ -414,7 +432,8 @@
                   id="add-recurring-event-btn"
                   class="hidden w-fit h-fit gap-3 text-black px-6 border-white border transition-all duration-300 py-2.5 rounded-full bg-white items-center"
                 >
-                  <span class="text-nowrap font-medium text-sm md:text-base lg:text-lg"
+                  <span
+                    class="text-nowrap font-medium text-sm md:text-base lg:text-lg"
                     >Add More Events</span
                   >
                   <svg
@@ -463,7 +482,9 @@
                 id="add-exception-parent-div"
                 class="pb-4 row opacity-0 h-0 xl:pt-4"
               >
-                <li class="xl:row add-acception-new-element space-y-4 lg:space-y-0">
+                <li
+                  class="xl:row add-acception-new-element space-y-4 lg:space-y-0"
+                >
                   <div class="xl:col w-full">
                     <div
                       class="w-full text-sm md:text-base new-venue-selector venue-details h-full flex flex-col gap-3 md:gap-5"
@@ -481,7 +502,9 @@
                     </div>
                   </div>
                   <div class="col">
-                    <div class="w-full flex flex-col gap-3 md:gap-5 text-sm md:text-base">
+                    <div
+                      class="w-full flex flex-col gap-3 md:gap-5 text-sm md:text-base"
+                    >
                       <label for="event-title">On</label>
                       <input
                         class="px-5 bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
@@ -494,10 +517,12 @@
                   </div>
                 </li>
               </ul>
-              <div class="flex flex-col-reverse gap-4 md:flex-row items-start justify-between">
+              <div
+                class="flex flex-col-reverse gap-4 md:flex-row items-start justify-between"
+              >
                 <div class="flex gap-3 xl:w-8/12 items-start">
                   <svg
-                  class="size-5 md:size-auto"
+                    class="size-5 md:size-auto"
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
                     height="25"
@@ -509,7 +534,9 @@
                       fill="white"
                     />
                   </svg>
-                  <p class="text-xs md:text-sm font-light text-gray-300 w-10/12">
+                  <p
+                    class="text-xs md:text-sm font-light text-gray-300 w-10/12"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
@@ -518,9 +545,10 @@
 
                 <button
                   id="add-acception-btn"
-                  class="opacity-0 w-fit flex h-fit gap-3 text-black text-nowrap px-6 border-white border transition-all  duration-300 py-2.5 rounded-full bg-white items-center"
+                  class="opacity-0 w-fit flex h-fit gap-3 text-black text-nowrap px-6 border-white border transition-all duration-300 py-2.5 rounded-full bg-white items-center"
                 >
-                  <span class="text-nowrap font-medium lg:text-lg text-sm md:text-base"
+                  <span
+                    class="text-nowrap font-medium lg:text-lg text-sm md:text-base"
                     >Add Exception</span
                   >
                   <svg
@@ -566,7 +594,7 @@
 
               <div class="flex gap-3 items-start">
                 <svg
-                class="size-5 md:size-auto"
+                  class="size-5 md:size-auto"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
                   height="25"
@@ -590,7 +618,11 @@
         <!-- banner image container -->
 
         <div id="banner-main-wrapper">
-          <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-5 md:pb-8 lg:pb-10">Banner Image</h3>
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-5 md:pb-8 lg:pb-10"
+          >
+            Banner Image
+          </h3>
 
           <div class="flex w-full gap-6 lg:pb-7 h-full flex-col">
             <div>
@@ -606,10 +638,14 @@
                 class="w-full h-32 lg:h-52 bg-cover flex justify-center items-center flex-col tracking-wider border-dashed border-2 bg-[#1C1C1C] rounded-lg"
                 for="sm-background-image"
               >
-                <h4 class="text-xs text-center md:text-sm text-gray-400 pb-1 px-4 md:px-8">
+                <h4
+                  class="text-xs text-center md:text-sm text-gray-400 pb-1 px-4 md:px-8"
+                >
                   Choose a JPG, PNG, or GIF, file under 32 MB in size
                 </h4>
-                <h3 class="text-white text-sm md:text-base pt-2 lg:pt-0">CHOOSE A IMAGE</h3>
+                <h3 class="text-white text-sm md:text-base pt-2 lg:pt-0">
+                  CHOOSE A IMAGE
+                </h3>
               </label>
             </div>
 
@@ -647,7 +683,11 @@
 
         <!-- event tage -->
         <div class="pb-6">
-          <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-3 md:pb-8 lg:pb-10">Event Tags</h3>
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-3 md:pb-8 lg:pb-10"
+          >
+            Event Tags
+          </h3>
 
           <div class="flex flex-col gap-5 text-sm md:text-base">
             <label for="event-title ">Search from existing Tags</label>
@@ -660,7 +700,9 @@
             />
           </div>
 
-          <ul class="flex flex-wrap text-xs items-center pt-4 gap-4 md:text-sm lg:text-base">
+          <ul
+            class="flex flex-wrap text-xs items-center pt-4 gap-4 md:text-sm lg:text-base"
+          >
             <li
               class="flex gap-4 items-center px-4 py-2.5 rounded-full text-sm text-gray-400 bg-[#1C1C1C]"
             >
@@ -747,15 +789,21 @@
 
         <!-- event status -->
         <div class="!mt-0">
-          <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-6 lg:pb-10">Event Status</h3>
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-6 lg:pb-10"
+          >
+            Event Status
+          </h3>
 
-          <div class="flex flex-wrap gap-5 xl:gap-14 items-center text-sm md:text-base">
+          <div
+            class="flex flex-wrap gap-5 xl:gap-14 items-center text-sm md:text-base"
+          >
             <div class="flex items-center gap-3">
               <input
                 type="radio"
                 id="going-live"
                 name="option"
-                class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2   focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
               />
               <label for="going-live" class="cursor-pointer">Going Live</label>
             </div>
@@ -773,7 +821,7 @@
                 type="radio"
                 id="postponed"
                 name="option"
-                class="appearance-none  size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2  focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
               />
               <label for="postponed" class="cursor-pointer">Postponed</label>
             </div>
@@ -801,7 +849,9 @@
         <!-- venue details -->
         <div class="">
           <div class="flex md:flex-row md:items-center justify-between">
-            <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10">
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10"
+            >
               Venue Details
             </h3>
             <button
@@ -810,7 +860,7 @@
             >
               <span class="text-xs md:text-base text-nowrap"></span>
               <svg
-              class="size-3 md:size-auto"
+                class="size-3 md:size-auto"
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
                 height="14"
@@ -856,16 +906,20 @@
         <!-- organizer details -->
         <div class="">
           <div class="flex gap-2 md:items-center justify-between">
-            <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10">
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10"
+            >
               Organizer Details
             </h3>
             <button
               id="create-new-organizer"
               class="flex gap-2 md:gap-4 items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
             >
-              <span class="text-xs md:text-base text-nowrap">Add New Organizer</span>
+              <span class="text-xs md:text-base text-nowrap"
+                >Add New Organizer</span
+              >
               <svg
-              class="size-3 md:size-auto"
+                class="size-3 md:size-auto"
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
                 height="14"
@@ -910,9 +964,15 @@
 
         <!-- event website link -->
         <div class="flex flex-col md:gap-6">
-          <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10  ">Event Website Link</h3>
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10"
+          >
+            Event Website Link
+          </h3>
           <ul>
-            <li class="w-full event-website-link h-full flex flex-col gap-3 md:gap-5 text-sm md:text-base">
+            <li
+              class="w-full event-website-link h-full flex flex-col gap-3 md:gap-5 text-sm md:text-base"
+            >
               <label for="time-zone">Website link</label>
               <div class="relative">
                 <select class="w-full bg-white">
@@ -929,17 +989,23 @@
 
         <!-- add new ticket and RSVP and Settings -->
         <div class="">
-          <div class="flex flex-col md:flex-row pb-7 md:items-center justify-between">
-            <h3 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10">Tickets</h3>
+          <div
+            class="flex flex-col md:flex-row pb-7 md:items-center justify-between"
+          >
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10"
+            >
+              Tickets
+            </h3>
             <div class="flex flex-wrap gap-4 items-center">
               <button
                 class="flex transition-all duration-200 gap-2 md:gap-4 bottom-add-btn border-white border items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
               >
                 <span class="transition-all duration-200 text-xs md:text-base"
                   >Add New Ticket</span
-                > 
+                >
                 <svg
-                class="size-3 md:size-auto"
+                  class="size-3 md:size-auto"
                   class="transition-all duration-200"
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -966,9 +1032,11 @@
               <button
                 class="flex gap-2 md:gap-4 transition-all duration-200 bottom-add-btn border-white border items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
               >
-                <span class="transition-all duration-200 text-xs md:text-base">Add New RSVP</span>
+                <span class="transition-all duration-200 text-xs md:text-base"
+                  >Add New RSVP</span
+                >
                 <svg
-                class="size-3 md:size-auto"
+                  class="size-3 md:size-auto"
                   class="transition-all duration-200"
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -995,9 +1063,10 @@
               <button
                 class="flex gap-2 md:gap-4 transition-all duration-200 bottom-add-btn border-white border items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
               >
-                <span class="transition-all duration-200 text-xs md:text-base">Settings</span>
+                <span class="transition-all duration-200 text-xs md:text-base"
+                  >Settings</span
+                >
                 <svg
-   
                   class="transition-all duration-200 size-3 md:size-auto"
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -1027,7 +1096,9 @@
           <!-- add new ticked -->
           <div class="hidden sm-add-new-wrapper">
             <!-- title -->
-            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4 md:pb-7 lg:pb-10">
+            <h3
+              class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4 md:pb-7 lg:pb-10"
+            >
               Add New Ticket
             </h3>
             <!-- ticket type -->
@@ -1044,7 +1115,8 @@
               </div>
 
               <div class="flex gap-3 items-start">
-                <svg class="size-5 md:size-auto"
+                <svg
+                  class="size-5 md:size-auto"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
                   height="25"
@@ -1065,7 +1137,9 @@
               </div>
             </div>
             <!-- ticket description -->
-            <div class="w-full flex flex-col pb-6 gap-3 md:gap-5 text-sm md:text-base">
+            <div
+              class="w-full flex flex-col pb-6 gap-3 md:gap-5 text-sm md:text-base"
+            >
               <label for="event-description">Ticket Description</label>
               <textarea
                 class="px-5 h-32 md:h-52 resize-none bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white focus:outline-none"
@@ -1077,7 +1151,7 @@
             <!-- ticket checkbox -->
             <div class="pb-6 h-16">
               <label
-                class="inline-flex  items-center gap-2 md:gap-4 cursor-pointer relative"
+                class="inline-flex items-center gap-2 md:gap-4 cursor-pointer relative"
               >
                 <input
                   type="checkbox"
@@ -1144,12 +1218,14 @@
               />
             </div>
             <!-- radio -->
-            <div class="flex pb-5 md:pb-8 lg:pb-10 items-center gap-3 text-sm md:text-base">
+            <div
+              class="flex pb-5 md:pb-8 lg:pb-10 items-center gap-3 text-sm md:text-base"
+            >
               <input
                 id="ticket-radio"
                 type="radio"
                 name="ticket-radio"
-                class="appearance-none size-4 md:size-6  cursor-pointer ring-white border-[4px] border-[#111111] ring-2   focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
               />
               <label for="ticket-radio"
                 >Share capacity with other tickets</label
@@ -1158,7 +1234,9 @@
             <!-- set capacity and sell -->
             <div class="xl:row pb-6 space-y-4 xl:space-y-0">
               <div class="col">
-                <div class="w-full ticket-price h-full flex flex-col gap-3 md:gap-5">
+                <div
+                  class="w-full ticket-price h-full flex flex-col gap-3 md:gap-5"
+                >
                   <label for="">Set shard to capacity</label>
                   <div class="relative">
                     <select class="w-full bg-white text-sm md:text-base">
@@ -1192,7 +1270,7 @@
                   id="capacity-radio"
                   type="radio"
                   name="option"
-                  class="appearance-none  size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2   focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                  class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
                 />
                 <label for="capacity-radio"
                   >Set capacity for this ticket only</label
@@ -1203,7 +1281,7 @@
                   id="capacity-radio2"
                   type="radio"
                   name="option"
-                  class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2  focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                  class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
                 />
                 <label for="capacity-radio2">Unlimited capacity</label>
               </div>
@@ -1212,7 +1290,11 @@
             <!-- advance -->
             <div class="pb-6 md:pb-8 lg:pb-12">
               <!-- title -->
-              <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4   md:pb-8">Advance</h3>
+              <h3
+                class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4 md:pb-8"
+              >
+                Advance
+              </h3>
               <div class="w-full flex flex-col gap-4">
                 <div class="flex flex-col gap-3 md:gap-5 text-sm md:text-base">
                   <label for="">SKU</label>
@@ -1227,7 +1309,7 @@
 
                 <div class="flex gap-3 items-start">
                   <svg
-                  class="size-5 md:size-auto"
+                    class="size-5 md:size-auto"
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
                     height="25"
@@ -1239,7 +1321,9 @@
                       fill="white"
                     />
                   </svg>
-                  <p class="text-xs md:text-sm font-light text-gray-300 w-10/12">
+                  <p
+                    class="text-xs md:text-sm font-light text-gray-300 w-10/12"
+                  >
                     Use this field if you want to override the auto-generated
                     description of event recurrence
                   </p>
@@ -1250,12 +1334,14 @@
             <!-- attendence collection -->
             <div>
               <!-- title -->
-              <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4">
+              <h3
+                class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4"
+              >
                 Attendance Collection
               </h3>
               <div class="flex gap-3 items-start pb-4">
                 <svg
-                class="size-5 md:size-auto"
+                  class="size-5 md:size-auto"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
                   height="25"
@@ -1280,7 +1366,7 @@
                     id="attendence-radio"
                     type="radio"
                     name="attendence"
-                    class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2   focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                    class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
                   />
                   <label for="attendence-radio"
                     >Set capacity for this ticket only</label
@@ -1315,11 +1401,15 @@
           <!-- add new RSVP -->
           <div class="hidden sm-add-new-wrapper">
             <!-- title -->
-            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4 md:pb-7 lg:pb-10">
+            <h3
+              class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-4 md:pb-7 lg:pb-10"
+            >
               Add New RSVP
             </h3>
             <!-- ticket type -->
-            <div class="w-full flex flex-col pb-5 md:pb-8 lg:pb-10 gap-4 text-sm md:text-base">
+            <div
+              class="w-full flex flex-col pb-5 md:pb-8 lg:pb-10 gap-4 text-sm md:text-base"
+            >
               <div class="flex flex-col gap-3 md:gap-5">
                 <label for="">Type</label>
                 <input
@@ -1333,7 +1423,7 @@
 
               <div class="flex gap-3 items-start">
                 <svg
-                class="size-4 md:size-auto"
+                  class="size-4 md:size-auto"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
                   height="25"
@@ -1352,7 +1442,9 @@
               </div>
             </div>
             <!-- ticket description -->
-            <div class="w-full flex flex-col pb-5 md:pb-7 lg:pb-10 gap-3 md:gap-5">
+            <div
+              class="w-full flex flex-col pb-5 md:pb-7 lg:pb-10 gap-3 md:gap-5"
+            >
               <label for="event-description">Ticket Description</label>
               <textarea
                 class="px-5 h-32 focus:outline-none md:h-52 resize-none bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xlxl text-gray-400 border border-white"
@@ -1420,7 +1512,9 @@
             </div>
 
             <!-- ticket price -->
-            <div class="w-full flex pb-5 md:pb-7 lg:pb-10 flex-col gap-3 md:gap-5">
+            <div
+              class="w-full flex pb-5 md:pb-7 lg:pb-10 flex-col gap-3 md:gap-5"
+            >
               <label for="ticket-capacity">Capacity</label>
               <input
                 class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
@@ -1436,9 +1530,11 @@
                 id="ticket-radio"
                 type="radio"
                 name="setting-radio"
-                class="appearance-none size-4 md:size-6 text-sm md:text-base cursor-pointer ring-white border-[4px] border-[#111111] ring-2   focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                class="appearance-none size-4 md:size-6 text-sm md:text-base cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
               />
-              <label for="ticket-radio" class="text-sm md:text-base">Able “Can Go” Response</label>
+              <label for="ticket-radio" class="text-sm md:text-base"
+                >Able “Can Go” Response</label
+              >
             </div>
             <!-- radio -->
             <div class="flex pb-5 md:pb-7 lg:pb-10 items-center gap-3">
@@ -1446,23 +1542,29 @@
                 id="ticket-radio"
                 type="radio"
                 name="ticket-radio"
-                class="appearance-none size-4 md:size-6 text-sm md:text-base cursor-pointer ring-white border-[4px] border-[#111111] ring-2  focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
+                class="appearance-none size-4 md:size-6 text-sm md:text-base cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
               />
-              <label for="ticket-radio" class="text-sm md:text-base">Enable “Can’t Go” Response</label>
+              <label for="ticket-radio" class="text-sm md:text-base"
+                >Enable “Can’t Go” Response</label
+              >
             </div>
           </div>
 
           <!-- ticket setting -->
           <div class="hidden sm-add-new-wrapper">
             <!-- title -->
-            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-5 md:pb-7 lg:pb-10">
+            <h3
+              class="text-xl md:text-2xl lg:text-3xl font-semibold text-white pb-5 md:pb-7 lg:pb-10"
+            >
               Ticket Settings
             </h3>
             <!-- capacity -->
             <div class="xl:row pb-5 md:pb-7 lg:pb-10 space-y-4 xl:space-y-0">
               <div class="xl:col-6 p xl:pb-6">
                 <div class="w-full flex flex-col gap-3 md:gap-5">
-                  <label for="event-title" class="text-sm md:text-base">Shared capacity</label>
+                  <label for="event-title" class="text-sm md:text-base"
+                    >Shared capacity</label
+                  >
                   <input
                     class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
                     placeholder="Enter event title here"
@@ -1474,7 +1576,9 @@
               </div>
               <div class="xl:col-6">
                 <div class="w-full flex flex-col gap-3 md:gap-5">
-                  <label for="event-title" class="text-sm md:text-base">Independent capacity</label>
+                  <label for="event-title" class="text-sm md:text-base"
+                    >Independent capacity</label
+                  >
                   <input
                     class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
                     placeholder="Enter event title here"
@@ -1486,7 +1590,9 @@
               </div>
               <div class="xl:col-6">
                 <div class="w-full flex flex-col gap-3 md:gap-5">
-                  <label for="event-title" class="text-sm md:text-base">Independent capacity</label>
+                  <label for="event-title" class="text-sm md:text-base"
+                    >Independent capacity</label
+                  >
                   <input
                     class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
                     placeholder="Enter event title here"
@@ -1501,7 +1607,8 @@
                   id=""
                   class="w-fit flex h-fit gap-3 text-black text-nowrap px-6 border-white border transition-all duration-300 py-2.5 rounded-full bg-white items-center"
                 >
-                  <span class="text-nowrap font-medium text-xs md:text-base lg:text-lg"
+                  <span
+                    class="text-nowrap font-medium text-xs md:text-base lg:text-lg"
                     >Create a ticket to add event capacity</span
                   >
                   <svg
@@ -1534,13 +1641,15 @@
             </div>
 
             <!-- checkbox -->
-            <div class="pb-5 md:pb-7 lg:pb-10 flex flex-col md:flex-row md:items-center gap-5 md:gap-7 lg:gap-10">
+            <div
+              class="pb-5 md:pb-7 lg:pb-10 flex flex-col md:flex-row md:items-center gap-5 md:gap-7 lg:gap-10"
+            >
               <label
                 class="inline-flex h-full items-center gap-2 md:gap-4 cursor-pointer relative"
               >
                 <input
                   type="checkbox"
-                  class="appearance-none font-bold flex justify-center items-center size-4 md:size-6 lg:size-7 text-sm md:text-base  border border-white rounded md:rounded-md lg:text-xl bg-transparent checked:bg-white checked:border-white text-black checked:after:content-['✔'] focus:outline-none"
+                  class="appearance-none font-bold flex justify-center items-center size-4 md:size-6 lg:size-7 text-sm md:text-base border border-white rounded md:rounded-md lg:text-xl bg-transparent checked:bg-white checked:border-white text-black checked:after:content-['✔'] focus:outline-none"
                 />
                 <span class="md:ml-2 font-normal text-sm md:text-base"
                   >Show attendees list on event page</span
@@ -1588,10 +1697,14 @@
                     class="w-full h-32 md:h-52 bg-cover flex justify-center items-center flex-col tracking-wider border-dashed border-2 bg-[#1C1C1C] rounded-lg"
                     for="ticket-setting-background-image-input"
                   >
-                    <h4 class="text-xs md:text-sm text-gray-400 pb-1 text-center px-8">
+                    <h4
+                      class="text-xs md:text-sm text-gray-400 pb-1 text-center px-8"
+                    >
                       Choose a JPG, PNG, or GIF, file under 32 MB in size
                     </h4>
-                    <h3 class="text-white text-sm md:text-base pt-2">CHOOSE A IMAGE</h3>
+                    <h3 class="text-white text-sm md:text-base pt-2">
+                      CHOOSE A IMAGE
+                    </h3>
                   </label>
                 </div>
 
@@ -1631,8 +1744,8 @@
       </div>
     </main>
 
-     <!-- start footer  -->
-     <footer class="py-6 md:py-10 2xl:py-[58px] bg-blackv2 overflow-hidden">
+    <!-- start footer  -->
+    <footer class="py-6 md:py-10 2xl:py-[58px] bg-blackv2 overflow-hidden">
       <div class="container">
         <div class="flex items-center justify-between">
           <div class=" ">
