@@ -182,7 +182,7 @@
 
       <!-- This is the body section  -->
       <section
-        class="flex lg:flex-row flex-col lg:gap-[162px] gap-16 lg:ml-[200px] ml-[15px] lg:mt-[59px] mt-4"
+        class="flex lg:flex-row flex-col lg:gap-[162px] gap-16 lg:ml-[200px] ml-[15px] lg:mt-[59px] mt-4 mr-[15px]"
       >
         <!-- Left Section -->
         <div class="space-y-6">
@@ -197,7 +197,7 @@
               type="text"
               id="campaign-name"
               placeholder="Enter your name"
-              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-full w-full lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
@@ -212,7 +212,7 @@
               type="email"
               id="select-list"
               placeholder="Enter your email"
-              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-full w-full lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
@@ -267,7 +267,7 @@
               type="text"
               id="subject"
               placeholder="Enter the subject"
-              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-full w-full lg:h-[79px] h-[48px] pt-[25px] pb-[28px] pl-[20px] border border-white/60 bg-transparent rounded-lg focus:outline-none"
             />
           </div>
 
@@ -282,7 +282,7 @@
               id="body"
               rows="4"
               placeholder=""
-              class="lg:w-[734px] md:w-[736px] w-[288px] lg:h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
+              class="lg:w-[734px] md:w-full w-full lg:h-[269px] px-4 py-2 border border-white/60 bg-transparent rounded-lg focus:outline-none"
             ></textarea>
             <!-- Button -->
             <div
@@ -382,12 +382,14 @@
               Preview
             </h2>
             <div
-              class="max-w-[288px] lg:max-w-full md:w-[736px] lg:h-[618px] h-[100px] bg-[#1C1C1C] rounded-[20px]"
+              class="w-full lg:max-w-full md:w-full lg:h-[618px] h-[100px] bg-[#1C1C1C] rounded-[20px]"
             ></div>
           </div>
 
           <!-- Buttons -->
-          <div class="flex lg:justify-center lg:py-10 pb-7">
+          <div
+            class="flex lg:justify-center md:justify-center sm:justify-center justify-center lg:py-10 pb-7"
+          >
             <button
               type="submit"
               class="lg:w-72 w-[288px] lg:py-4 py-2 rounded-full bg-white text-[#111] text-center font-inter text-base font-medium leading-normal"

@@ -906,10 +906,6 @@ video {
   margin-top: 50px;
 }
 
-.mr-\[\]{
-  margin-right: ;
-}
-
 .block{
   display: block;
 }
@@ -1303,6 +1299,10 @@ video {
   width: 100%;
 }
 
+.w-\[fu\]{
+  width: fu;
+}
+
 .min-w-\[600px\]{
   min-width: 600px;
 }
@@ -1533,30 +1533,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-x-0 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0px * var(--tw-space-x-reverse));
-  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc( * var(--tw-space-x-reverse));
-  margin-left: calc( * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-\[\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc( * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc( * var(--tw-space-y-reverse));
-}
-
-.space-y-\[25px\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(25px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(25px * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -3577,10 +3553,6 @@ body{
     height: 48px;
   }
 
-  .sm\:h-full{
-    height: 100%;
-  }
-
   .sm\:w-1\/2{
     width: 50%;
   }
@@ -4029,10 +4001,6 @@ body{
     justify-content: center;
   }
 
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-
   .md\:gap-10{
     gap: 2.5rem;
   }
@@ -4464,6 +4432,10 @@ body{
     margin-right: 1rem;
   }
 
+  .lg\:mr-\[122px\]{
+    margin-right: 122px;
+  }
+
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -4554,14 +4526,6 @@ body{
 
   .lg\:mt-\[94px\]{
     margin-top: 94px;
-  }
-
-  .lg\:mr-\[122px\]{
-    margin-right: 122px;
-  }
-
-  .lg\:mt-\[\]{
-    margin-top: ;
   }
 
   .lg\:flex{
@@ -4710,6 +4674,10 @@ body{
     width: 322px;
   }
 
+  .lg\:w-\[325px\]{
+    width: 325px;
+  }
+
   .lg\:w-\[32px\]{
     width: 32px;
   }
@@ -4768,14 +4736,6 @@ body{
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-\[\]{
-    width: ;
-  }
-
-  .lg\:w-\[325px\]{
-    width: 325px;
   }
 
   .lg\:max-w-\[874px\]{
