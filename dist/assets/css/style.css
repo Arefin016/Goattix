@@ -2141,10 +2141,6 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-7{
-  padding-top: 1.75rem;
-}
-
 .pt-8{
   padding-top: 2rem;
 }
@@ -4226,10 +4222,6 @@ body{
     padding-left: 1.25rem;
   }
 
-  .md\:pl-\[41px\]{
-    padding-left: 41px;
-  }
-
   .md\:pl-\[90px\]{
     padding-left: 90px;
   }
@@ -5344,14 +5336,6 @@ body{
 
   .xl\:w-10\/12{
     width: 83.333333%;
-  }
-
-  .xl\:w-8\/12{
-    width: 66.666667%;
-  }
-
-  .xl\:w-9\/12{
-    width: 75%;
   }
 
   .xl\:w-\[123px\]{
