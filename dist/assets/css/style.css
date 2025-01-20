@@ -1299,10 +1299,6 @@ video {
   width: 100%;
 }
 
-.w-\[fu\]{
-  width: fu;
-}
-
 .min-w-\[600px\]{
   min-width: 600px;
 }
@@ -1313,10 +1309,6 @@ video {
 
 .max-w-\[1166px\]{
   max-width: 1166px;
-}
-
-.max-w-\[288px\]{
-  max-width: 288px;
 }
 
 .max-w-\[380px\]{
@@ -5614,6 +5606,10 @@ body{
     padding-top: 50px;
   }
 
+  .xl\:pt-\[97px\]{
+    padding-top: 97px;
+  }
+
   .xl\:text-left{
     text-align: left;
   }
@@ -5678,6 +5674,10 @@ body{
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:font-medium{
+    font-weight: 500;
   }
 
   .xl\:leading-\[1\.3\]{
