@@ -910,6 +910,14 @@ video {
   margin-top: 50px;
 }
 
+.ml-\[\]{
+  margin-left: ;
+}
+
+.ml-0{
+  margin-left: 0px;
+}
+
 .block{
   display: block;
 }
@@ -1488,6 +1496,22 @@ video {
   gap: 6px;
 }
 
+.gap-\[200px\]{
+  gap: 200px;
+}
+
+.gap-\[223px\]{
+  gap: 223px;
+}
+
+.gap-\[250px\]{
+  gap: 250px;
+}
+
+.gap-\[260px\]{
+  gap: 260px;
+}
+
 .gap-x-5{
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
@@ -2007,6 +2031,11 @@ video {
   padding-bottom: 30px;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -2262,6 +2291,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[28px\]{
+  font-size: 28px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2399,6 +2432,15 @@ video {
 
 .text-white\/60{
   color: rgb(255 255 255 / 0.6);
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#FFF\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -3521,6 +3563,18 @@ body{
     margin-top: 1.5rem;
   }
 
+  .sm\:ml-\[\]{
+    margin-left: ;
+  }
+
+  .sm\:ml-\[15px\]{
+    margin-left: 15px;
+  }
+
+  .sm\:ml-\[37px\]{
+    margin-left: 37px;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -3634,6 +3688,18 @@ body{
     gap: 10px;
   }
 
+  .sm\:p-3{
+    padding: 0.75rem;
+  }
+
+  .sm\:p-8{
+    padding: 2rem;
+  }
+
+  .sm\:p-9{
+    padding: 2.25rem;
+  }
+
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -3724,6 +3790,14 @@ body{
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-\[28px\]{
+    font-size: 28px;
+  }
+
+  .sm\:text-\[\]{
+    color: ;
   }
 }
 
@@ -3838,6 +3912,34 @@ body{
 
   .md\:mt-\[40px\]{
     margin-top: 40px;
+  }
+
+  .md\:ml-\[100px\]{
+    margin-left: 100px;
+  }
+
+  .md\:ml-\[1px\]{
+    margin-left: 1px;
+  }
+
+  .md\:ml-\[px\]{
+    margin-left: px;
+  }
+
+  .md\:ml-\[70px\]{
+    margin-left: 70px;
+  }
+
+  .md\:ml-\[120px\]{
+    margin-left: 120px;
+  }
+
+  .md\:ml-\[130px\]{
+    margin-left: 130px;
+  }
+
+  .md\:ml-\[140px\]{
+    margin-left: 140px;
   }
 
   .md\:block{
@@ -3994,6 +4096,10 @@ body{
     justify-content: flex-start;
   }
 
+  .md\:justify-center{
+    justify-content: center;
+  }
+
   .md\:gap-10{
     gap: 2.5rem;
   }
@@ -4032,6 +4138,18 @@ body{
 
   .md\:gap-\[18px\]{
     gap: 18px;
+  }
+
+  .md\:gap-\[\]{
+    gap: ;
+  }
+
+  .md\:gap-\[30px\]{
+    gap: 30px;
+  }
+
+  .md\:gap-\[28px\]{
+    gap: 28px;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -4082,6 +4200,10 @@ body{
 
   .md\:p-\[18px\]{
     padding: 18px;
+  }
+
+  .md\:p-3{
+    padding: 0.75rem;
   }
 
   .md\:px-0{
@@ -4253,6 +4375,14 @@ body{
 
   .md\:pt-\[26\.3px\]{
     padding-top: 26.3px;
+  }
+
+  .md\:pt-\[\]{
+    padding-top: ;
+  }
+
+  .md\:pt-\[50px\]{
+    padding-top: 50px;
   }
 
   .md\:text-2xl{
@@ -4529,6 +4659,38 @@ body{
     margin-top: 94px;
   }
 
+  .lg\:mt-\[97px\]{
+    margin-top: 97px;
+  }
+
+  .lg\:ml-\[2\]{
+    margin-left: 2;
+  }
+
+  .lg\:ml-\[200ox\]{
+    margin-left: 200ox;
+  }
+
+  .lg\:ml-\[\]{
+    margin-left: ;
+  }
+
+  .lg\:ml-\[0\]{
+    margin-left: 0;
+  }
+
+  .lg\:ml-\[197px\]{
+    margin-left: 197px;
+  }
+
+  .lg\:ml-\[20px\]{
+    margin-left: 20px;
+  }
+
+  .lg\:ml-\[0px\]{
+    margin-left: 0px;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -4755,6 +4917,10 @@ body{
     flex-direction: column;
   }
 
+  .lg\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
   .lg\:flex-nowrap{
     flex-wrap: nowrap;
   }
@@ -4817,6 +4983,10 @@ body{
 
   .lg\:gap-\[91px\]{
     gap: 91px;
+  }
+
+  .lg\:gap-\[\]{
+    gap: ;
   }
 
   .lg\:gap-x-5{
@@ -5002,6 +5172,11 @@ body{
     padding-bottom: 30px;
   }
 
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pb-10{
     padding-bottom: 2.5rem;
   }
@@ -5110,6 +5285,18 @@ body{
     padding-top: 31px;
   }
 
+  .lg\:pt-\[97px\]{
+    padding-top: 97px;
+  }
+
+  .lg\:pb-\[3px\]{
+    padding-bottom: 3px;
+  }
+
+  .lg\:pb-\[px\]{
+    padding-bottom: px;
+  }
+
   .lg\:text-left{
     text-align: left;
   }
@@ -5191,6 +5378,10 @@ body{
 
   .lg\:leading-\[30px\]{
     line-height: 30px;
+  }
+
+  .lg\:text-\[\]{
+    color: ;
   }
 }
 
@@ -5290,6 +5481,34 @@ body{
 
   .xl\:mt-\[70px\]{
     margin-top: 70px;
+  }
+
+  .xl\:ml-\[\]{
+    margin-left: ;
+  }
+
+  .xl\:ml-\[50px\]{
+    margin-left: 50px;
+  }
+
+  .xl\:ml-\[60px\]{
+    margin-left: 60px;
+  }
+
+  .xl\:ml-\[65px\]{
+    margin-left: 65px;
+  }
+
+  .xl\:ml-0{
+    margin-left: 0px;
+  }
+
+  .xl\:ml-\[200px\]{
+    margin-left: 200px;
+  }
+
+  .xl\:ml-\[55px\]{
+    margin-left: 55px;
   }
 
   .xl\:flex{
@@ -5463,6 +5682,18 @@ body{
     gap: 50px;
   }
 
+  .xl\:gap-\[260px\]{
+    gap: 260px;
+  }
+
+  .xl\:gap-\[1px\]{
+    gap: 1px;
+  }
+
+  .xl\:gap-\[102px\]{
+    gap: 102px;
+  }
+
   .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -5592,6 +5823,14 @@ body{
 
   .xl\:pt-64{
     padding-top: 16rem;
+  }
+
+  .xl\:pt-\[\]{
+    padding-top: ;
+  }
+
+  .xl\:pt-\[50px\]{
+    padding-top: 50px;
   }
 
   .xl\:text-left{
@@ -6185,6 +6424,14 @@ body{
 
   .\32xl\:pt-\[58px\]{
     padding-top: 58px;
+  }
+
+  .\32xl\:pt-\[\]{
+    padding-top: ;
+  }
+
+  .\32xl\:pt-\[50px\]{
+    padding-top: 50px;
   }
 
   .\32xl\:\!text-\[24px\]{
