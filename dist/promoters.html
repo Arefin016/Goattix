@@ -130,28 +130,33 @@
         <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
           <div class="sidebar--menu--active">
             <a
-              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
               href="index.html"
               >Home</a
             >
           </div>
-          <a
-            href="events.html"
-            class="text-sm md:text-base text-menuColor"
-            href="index.html"
+          <a href="events.html" class="text-sm md:text-base text-menuColor"
             >Events</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >About Us</a
+          <div class="sidebar--menu--active">
+            <a
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="organizer.html"
+              >Organizer</a
+            >
+          </div>
+          <div class="sidebar--menu--active">
+            <a
+              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="promoters.html"
+              >Promoters</a
+            >
+          </div>
+          <a class="text-sm md:text-base text-menuColor" href="contact.html"
+            >Marketing</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Permotors</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Blogs</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Contact Us</a
+          <a class="text-sm md:text-base text-menuColor" href="my-events.html"
+            >Host</a
           >
         </div>
 
@@ -173,77 +178,254 @@
       <!-- Promoter Dashboard Section -->
       <section class="lg:mt-20 mt-28">
         <!-- This is the title section start-->
-        <h2
-          class="text-white lg:mt-[189px] lg:ml-[200px] ml-[15px] font-inter lg:text-[42px] text-[24px] font-medium leading-normal"
+        <div
+          class="container time-zone flex flex-col space-y-7 md:space-y-9 lg:space-y-10 xl:space-y-14"
         >
-          Promoter Dashboard
-        </h2>
-        <!-- This is the title section end -->
-        <!-- This is the input field start -->
-        <section
-          class="flex flex-col lg:flex-row lg:space-x-[125px] ml-[15px] mt-[28px] space-y-6 lg:space-y-0 mr-[15px] lg:ml-[122px] lg:mr-[122px] lg:mt-[58px]"
-        >
-          <!-- 1st Input -->
-          <div class="md:w-full lg:space-y-[25px] sm:w-full">
-            <label
-              for="input1"
-              class="text-white font-inter lg:text-[28px] text-[16px] md:text-[18px] font-medium leading-none mb-4 md:mb-[25px]"
-              >Total Referrals</label
-            >
-            <input
-              type="number"
-              placeholder="0"
-              id="input1"
-              class="rounded-lg lg:w-[325px] border border-white w-full md:w-full h-[48px] md:h-[58px] px-4 pl-4 text-white font-inter text-base md:text-2xl font-normal leading-none focus:outline-none bg-[#111]"
-            />
-          </div>
+          <!-- add new event input container -->
 
-          <!-- 2nd Input -->
-          <div class="md:w-full lg:space-y-[25px] sm:w-full">
-            <label
-              for="input2"
-              class="text-white font-inter lg:text-[28px] md:text-[18px] font-medium leading-none mb-4 md:mb-[25px]"
-              >Total Visits</label
+          <!-- event time and date container -->
+          <div>
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10"
             >
-            <input
-              type="number"
-              placeholder="0"
-              id="input2"
-              class="rounded-lg border lg:w-[325px] border-white w-full h-[48px] md:h-[58px] px-4 pl-4 text-white md:w-full font-inter text-base md:text-2xl font-normal leading-none focus:outline-none bg-[#111]"
-            />
-          </div>
+              Event Time & Date
+            </h3>
 
-          <!-- 3rd Input -->
-          <div class="md:w-full lg:space-y-[25px] sm:w-full">
-            <label
-              for="input3"
-              class="text-white font-inter lg:text-[28px] md:text-[18px] font-medium leading-none mb-4 md:mb-[25px]"
-              >Total Unpaid Earnings</label
+            <!-- date and time picker  -->
+            <div class="xl:row space-y-4 lg:space-y-0">
+              <div class="w-full col flex flex-col gap-5">
+                <label for="start-date">Name of Day</label>
+                <input
+                  class="px-5 bg-transparent w-full py-[14px] md:py-6 rounded-lg focus:outline-none md:rounded-xl text-sm md:text-base text-gray-400 border border-white"
+                  placeholder="Type here"
+                  type="text"
+                  name="event-title"
+                  id="event-title"
+                />
+              </div>
+              <div class="w-full col flex flex-col gap-5">
+                <label for="start-time">On</label>
+                <input
+                  class="px-4 md:px-5 start-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                  placeholder="DD-MM-YYYY"
+                  type="text"
+                  name=""
+                  id="start-time"
+                />
+              </div>
+              <div class="w-full col flex flex-col gap-5">
+                <label for="end-date">From</label>
+                <input
+                  class="px-4 md:px-5 start-date bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                  placeholder="HH - MM"
+                  type="text"
+                  name=""
+                  id="end-date"
+                />
+              </div>
+              <div class="w-full col flex flex-col gap-5">
+                <label for="end-time">To</label>
+                <input
+                  class="px-4 md:px-5 end-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                  placeholder="HH - MM"
+                  type="text"
+                  name=""
+                  id="end-time"
+                />
+              </div>
+            </div>
+
+            <!-- timezone picker -->
+
+            <!-- recurring events and add exception -->
+            <div
+              class="flex flex-col gap-4 md:gap-8 lg:gap-10 pt-4 lg:pt-14 w-full"
             >
-            <input
-              type="number"
-              id="input3"
-              placeholder="0"
-              class="rounded-lg border lg:w-[325px] border-white w-full md:w-full h-[48px] md:h-[58px] px-4 pl-4 text-white font-inter text-base md:text-2xl font-normal leading-none focus:outline-none bg-[#111]"
-            />
-          </div>
+              <!-- recurring events -->
+              <div class="flex flex-col md:gap-8">
+                <label
+                  class="inline-flex h-full items-center w-full gap-4 cursor-pointer relative"
+                >
+                  <input
+                    id="recurring-event-checkbox"
+                    type="checkbox"
+                    class="text-sm md:text-base font-bold flex appearance-none justify-center items-center size-4 md:size-6 lg:size-7 border border-white rounded md:rounded-md lg:text-xl bg-transparent checked:bg-white checked:border-white text-black checked:after:content-['✔'] focus:outline-none"
+                  />
+                  <span class="md:ml-2 text-sm md:text-base font-normal"
+                    >Recurring Event: Schedule Multiple Events</span
+                  >
+                </label>
+                <ul
+                  id="recurring-parent-div"
+                  class="h-0 opacity-0"
+                  id="recurring-parent-div"
+                >
+                  <li
+                    id="recurring-event-wrapper"
+                    class="fle p-1 recurring-event-wrapper h-full transition-all duration-300 flex-col gap-8"
+                  >
+                    <div
+                      class="xl:row md:pb-6 space-y-4 xl:space-y-0 pt-2 md:pt-0"
+                    >
+                      <div class="col">
+                        <div class="w-full flex flex-col gap-3 md:gap-5">
+                          <label for="event-title">Name of Day</label>
+                          <input
+                            class="px-5 bg-transparent w-full py-[14px] md:py-6 rounded-lg focus:outline-none md:rounded-xl text-sm md:text-base text-gray-400 border border-white"
+                            placeholder="Type here"
+                            type="text"
+                            name="event-title"
+                            id="event-title"
+                          />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="w-full flex flex-col gap-3 md:gap-5">
+                          <label for="event-title">On</label>
+                          <input
+                            class="px-4 md:px-5 start-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                            placeholder="DD-MM-YYYY"
+                            type="text"
+                            name=""
+                            id="start-time"
+                          />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="w-full col flex flex-col gap-3 md:gap-5">
+                          <label for="start-time-recurring-event">From</label>
+                          <input
+                            class="px-5 focus:outline-none start-time bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                            placeholder="HH - MM"
+                            type="text"
+                            name=""
+                            id="start-time-recurring-event"
+                          />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="w-full col flex flex-col gap-3 md:gap-5">
+                          <label for="end-time-recurring-evente">To</label>
+                          <input
+                            class="px-5 focus:outline-none end-time bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
+                            placeholder="HH - MM"
+                            type="text"
+                            name=""
+                            id="end-time-recurring-event"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
 
-          <!-- 4th Input -->
-          <div class="md:w-full lg:space-y-[25px] sm:w-full">
-            <label
-              for="input4"
-              class="text-white font-inter lg:text-[28px] md:text-[18px] font-medium leading-none mb-4 md:mb-[25px]"
-              >Total Paid</label
-            >
-            <input
-              type="number"
-              placeholder="0"
-              id="input4"
-              class="rounded-lg border lg:w-[325px] border-white w-full md:w-full h-[48px] md:h-[58px] px-4 pl-4 text-white font-inter text-base md:text-2xl font-normal leading-none focus:outline-none bg-[#111]"
-            />
+                <div
+                  class="flex flex-col-reverse gap-3 md:flex-row items-start justify-between my-5 w-full"
+                >
+                  <div class="flex gap-3 w-full xl:w-10/12 items-start">
+                    <svg
+                      class="size-5 md:size-auto"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 29 29"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.948 20.5143H15.2522V13.2518H12.948V20.5143ZM14.0272 11.5893C14.4355 11.5893 14.7661 11.4629 15.0189 11.2101C15.2717 10.9573 15.398 10.6365 15.398 10.2476C15.398 9.80039 15.2717 9.45525 15.0189 9.21219C14.7661 8.96913 14.4355 8.84761 14.0272 8.84761C13.5994 8.84761 13.264 8.96913 13.021 9.21219C12.7779 9.45525 12.6564 9.79066 12.6564 10.2184C12.6564 10.6268 12.7828 10.9573 13.0355 11.2101C13.2883 11.4629 13.6189 11.5893 14.0272 11.5893ZM14.0272 26.6976C12.3355 26.6976 10.7411 26.3816 9.24388 25.7497C7.74666 25.1177 6.43902 24.2427 5.32096 23.1247C4.20291 22.0066 3.32791 20.699 2.69596 19.2018C2.06402 17.7046 1.74805 16.1101 1.74805 14.4184C1.74805 12.7073 2.06402 11.108 2.69596 9.62052C3.32791 8.13302 4.20291 6.83025 5.32096 5.71219C6.43902 4.59414 7.74666 3.71427 9.24388 3.07261C10.7411 2.43094 12.3355 2.11011 14.0272 2.11011C15.7189 2.11011 17.3182 2.43094 18.8251 3.07261C20.3321 3.71427 21.6397 4.59414 22.748 5.71219C23.8564 6.83025 24.7314 8.13788 25.373 9.63511C26.0147 11.1323 26.3355 12.7268 26.3355 14.4184C26.3355 16.1296 26.0147 17.7289 25.373 19.2164C24.7314 20.7039 23.8515 22.0018 22.7335 23.1101C21.6154 24.2184 20.3078 25.0934 18.8105 25.7351C17.3133 26.3768 15.7189 26.6976 14.0272 26.6976Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p
+                      class="text-xs w-full font-light text-gray-300 xl:w-10/12"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <button
+                    id="add-recurring-event-btn"
+                    class="hidden w-fit h-fit gap-3 text-black px-6 border-white border transition-all duration-300 py-2.5 rounded-full bg-white items-center"
+                  >
+                    <span
+                      class="text-nowrap font-medium text-sm md:text-base lg:text-lg"
+                      >Add More Events</span
+                    >
+                    <svg
+                      class="hover:stroke-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="15"
+                      viewBox="0 0 14 15"
+                      fill="none"
+                    >
+                      <path
+                        class="hover:stroke-slate-50"
+                        d="M1.19531 7.58252H12.6953"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="hover:stroke-slate-50"
+                        d="M7.19531 1.58252L7.19531 13.0825"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- add exception -->
+              <div class="flex flex-col gap-4">
+                <ul
+                  id="add-exception-parent-div"
+                  class="pb-4 row opacity-0 h-0 xl:pt-4"
+                >
+                  <li
+                    class="xl:row add-acception-new-element space-y-4 lg:space-y-0"
+                  >
+                    <div class="xl:col w-full">
+                      <div
+                        class="w-full text-sm md:text-base new-venue-selector venue-details h-full flex flex-col gap-3 md:gap-5"
+                      >
+                        <label for="time-zone">Not</label>
+                        <div class="relative">
+                          <select class="w-full bg-white">
+                            <option selected>Once</option>
+                            <option value="1">Houston</option>
+                            <option value="2">Austin</option>
+                            <option value="3">Dallas</option>
+                            <option value="4">San Antonio</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div
+                        class="w-full flex flex-col gap-3 md:gap-5 text-sm md:text-base"
+                      >
+                        <label for="event-title">On</label>
+                        <input
+                          class="px-5 bg-transparent w-full py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                          placeholder="Enter event title here"
+                          type="text"
+                          name="event-title"
+                          id="event-title"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </section>
-
+        </div>
         <!-- This is the input field end  -->
 
         <!-- This is the coupon section start -->
@@ -301,7 +483,7 @@
 
         <!-- This is the table section start -->
         <section
-          class="bg-[#121212] w-[90%] md:w-[735px] lg:max-w-[874px] lg:ml-[122px] ml-[15px] mt-8 lg:mt-[58px] mb-12 lg:mb-[358px]"
+          class="bg-[#121212] w-[90%] md:w-[735px] lg:max-w-[874px] lg:ml-[122px] ml-[15px] mt-8 lg:mt-[58px] mb-[60px] lg:mb-[358px]"
         >
           <h1
             class="text-white font-inter text-[16px] lg:text-2xl font-medium leading-normal"
@@ -495,437 +677,6 @@
       </div>
     </footer>
     <!-- end footer  -->
-    <!-- get tickets popup  -->
-    <div
-      class="overlay fixed top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.6)] z-[50] backdrop-blur opacity-0 invisible duration-300 ease-in-out"
-    ></div>
-    <div
-      class="fixed top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] bg-white rounded-[16px] w-[1166px] z-50 overflow-hidden opacity-0 invisible duration-300 ease-in-out"
-      id="getTicketPopup"
-    >
-      <form
-        action="#"
-        class="max-h-[calc(100vh-90px)] overflow-y-auto custom--scrollbar pt-20 pb-10 px-[52px] relative"
-      >
-        <!-- table  -->
-        <div>
-          <div>
-            <!-- table head  -->
-            <div
-              class="table--head flex items-center justify-between bg-blackv1 py-6 px-12 rounded-tl-[11px] rounded-tr-[11px]"
-            >
-              <p class="text-[18px] font-medium">Tickets</p>
-              <p class="text-[18px] font-medium">Price</p>
-              <p class="text-[18px] font-medium">Quantity</p>
-              <p class="text-[18px] font-medium">Total Price</p>
-              <p class="text-[18px] font-medium">Remove</p>
-            </div>
-            <div class="table--row--wrapp">
-              <!-- table row  -->
-              <div
-                class="table--row flex items-center px-12 py-8 border-b-[1px] border-[rgba(0,0,0,0.10)]"
-              >
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] flex items-center gap-[10px] w-[22%]"
-                >
-                  <img
-                    class="w-[26px] h-[26px]"
-                    src="./assets/images/ticket.svg"
-                    alt=""
-                  />
-                  18+ to Get In
-                </p>
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[21%]"
-                >
-                  $50.00
-                </p>
-                <!-- quantity  -->
-                <div class="quantity flex items-center w-[24.5%]">
-                  <button
-                    class="minus h-[42px] w-[42px] rounded-full disabled:opacity-50"
-                    disabled
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <rect
-                        width="32"
-                        height="32"
-                        rx="16"
-                        fill="black"
-                        fill-opacity="0.08"
-                      />
-                      <path
-                        d="M11.4766 16H21.8813"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <input
-                    class="w-[56px] bg-transparent text-[18px] font-medium text-blackv1 text-center focus:outline-none"
-                    value="0"
-                    type="tel"
-                    readonly
-                  />
-                  <button
-                    class="plus h-[42px] w-[42px] rounded-full disabled:opacity-50"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <rect
-                        width="32"
-                        height="32"
-                        rx="16"
-                        fill="black"
-                        fill-opacity="0.08"
-                      />
-                      <path
-                        d="M11.4287 15.999H20.1906"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 11.4277L16 20.1896"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[28%]"
-                >
-                  $150.00
-                </p>
-                <p class="cursor-pointer">
-                  <img
-                    class="h-[27px] w-[27px]"
-                    src="./assets/images/delete.svg"
-                    alt=""
-                  />
-                </p>
-              </div>
-              <!-- table row  -->
-              <div
-                class="table--row flex items-center px-12 py-8 border-b-[1px] border-[rgba(0,0,0,0.10)]"
-              >
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] flex items-center gap-[10px] w-[22%]"
-                >
-                  <img
-                    class="w-[26px] h-[26px]"
-                    src="./assets/images/ticket.svg"
-                    alt=""
-                  />
-                  18+ to Get In
-                </p>
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[21%]"
-                >
-                  $50.00
-                </p>
-                <!-- quantity  -->
-                <div class="quantity flex items-center w-[24.5%]">
-                  <button
-                    class="minus h-[42px] w-[42px] rounded-full disabled:opacity-50"
-                    disabled
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <rect
-                        width="32"
-                        height="32"
-                        rx="16"
-                        fill="black"
-                        fill-opacity="0.08"
-                      />
-                      <path
-                        d="M11.4766 16H21.8813"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <input
-                    class="w-[56px] bg-transparent text-[18px] font-medium text-blackv1 text-center focus:outline-none"
-                    value="0"
-                    type="tel"
-                    readonly
-                  />
-                  <button
-                    class="plus h-[42px] w-[42px] rounded-full disabled:opacity-50"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <rect
-                        width="32"
-                        height="32"
-                        rx="16"
-                        fill="black"
-                        fill-opacity="0.08"
-                      />
-                      <path
-                        d="M11.4287 15.999H20.1906"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 11.4277L16 20.1896"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[28%]"
-                >
-                  $150.00
-                </p>
-                <p class="cursor-pointer">
-                  <img
-                    class="h-[27px] w-[27px]"
-                    src="./assets/images/delete.svg"
-                    alt=""
-                  />
-                </p>
-              </div>
-              <!-- table row  -->
-              <div
-                class="table--row flex items-center px-12 py-8 border-b-[1px] border-[rgba(0,0,0,0.10)]"
-              >
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] flex items-center gap-[10px] w-[22%]"
-                >
-                  <img
-                    class="w-[26px] h-[26px]"
-                    src="./assets/images/ticket.svg"
-                    alt=""
-                  />
-                  18+ to Get In
-                </p>
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[21%]"
-                >
-                  $50.00
-                </p>
-                <!-- quantity  -->
-                <div class="quantity flex items-center w-[24.5%]">
-                  <button
-                    class="minus h-[42px] w-[42px] rounded-full disabled:opacity-50"
-                    disabled
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <rect
-                        width="32"
-                        height="32"
-                        rx="16"
-                        fill="black"
-                        fill-opacity="0.08"
-                      />
-                      <path
-                        d="M11.4766 16H21.8813"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <input
-                    class="w-[56px] bg-transparent text-[18px] font-medium text-blackv1 text-center focus:outline-none"
-                    value="0"
-                    type="tel"
-                    readonly
-                  />
-                  <button
-                    class="plus h-[42px] w-[42px] rounded-full disabled:opacity-50"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <rect
-                        width="32"
-                        height="32"
-                        rx="16"
-                        fill="black"
-                        fill-opacity="0.08"
-                      />
-                      <path
-                        d="M11.4287 15.999H20.1906"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 11.4277L16 20.1896"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <p
-                  class="text-[18px] leading-normal text-[rgba(0,0,0,0.6)] w-[28%]"
-                >
-                  $150.00
-                </p>
-                <p class="cursor-pointer">
-                  <img
-                    class="h-[27px] w-[27px]"
-                    src="./assets/images/delete.svg"
-                    alt=""
-                  />
-                </p>
-              </div>
-            </div>
-            <!-- total amount & quantity  -->
-            <div class="flex items-center justify-end gap-7 mt-7">
-              <p class="flex items-center gap-3 text-[rgba(0,0,0,0.68)]">
-                Qty: <span class="text-[20px] font-medium text-blackv1">6</span>
-              </p>
-              <p class="h-[15px] w-[1px] bg-[rgba(0,0,0,0.29)]"></p>
-              <p class="flex items-center gap-3 text-[rgba(0,0,0,0.6)]">
-                Total Amount:
-                <span class="text-[20px] font-medium text-blackv1"
-                  >$450.00</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- attendee box  -->
-        <div class="py-[30px] px-[50px] relative mt-[50px] rounded-[16px]
-        bg-[#F2F2F2] text-blackv1>
-        <h3 class="text-[24px] font-medium leading-normal mb-[6px]">
-          Attendee1
-        </h3>
-        <div class="row">
-          <div class="col-12 md:col-6 mt-5">
-            <label for="name" class="text-[18px] mb-5 inline-block">Name</label>
-            <input
-              type="text"
-              id="name"
-              class="w-full h-[72px] rounded-[12px] border border-blackv1 focus:outline-none px-5"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-          <div class="col-12 md:col-6 mt-5">
-            <label for="name" class="text-[18px] mb-5 inline-block"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="name"
-              class="w-full h-[72px] rounded-[12px] border border-blackv1 focus:outline-none px-5"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-        </div>
-
-        <!-- close--attendee  -->
-        <p
-          class="close--attendee absolute top-[23px] right-[23px] cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M12 0C5.364 0 0 5.364 0 12C0 18.636 5.364 24 12 24C18.636 24 24 18.636 24 12C24 5.364 18.636 0 12 0ZM17.16 17.16C16.692 17.628 15.936 17.628 15.468 17.16L12 13.692L8.532 17.16C8.064 17.628 7.308 17.628 6.84 17.16C6.372 16.692 6.372 15.936 6.84 15.468L10.308 12L6.84 8.532C6.372 8.064 6.372 7.308 6.84 6.84C7.308 6.372 8.064 6.372 8.532 6.84L12 10.308L15.468 6.84C15.936 6.372 16.692 6.372 17.16 6.84C17.628 7.308 17.628 8.064 17.16 8.532L13.692 12L17.16 15.468C17.616 15.924 17.616 16.692 17.16 17.16Z"
-              fill="black"
-              fill-opacity="0.24"
-            />
-          </svg>
-        </p>
-
-        <!-- close--attendee  -->
-        <p
-          class="close--getTicket absolute top-[23px] right-[51px] cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="34"
-            height="34"
-            viewBox="0 0 34 34"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_503_392)">
-              <path
-                d="M16.9997 2.83398C9.16551 2.83398 2.83301 9.16648 2.83301 17.0007C2.83301 24.8348 9.16551 31.1673 16.9997 31.1673C24.8338 31.1673 31.1663 24.8348 31.1663 17.0007C31.1663 9.16648 24.8338 2.83398 16.9997 2.83398ZM23.0913 23.0923C22.5388 23.6448 21.6463 23.6448 21.0938 23.0923L16.9997 18.9982L12.9055 23.0923C12.353 23.6448 11.4605 23.6448 10.908 23.0923C10.3555 22.5398 10.3555 21.6473 10.908 21.0948L15.0022 17.0007L10.908 12.9065C10.3555 12.354 10.3555 11.4615 10.908 10.909C11.4605 10.3565 12.353 10.3565 12.9055 10.909L16.9997 15.0032L21.0938 10.909C21.6463 10.3565 22.5388 10.3565 23.0913 10.909C23.6438 11.4615 23.6438 12.354 23.0913 12.9065L18.9972 17.0007L23.0913 21.0948C23.6297 21.6332 23.6297 22.5398 23.0913 23.0923Z"
-                fill="black"
-                fill-opacity="0.22"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_503_392">
-                <rect width="34" height="34" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </p>
-        <div class="flex justify-end">
-          <button
-            class="mt-9 inline-block py-4 px-[60px] border border-blackv1 bg-blackv1 text-[20px] font-medium rounded-[100px] duration-300 ease-in-out hover:bg-transparent hover:text-blackv1"
-            type="submit"
-          >
-            Checkout
-          </button>
-        </div>
-      </form>
-    </div>
-
     <!-- all js scripts  -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>

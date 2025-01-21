@@ -130,28 +130,37 @@
         <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
           <div class="sidebar--menu--active">
             <a
-              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
               href="index.html"
               >Home</a
             >
           </div>
-          <a
-            href="events.html"
-            class="text-sm md:text-base text-menuColor"
-            href="index.html"
+          <a href="events.html" class="text-sm md:text-base text-menuColor"
             >Events</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >About Us</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Permotors</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Blogs</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Contact Us</a
+          <div class="sidebar--menu--active">
+            <a
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="organizer.html"
+              >Organizer</a
+            >
+          </div>
+          <div class="sidebar--menu--active">
+            <a
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="promoters.html"
+              >Promoters</a
+            >
+          </div>
+          <div class="sidebar--menu--active">
+            <a
+              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="contact.html"
+              >Marketing</a
+            >
+          </div>
+          <a class="text-sm md:text-base text-menuColor" href="my-events.html"
+            >Host</a
           >
         </div>
 
@@ -170,7 +179,7 @@
     <!-- end header  -->
 
     <main>
-      <section class="mt-20">
+      <section class="mt-[100px]">
         <!-- This is the title section start -->
         <h2
           class="ml-[15px] md:ml-[140px] xl:ml-[55px] lg:ml-[15px] sm:ml-[37px] 2xl:ml-[200px] font-inter lg:text-[42px] sm:text-[28px] text-[28px] text-[#FFF] lg:pt-[97px] md:pt-[50px] xl:pt-[97px] xl:font-medium"
@@ -181,12 +190,12 @@
 
         <!-- This is the button section start -->
         <section
-          class="md:mt-0 xl:mt-[91px] sm:p-9 md:p-3 lg:mt-[30px] lg:ml-[0px] p-2 lg:space-y-0 md:space-y-0 space-y-5 flex xl:gap-[260px] md:gap-[28px] lg:gap-6 md:justify-center lg:flex-row md:flex-row flex-col"
+          class="md:mt-0 xl:mt-[91px] sm:p-9 md:p-3 lg:mt-[30px] lg:ml-[0px] p-[40px] lg:space-y-0 md:space-y-0 space-y-5 flex xl:gap-[260px] md:gap-[28px] lg:gap-6 md:justify-center lg:flex-row md:flex-row flex-col"
         >
           <!-- New Campaign button -->
           <a href="blogs.html">
             <button
-              class="bg-[#FFF] lg:w-[322px] md:w-[230px] text-[#111] text-center font-inter font-medium px-0 leading-none md:px-0 lg:px-0 lg:pt-[31px] pt-[15px] lg:pb-[32.5px] pb-[15px] rounded-[62px] lg:text-[24px] text-[14px] focus:outline-none"
+              class="bg-[#FFF] sm:w-full w-full lg:w-[322px] md:w-[230px] text-[#111] text-center font-inter font-medium px-0 leading-none md:px-0 lg:px-0 lg:pt-[31px] pt-[15px] lg:pb-[32.5px] pb-[15px] rounded-[62px] lg:text-[24px] text-[14px] focus:outline-none"
             >
               New Campaign
             </button>
@@ -218,7 +227,7 @@
           Your Lists
         </h1>
         <div
-          class="event--table mt-7 md:mt-10 lg:mt-16 xl:mt-20 2xl:mt-[110px] rounded-lg md:rounded-xl lg:rounded-[16px] overflow-hidden border border-[rgba(255,255,255,0.20)] w-full 2xl:w-4/5"
+          class="event--table mt-7 md:mt-10 lg:mt-16 xl:mt-20 2xl:mt-[110px] rounded-lg md:rounded-xl lg:rounded-[16px] overflow-hidden border border-[rgba(255,255,255,0.20)] w-full 2xl:w-4/5 sm:mb-[60px] mb-[60px]"
         >
           <div class="overflow-x-auto text-nowrap">
             <table class="min-w-full w-full">
@@ -269,7 +278,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -280,7 +289,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -309,7 +318,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -320,7 +329,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -349,7 +358,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -360,7 +369,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -389,7 +398,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -400,7 +409,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -429,7 +438,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -440,7 +449,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -469,7 +478,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -480,7 +489,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -509,7 +518,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -520,7 +529,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -549,7 +558,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -560,7 +569,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -589,7 +598,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -600,7 +609,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -629,7 +638,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -640,7 +649,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -669,7 +678,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -680,7 +689,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>
@@ -709,7 +718,7 @@
                     class="security-code text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Update
                     </button>
@@ -720,7 +729,7 @@
                     class="status text-left py-2 px-2 md:py-4 md:px-4 lg:px-9 text-[12px] md:text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.6)] border-r border-[rgba(255,255,255,0.20)]"
                   >
                     <button
-                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[16px] font-medium leading-normal items-center"
+                      class="bg-white lg:pt-[14px] pt-[5px] lg:pb-[14px] pb-[5px] lg:pl-[49px] pl-[30px] ml-[33px] lg:pr-[49px] pr-[30px] rounded-full text-[#111] text-center font-inter lg:text-[24px] text-[14px] font-medium leading-normal items-center"
                     >
                       Delete
                     </button>

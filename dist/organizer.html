@@ -130,28 +130,29 @@
         <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
           <div class="sidebar--menu--active">
             <a
-              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
               href="index.html"
               >Home</a
             >
           </div>
-          <a
-            href="events.html"
-            class="text-sm md:text-base text-menuColor"
-            href="index.html"
+          <a href="events.html" class="text-sm md:text-base text-menuColor"
             >Events</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >About Us</a
+          <div class="sidebar--menu--active">
+            <a
+              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="index.html"
+              >Organizer</a
+            >
+          </div>
+          <a class="text-sm md:text-base text-menuColor" href="promoters.html"
+            >Promoters</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Permotors</a
+          <a class="text-sm md:text-base text-menuColor" href="contact.html"
+            >Marketing</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Blogs</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Contact Us</a
+          <a class="text-sm md:text-base text-menuColor" href="my-events.html"
+            >Host</a
           >
         </div>
 
@@ -174,7 +175,9 @@
         class="organizer--area pt-24 md:pt-28 lg:pt-40 pb-8 md:pb-10 lg:pb-12 2xl:pt-[190px] 2xl:pb-[60px]"
       >
         <div class="container">
-          <div class="flex flex-row justify-between">
+          <div
+            class="flex flex-col sm:flex-row mb-5 sm:mb-6 md:flex-row justify-between"
+          >
             <h1
               class="text-2xl md:text-3xl lg:text-4xl 2xl:text-[42px] font-medium mb-5 md:mb-8 lg:mb-10 xl:mb-16 2xl:mb-[70px]"
             >
@@ -300,7 +303,7 @@
       <!-- end organizer area  -->
 
       <!-- start events area  -->
-      <section class="event--area upcoming-events-area pb-[100px]">
+      <section class="event--area upcoming-events-area md:pb-[100px] pb-[50px]">
         <div class="container">
           <h2
             class="text-2xl md:text-3xl lg:text-4xl 2xl:text-[42px] font-medium"

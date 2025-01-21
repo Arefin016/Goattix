@@ -135,29 +135,38 @@
         <div class="flex flex-col pt-8 justify-center pl-6 gap-6">
           <div class="sidebar--menu--active">
             <a
-              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
               href="index.html"
               >Home</a
             >
           </div>
-          <a
-            href="events.html"
-            class="text-sm md:text-base text-menuColor"
-            href="index.html"
+          <a href="events.html" class="text-sm md:text-base text-menuColor"
             >Events</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >About Us</a
+          <div class="sidebar--menu--active">
+            <a
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="organizer.html"
+              >Organizer</a
+            >
+          </div>
+          <div class="sidebar--menu--active">
+            <a
+              class="text-menuColor text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="promoters.html"
+              >Promoters</a
+            >
+          </div>
+          <a class="text-sm md:text-base text-menuColor" href="contact.html"
+            >Marketing</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Permotors</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Blogs</a
-          >
-          <a class="text-sm md:text-base text-menuColor" href="index.html"
-            >Contact Us</a
-          >
+          <div class="sidebar--menu--active">
+            <a
+              class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+              href="my-events.html"
+              >Host</a
+            >
+          </div>
         </div>
 
         <div class="pt-6 pl-5">
@@ -174,7 +183,7 @@
     </header>
     <!-- end header  -->
 
-    <main class="mt-24 xl:mt-52 pb-28 overflow-x-hidden">
+    <main class="mt-24 xl:mt-52 md:pb-28 pb-[60px] overflow-x-hidden">
       <div
         class="container time-zone flex flex-col space-y-7 md:space-y-9 lg:space-y-10 xl:space-y-14"
       >
@@ -291,7 +300,7 @@
                   class="fle p-1 recurring-event-wrapper h-full transition-all duration-300 flex-col gap-8"
                 >
                   <div
-                    class="xl:row pb-4 md:pb-6 space-y-4 xl:space-y-0 pt-2 md:pt-0"
+                    class="xl:row md:pb-6 space-y-4 xl:space-y-0 pt-2 md:pt-0"
                   >
                     <div class="col">
                       <div class="w-full flex flex-col gap-3 md:gap-5">
