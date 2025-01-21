@@ -910,22 +910,6 @@ video {
   margin-top: 50px;
 }
 
-.mt-\[\]{
-  margin-top: ;
-}
-
-.mt-\[120px\]{
-  margin-top: 120px;
-}
-
-.mb-\[\]{
-  margin-bottom: ;
-}
-
-.mb-14{
-  margin-bottom: 3.5rem;
-}
-
 .block{
   display: block;
 }
@@ -2013,16 +1997,6 @@ video {
   padding-bottom: 30px;
 }
 
-.py-\[10px\]{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.py-\[1px\]{
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -2199,16 +2173,12 @@ video {
   padding-top: 29px;
 }
 
-.pt-\[5px\]{
-  padding-top: 5px;
-}
-
-.pb-\[\]{
-  padding-bottom: ;
-}
-
 .pt-\[50px\]{
   padding-top: 50px;
+}
+
+.pt-\[5px\]{
+  padding-top: 5px;
 }
 
 .text-left{
@@ -2432,10 +2402,6 @@ video {
 
 .text-white\/60{
   color: rgb(255 255 255 / 0.6);
-}
-
-.text-\[\]{
-  color: ;
 }
 
 .opacity-0{
@@ -3566,10 +3532,6 @@ body{
     margin-top: 1.25rem;
   }
 
-  .sm\:ml-\[15px\]{
-    margin-left: 15px;
-  }
-
   .sm\:block{
     display: block;
   }
@@ -3747,10 +3709,6 @@ body{
 
   .sm\:pt-14{
     padding-top: 3.5rem;
-  }
-
-  .sm\:pt-\[50px\]{
-    padding-top: 50px;
   }
 
   .sm\:text-center{
@@ -4107,16 +4065,16 @@ body{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:space-y-9 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
-  }
-
   .md\:space-y-3 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-9 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
   }
 
   .md\:rounded-2xl{
@@ -4353,6 +4311,10 @@ body{
     font-size: 15px;
   }
 
+  .md\:text-\[16px\]{
+    font-size: 16px;
+  }
+
   .md\:text-\[18px\]{
     font-size: 18px;
   }
@@ -4383,14 +4345,6 @@ body{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-\[28px\]{
-    font-size: 28px;
-  }
-
-  .md\:text-\[16px\]{
-    font-size: 16px;
   }
 
   .md\:leading-\[1\]{
@@ -4480,10 +4434,6 @@ body{
     margin-left: 0px;
   }
 
-  .lg\:ml-\[122px\]{
-    margin-left: 122px;
-  }
-
   .lg\:ml-\[15px\]{
     margin-left: 15px;
   }
@@ -4552,6 +4502,10 @@ body{
     margin-top: -6px;
   }
 
+  .lg\:mt-\[120px\]{
+    margin-top: 120px;
+  }
+
   .lg\:mt-\[189px\]{
     margin-top: 189px;
   }
@@ -4590,10 +4544,6 @@ body{
 
   .lg\:mt-\[94px\]{
     margin-top: 94px;
-  }
-
-  .lg\:mt-\[120px\]{
-    margin-top: 120px;
   }
 
   .lg\:flex{
@@ -4802,6 +4752,14 @@ body{
     width: 100%;
   }
 
+  .lg\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .lg\:w-\[309px\]{
+    width: 309px;
+  }
+
   .lg\:max-w-\[874px\]{
     max-width: 874px;
   }
@@ -4915,12 +4873,6 @@ body{
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:space-y-5 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
   .lg\:text-nowrap{
@@ -5100,8 +5052,8 @@ body{
     padding-bottom: 21px;
   }
 
-  .lg\:pb-\[32\.5px\]{
-    padding-bottom: 32.5px;
+  .lg\:pb-\[25px\]{
+    padding-bottom: 25px;
   }
 
   .lg\:pl-\[28px\]{
@@ -5164,12 +5116,16 @@ body{
     padding-top: 30px;
   }
 
-  .lg\:pt-\[31px\]{
-    padding-top: 31px;
-  }
-
   .lg\:pt-\[97px\]{
     padding-top: 97px;
+  }
+
+  .lg\:pl-\[40px\]{
+    padding-left: 40px;
+  }
+
+  .lg\:pr-\[40px\]{
+    padding-right: 40px;
   }
 
   .lg\:text-left{
@@ -5247,16 +5203,16 @@ body{
     line-height: 1.75rem;
   }
 
+  .lg\:text-\[2px\]{
+    font-size: 2px;
+  }
+
   .lg\:leading-\[1\.5\]{
     line-height: 1.5;
   }
 
   .lg\:leading-\[30px\]{
     line-height: 30px;
-  }
-
-  .lg\:text-\[\]{
-    color: ;
   }
 }
 
