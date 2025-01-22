@@ -886,6 +886,10 @@ video {
   margin-top: 50px;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1285,6 +1289,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[400px\]{
+  width: 400px;
 }
 
 .min-w-\[600px\]{
@@ -3825,6 +3837,14 @@ body{
     margin-top: 40px;
   }
 
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-1{
+    margin-top: 0.25rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -3915,6 +3935,10 @@ body{
     width: 150px;
   }
 
+  .md\:w-\[20\%\]{
+    width: 20%;
+  }
+
   .md\:w-\[210px\]{
     width: 210px;
   }
@@ -3955,8 +3979,12 @@ body{
     width: 100%;
   }
 
-  .md\:w-\[20\%\]{
-    width: 20%;
+  .md\:w-\[\]{
+    width: ;
+  }
+
+  .md\:w-\[400px\]{
+    width: 400px;
   }
 
   .md\:flex-row{
@@ -4642,6 +4670,10 @@ body{
     width: 1475px;
   }
 
+  .lg\:w-\[20\%\]{
+    width: 20%;
+  }
+
   .lg\:w-\[202px\]{
     width: 202px;
   }
@@ -4716,18 +4748,6 @@ body{
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-\[\]{
-    width: ;
-  }
-
-  .lg\:w-\[20\]{
-    width: 20;
-  }
-
-  .lg\:w-\[20\%\]{
-    width: 20%;
   }
 
   .lg\:max-w-\[874px\]{
@@ -5375,10 +5395,6 @@ body{
     align-items: center;
   }
 
-  .xl\:justify-normal{
-    justify-content: normal;
-  }
-
   .xl\:justify-start{
     justify-content: flex-start;
   }
@@ -5405,10 +5421,6 @@ body{
 
   .xl\:gap-20{
     gap: 5rem;
-  }
-
-  .xl\:gap-32{
-    gap: 8rem;
   }
 
   .xl\:gap-5{
@@ -5714,10 +5726,6 @@ body{
     margin-top: 50px;
   }
 
-  .\32xl\:mt-\[52px\]{
-    margin-top: 52px;
-  }
-
   .\32xl\:mt-\[55px\]{
     margin-top: 55px;
   }
@@ -5814,10 +5822,6 @@ body{
     width: 470px;
   }
 
-  .\32xl\:w-\[474px\]{
-    width: 474px;
-  }
-
   .\32xl\:w-\[485px\]{
     width: 485px;
   }
@@ -5900,10 +5904,6 @@ body{
 
   .\32xl\:gap-\[200px\]{
     gap: 200px;
-  }
-
-  .\32xl\:gap-\[244px\]{
-    gap: 244px;
   }
 
   .\32xl\:gap-\[30px\]{
@@ -6071,11 +6071,6 @@ body{
   .\32xl\:py-\[50px\]{
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .\32xl\:py-\[58px\]{
-    padding-top: 58px;
-    padding-bottom: 58px;
   }
 
   .\32xl\:py-\[80px\]{
