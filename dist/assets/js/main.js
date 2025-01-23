@@ -249,29 +249,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// startTime Func
-
+// Start Time Picker
 document.addEventListener("DOMContentLoaded", function () {
-  flatpickr(`.start-time`, {
+  flatpickr(".start-time", {
     enableTime: true, // Enable time picker
-    dateFormat: "h:i K", // Date format with 12-hour time and AM/PM
-    time_24hr: false, // 12-hour format with AM/PM
+    noCalendar: true, // Disable calendar
+    dateFormat: "h:i K", // 12-hour time format with AM/PM
+    time_24hr: false, // 12-hour format
     minuteIncrement: 5, // Increment by 5 minutes
-    defaultHour: "currentHour", // Default hour (9 AM)
-    defaultMinute: "currentMinuite", // Default minute
+    defaultHour: 9, // Default hour (9 AM)
+    defaultMinute: 0, // Default minute (00)
   });
 });
-
 // endTime Func
 
+// End Time Picker
 document.addEventListener("DOMContentLoaded", function () {
-  flatpickr(`.end-time`, {
+  flatpickr(".end-time", {
     enableTime: true, // Enable time picker
-    dateFormat: "h:i K", // Date format with 12-hour time and AM/PM
-    time_24hr: false, // 12-hour format with AM/PM
+    noCalendar: true, // Disable calendar
+    dateFormat: "h:i K", // 12-hour time format with AM/PM
+    time_24hr: false, // 12-hour format
     minuteIncrement: 5, // Increment by 5 minutes
-    defaultHour: "currentHour", // Default hour (9 AM)
-    defaultMinute: "currentMinuite", // Default minute
+    defaultHour: 18, // Default hour (6 PM)
+    defaultMinute: 30, // Default minute (30)
   });
 });
 
@@ -617,28 +618,28 @@ document.addEventListener("click", (e) => {
 });
 // ===sidebar::end
 
-
-
 // video permission:start
-document.addEventListener("DOMContentLoaded", function() {
-  const cameraButton = document.getElementById('cameraButton');
-  const videoContainer = document.getElementById('videoContainer');
-  const videoElement = document.getElementById('video');
-  const videoBtnContainer=document.getElementById('requestPermissionContainer');
+document.addEventListener("DOMContentLoaded", function () {
+  const cameraButton = document.getElementById("cameraButton");
+  const videoContainer = document.getElementById("videoContainer");
+  const videoElement = document.getElementById("video");
+  const videoBtnContainer = document.getElementById(
+    "requestPermissionContainer"
+  );
 
-  cameraButton.addEventListener('click', async () => {
+  cameraButton.addEventListener("click", async () => {
     try {
       // Request access to the user's camera
       const stream = await navigator.mediaDevices.getUserMedia({ video: true });
       videoElement.srcObject = stream;
-      
+
       // Show the video container and hide the button
-      videoBtnContainer.classList.add("hidden")
-      videoContainer.classList.remove('hidden');
-      cameraButton.classList.add('hidden');
+      videoBtnContainer.classList.add("hidden");
+      videoContainer.classList.remove("hidden");
+      cameraButton.classList.add("hidden");
     } catch (error) {
-      alert('Camera access denied or unavailable.');
-      console.error('Error accessing camera:', error);
+      alert("Camera access denied or unavailable.");
+      console.error("Error accessing camera:", error);
     }
   });
 });
