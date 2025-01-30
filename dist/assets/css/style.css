@@ -733,11 +733,6 @@ video {
   margin-right: auto;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .\!mt-0{
   margin-top: 0px !important;
 }
@@ -959,10 +954,6 @@ video {
 .size-8{
   width: 2rem;
   height: 2rem;
-}
-
-.h-0{
-  height: 0px;
 }
 
 .h-10{
@@ -1378,10 +1369,6 @@ video {
 
 .flex-col{
   flex-direction: column;
-}
-
-.flex-col-reverse{
-  flex-direction: column-reverse;
 }
 
 .flex-wrap{
@@ -3323,10 +3310,6 @@ body{
     margin-top: var(--bs-gutter-y);
   }
 
-  .xl\:col{
-    flex: 1 0 0%;
-  }
-
   .xl\:col-4{
     flex: 0 0 auto;
     width: 33.333333333333336%;
@@ -4234,10 +4217,6 @@ body{
     padding-right: 4rem;
   }
 
-  .md\:pt-0{
-    padding-top: 0px;
-  }
-
   .md\:pt-20{
     padding-top: 5rem;
   }
@@ -5038,10 +5017,6 @@ body{
     padding-top: 0px;
   }
 
-  .lg\:pt-14{
-    padding-top: 3.5rem;
-  }
-
   .lg\:pt-20{
     padding-top: 5rem;
   }
@@ -5314,10 +5289,6 @@ body{
     width: 345px !important;
   }
 
-  .xl\:w-10\/12{
-    width: 83.333333%;
-  }
-
   .xl\:w-\[123px\]{
     width: 123px;
   }
@@ -5536,10 +5507,6 @@ body{
 
   .xl\:pr-6{
     padding-right: 1.5rem;
-  }
-
-  .xl\:pt-4{
-    padding-top: 1rem;
   }
 
   .xl\:pt-48{
