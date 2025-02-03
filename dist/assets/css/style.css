@@ -1197,6 +1197,10 @@ video {
   width: 252px;
 }
 
+.w-\[260px\]{
+  width: 260px;
+}
+
 .w-\[26px\]{
   width: 26px;
 }
@@ -1276,14 +1280,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[270px\]{
-  width: 270px;
-}
-
-.w-\[260px\]{
-  width: 260px;
 }
 
 .min-w-\[600px\]{
@@ -3584,10 +3580,6 @@ body{
     flex-direction: column;
   }
 
-  .sm\:items-start{
-    align-items: flex-start;
-  }
-
   .sm\:items-center{
     align-items: center;
   }
@@ -4659,6 +4651,10 @@ body{
     width: 20%;
   }
 
+  .lg\:w-\[200px\]{
+    width: 200px;
+  }
+
   .lg\:w-\[202px\]{
     width: 202px;
   }
@@ -4733,18 +4729,6 @@ body{
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-\[340px\]{
-    width: 340px;
-  }
-
-  .lg\:w-\[00px\]{
-    width: 00px;
-  }
-
-  .lg\:w-\[200px\]{
-    width: 200px;
   }
 
   .lg\:max-w-\[874px\]{
@@ -5385,22 +5369,6 @@ body{
     width: 100%;
   }
 
-  .xl\:w-\[\]{
-    width: ;
-  }
-
-  .xl\:w-\[2\]{
-    width: 2;
-  }
-
-  .xl\:w-\[250px\]{
-    width: 250px;
-  }
-
-  .xl\:w-\[20px\]{
-    width: 20px;
-  }
-
   .xl\:flex-row{
     flex-direction: row;
   }
@@ -5567,16 +5535,6 @@ body{
   .xl\:py-\[200px\]{
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-
-  .xl\:py-2{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .xl\:py-\[\]{
-    padding-top: ;
-    padding-bottom: ;
   }
 
   .xl\:pb-24{
