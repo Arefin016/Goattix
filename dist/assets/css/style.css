@@ -3507,10 +3507,6 @@ body{
     margin-top: 1.25rem;
   }
 
-  .sm\:mb-0{
-    margin-bottom: 0px;
-  }
-
   .sm\:block{
     display: block;
   }
@@ -3832,10 +3828,6 @@ body{
 
   .md\:mt-\[40px\]{
     margin-top: 40px;
-  }
-
-  .md\:mb-0{
-    margin-bottom: 0px;
   }
 
   .md\:block{
@@ -4361,6 +4353,10 @@ body{
     margin-right: auto;
   }
 
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .lg\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -4527,10 +4523,6 @@ body{
 
   .lg\:mt-\[94px\]{
     margin-top: 94px;
-  }
-
-  .lg\:mb-0{
-    margin-bottom: 0px;
   }
 
   .lg\:flex{
