@@ -390,6 +390,30 @@
                 </div>
               </div>
             </div>
+            <!-- Fees -->
+            <div class="mt-[30px] w-full lg:w-[20%]">
+              <label class="lg:text-[18px] mb-3 md:mb-4 block" for="f-name"
+                >Fees</label
+              >
+              <input
+                id="f-name"
+                class="w-full h-12 md:h-14 xl:h-[72px] text-sm md:text-base rounded-lg md:rounded-xl lg:rounded-[12px] border border-white px-5 bg-transparent focus:outline-none"
+                type="number"
+                placeholder="Fees"
+                required
+              />
+            </div>
+            <!-- Fees and % -->
+            <div class="mt-4 md:mt-6 xl:mt-[30px] w-full lg:w-[20%]">
+              <label class="lg:text-[18px] mb-3 md:mb-4 block" for="f-name"
+                >Flat or % Fees</label
+              >
+              <select>
+                <option selected disabled>Choose fees</option>
+                <option value="1">Flat Fees</option>
+                <option value="2">Percentage(%)</option>
+              </select>
+            </div>
             <!-- condition and submit  -->
             <div
               class="flex gap-5 md:gap-8 flex-col lg:flex-row lg:items-center justify-between mt-5 md:mt-8 lg:mt-12 2xl:mt-20"
