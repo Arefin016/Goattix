@@ -1113,6 +1113,10 @@ video {
   height: 100%;
 }
 
+.h-\[54px\]{
+  height: 54px;
+}
+
 .max-h-0{
   max-height: 0px;
 }
@@ -1282,6 +1286,10 @@ video {
   width: 100%;
 }
 
+.w-\[123px\]{
+  width: 123px;
+}
+
 .min-w-\[600px\]{
   min-width: 600px;
 }
@@ -1300,6 +1308,10 @@ video {
 
 .max-w-lg{
   max-width: 32rem;
+}
+
+.max-w-\[123px\]{
+  max-width: 123px;
 }
 
 .-translate-x-1\/2{

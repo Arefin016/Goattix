@@ -15,10 +15,10 @@
     <header
       class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
     >
-      <div class="container relative">
-        <div class="2xl:row lg:items-center flex items-center justify-between">
-          <div class="2xl:col-3">
-            <!-- logo  -->
+      <div class="container relative h-full flex items-center">
+        <div class="flex items-center justify-between w-full">
+          <!-- Logo -->
+          <div class="w-[123px] flex items-center">
             <a href="index.html">
               <img
                 class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
@@ -27,68 +27,77 @@
               />
             </a>
           </div>
-          <div class="2xl:col-6 hidden xl:flex">
+
+          <!-- Navigation -->
+          <div class="hidden xl:flex">
             <ul class="menu flex items-center gap-8 2xl:gap-12">
               <li>
                 <a
                   href="index.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   href="events.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Events</a
                 >
               </li>
               <li>
                 <a
                   href="organizer.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Organizer</a
                 >
               </li>
               <li>
                 <a
                   href="promoters.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Promoters</a
                 >
               </li>
               <li>
                 <a
                   href="marketing.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Blogs</a
                 >
               </li>
               <li>
                 <a
                   href="my-events.html"
-                  class="active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Host</a
                 >
               </li>
               <li>
                 <a
                   href="get-in-touch.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >GetInTouch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="venue.html"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  >Venue</a
                 >
               </li>
             </ul>
           </div>
-          <div class="2xl:col-3 hidden xl:flex 2xl:block">
-            <div class="text-right">
-              <a href="login.html" class="button">Sign in</a>
-            </div>
+
+          <!-- Sign-in Button -->
+          <div class="hidden xl:flex">
+            <a href="login.html" class="button">Sign in</a>
           </div>
 
-          <!-- hamburger icons::start -->
-          <div class="transition duration-500 xl:hidden">
-            <div id="openMenu" class="transition duration-500">
+          <!-- Hamburger Menu (Mobile) -->
+          <div class="xl:hidden">
+            <div id="openMenu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -106,9 +115,9 @@
               </svg>
             </div>
           </div>
-          <!-- hamburger icons::end -->
         </div>
       </div>
+
       <!-- sidebar::start -->
       <div
         id="menu-sidebar"
@@ -143,7 +152,9 @@
           <a href="events.html" class="text-sm md:text-base text-menuColor"
             >Events</a
           >
-          <a class="text-sm md:text-base text-menuColor" href="organizer.html"
+          <a
+            class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
+            href="organizer.html"
             >Organizer</a
           >
           <a class="text-sm md:text-base text-menuColor" href="promoters.html"
@@ -152,9 +163,7 @@
           <a class="text-sm md:text-base text-menuColor" href="marketing.html"
             >Blogs</a
           >
-          <a
-            class="active text-sm md:text-base font-medium hover:text-white duration-300 ease-in-out"
-            href="my-events.html"
+          <a class="text-sm md:text-base text-menuColor" href="my-events.html"
             >Host</a
           >
           <a
