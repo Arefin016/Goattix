@@ -1,46 +1,89 @@
-.venue-details .nice-select{
-    background-color: transparent !important;
-    height: 75px !important;
-    display: flex;
-    align-items: center;
+.venue-details .nice-select {
+  background-color: transparent !important;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
 }
-.organizer-details .nice-select{
-    background-color: transparent !important;
-    height: 75px !important;
-    display: flex;
-    align-items: center;
+.organizer-details .nice-select {
+  background-color: transparent !important;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
 }
-.time-zone .nice-select{
-    background-color: transparent !important;
-    height: 75px !important;
-    display: flex;
-    align-items: center;
+.time-zone .nice-select {
+  background-color: transparent !important;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
 }
-.event-website-link .nice-select{
-    background-color: transparent !important;
-    height: 75px !important;
-    display: flex;
-    align-items: center;
+.event-website-link .nice-select {
+  background-color: transparent !important;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
 }
-.ticket-price .nice-select{
-    background-color: transparent !important;
-   height: 75px !important;
-   display: flex;
-   align-items: center;
+.ticket-price .nice-select,
+.select2 {
+  background-color: transparent !important;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  padding-left: 5px;
 }
 
-.bottom-active-button{
-    background-color: #111;
-    color: white;
+.ticket-price .nice-select:hover,
+.select2:hover {
+  border: 1px solid #999;
+}
+.select2 {
+  width: 100% !important;
+}
+.select2 .selection {
+  width: 100%;
+}
+.select2-container--default .select2-selection--single {
+  background: transparent;
+  border: none;
+}
+.select2-dropdown {
+  background-color: black;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  font-size: 18px;
+  color: #fff;
 }
 
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  background-color: #111;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: black;
+}
+
+.bottom-active-button {
+  background-color: #111;
+  color: white;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: 1px solid #aaa;
+  border-radius: 3px;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 640px) {
-    .time-zone .nice-select{
-        background-color: transparent !important;
-        height: 50px !important;
-        display: flex;
-        align-items: center;
-    }
+  .time-zone .nice-select {
+    background-color: transparent !important;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+  }
 }
-

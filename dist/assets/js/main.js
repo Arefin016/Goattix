@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
     once: true,
   });
   // Initialize niceSelect
-  $("select").niceSelect();
+  $(".select").niceSelect();
 });
 
 //=== time and date relatex func ====//
@@ -627,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "requestPermissionContainer"
   );
 
-  cameraButton.addEventListener("click", async () => {
+  cameraButton?.addEventListener("click", async () => {
     try {
       // Request access to the user's camera
       const stream = await navigator.mediaDevices.getUserMedia({ video: true });

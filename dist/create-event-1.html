@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" href="./assets/css/nice-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/flatpicker.css" />
+    <link rel="stylesheet" href="./assets/css/select-2.css" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/custom/custom.css" />
-    <link rel="stylesheet" href="./assets/css/flatpicker.css" />
     <!-- flatpicker -->
 
     <!-- timezone picker -->
     <!-- Select 2 -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
-    />
+    /> -->
   </head>
   <body>
     <!-- start header  -->
@@ -529,35 +531,6 @@
             >
               Venue Details
             </h3>
-            <button
-              id="create-new-venue"
-              class="flex gap-2 md:gap-4 items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
-            >
-              <span class="text-xs md:text-base text-nowrap"></span>
-              <svg
-                class="size-3 md:size-auto"
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-              >
-                <path
-                  d="M1.17969 7.48364H12.6797"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.17969 1.48364L7.17969 12.9836"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
           </div>
 
           <ul id="new-venue-parent-container">
@@ -565,13 +538,13 @@
               class="w-full new-venue-selector venue-details h-full flex flex-col gap-3 md:gap-5"
             >
               <!-- This is the venue section -->
-              <label for="time-zone">Venue</label>
-              <div class="relative">
-                <select id="citySelect" style="width: 100%">
+              <div>
+                <!-- <label for="time-zone">Venue</label> -->
+                <select class="js-example-basic-multiple" name="states">
+                  <option value="Alabama">Alabama</option>
+                  <option value="Wyoming">Wyoming</option>
+                  <option value="Virginia">Virginia</option>
                   <option value="Houston">Houston</option>
-                  <option value="Austin">Austin</option>
-                  <option value="Dallas">Dallas</option>
-                  <option value="San Antonio">San Antonio</option>
                 </select>
               </div>
             </li>
@@ -625,7 +598,7 @@
             >
               <label for="time-zone">Organizer</label>
               <div class="relative">
-                <select class="w-full bg-white">
+                <select class="w-full bg-white select">
                   <option selected>Demo Organizer</option>
                   <option value="1">Houston</option>
                   <option value="2">Austin</option>
@@ -650,7 +623,7 @@
             >
               <label for="time-zone">Website link</label>
               <div class="relative">
-                <select class="w-full bg-white">
+                <select class="w-full bg-white select">
                   <option selected>Demo Link</option>
                   <option value="1">Houston</option>
                   <option value="2">Austin</option>
@@ -914,7 +887,7 @@
                 >
                   <label for="">Set shard to capacity</label>
                   <div class="relative">
-                    <select class="w-full bg-white text-sm md:text-base">
+                    <select class="w-full bg-white text-sm md:text-base select">
                       <option selected>Select Capacity</option>
                       <option value="1">Houston</option>
                       <option value="2">Austin</option>
@@ -1607,13 +1580,10 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <script>
       $(document).ready(function () {
-        $("#citySelect").select2({
-          placeholder: "Select a city",
-          allowClear: true,
-        });
+        $(".js-example-basic-multiple").select2();
       });
     </script>
   </body>
