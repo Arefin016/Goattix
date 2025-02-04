@@ -645,3 +645,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // video permission:end
+
+//
+//  const citySelect = document.getElementById("citySelect");
+function filterCities() {
+  const input = document.getElementById("cityInput");
+  const select = document.getElementById("citySelect");
+  const options = select.options;
+  const userInput = input.value.toLowerCase();
+
+  // Filter options based on user input
+  for (let i = 0; i < options.length; i++) {
+    const option = options[i];
+    const text = option.text.toLowerCase();
+    if (text.indexOf(userInput) === -1) {
+      option.style.display = "none";
+    } else {
+      option.style.display = "block";
+    }
+  }
+}
+
+function updateInputValue() {
+  const select = document.getElementById("citySelect");
+  const input = document.getElementById("cityInput");
+  input.value = select.value;
+}
