@@ -539,7 +539,6 @@
             >
               <!-- This is the venue section -->
               <div>
-                <!-- <label for="time-zone">Venue</label> -->
                 <select class="js-example-basic-multiple" name="states">
                   <option value="Alabama">Alabama</option>
                   <option value="Wyoming">Wyoming</option>
@@ -1583,7 +1582,45 @@
 
     <script>
       $(document).ready(function () {
+        // Initialize select2
         $(".js-example-basic-multiple").select2();
+
+        // When Enter is pressed in the select2 search input field
+        $(".js-example-basic-multiple").on("select2:open", function () {
+          $(".select2-search__field").on("keydown", function (e) {
+            if (e.key === "Enter") {
+              // Prevent default form submission
+              e.preventDefault();
+
+              // Get the current value of the select2 input field
+              var currentValue = $(this).val();
+
+              // Open the modal
+              $("#myModal").fadeIn();
+
+              // Set the value back to the select2 input after the modal is open
+              $(".select2-search__field").val(currentValue);
+
+              // Keep the select2 input field focused
+              $(".select2-search__field").focus();
+            }
+          });
+        });
+
+        // Close the modal when clicking on the close button
+        $(".close").on("click", function () {
+          $("#myModal").fadeOut();
+        });
+
+        // Close the modal if the user clicks anywhere outside of the modal but not inside select2
+        $(window).on("click", function (event) {
+          if (
+            event.target === document.getElementById("myModal") &&
+            !$(event.target).closest(".select2-container").length
+          ) {
+            $("#myModal").fadeOut();
+          }
+        });
       });
     </script>
   </body>
