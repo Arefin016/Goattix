@@ -551,7 +551,7 @@
         </div>
         <!-- This is the form when user write something then press the enter button the form will open -->
         <div class="custom-form" style="display: none">
-          <form class="w-full lg:w-[700px]">
+          <form class="w-full lg:w-[700px] mt-20 lg:mt-16">
             <!-- This is the address start -->
             <div class="mb-5">
               <label
@@ -633,7 +633,7 @@
                 Postal Code
               </label>
               <input
-                type="text"
+                type="number"
                 id="postal-code"
                 name="postal-code"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -1710,16 +1710,36 @@
     <script>
       $(document).ready(function () {
         // Initialize Select2
-        $("#mySelect2").select2();
+        $(".js-example-basic-multiple").select2({
+          tags: true,
+          createTag: function (params) {
+            return {
+              id: params.term,
+              text: params.term,
+              newOption: true,
+            };
+          },
+        });
+
         $(document).on("keydown", ".select2-search__field", function (event) {
           if (event.key === "Enter") {
             event.preventDefault();
-            const searchText = $(this).val();
-            $(".custom-form").show();
-            $(this).val("");
+
+            const searchText = $(this).val().trim();
+            if (searchText !== "") {
+              // Add new option to Select2 dropdown
+              const newOption = new Option(searchText, searchText, true, true);
+              $(".js-example-basic-multiple")
+                .append(newOption)
+                .trigger("change");
+
+              // Show the form
+              $(".custom-form").show();
+            }
           }
         });
       });
+
       $(document).ready(function () {
         // Initialize select2
         $(".js-example-basic-multiple").select2();
@@ -1728,19 +1748,10 @@
         $(".js-example-basic-multiple").on("select2:open", function () {
           $(".select2-search__field").on("keydown", function (e) {
             if (e.key === "Enter") {
-              // Prevent default form submission
               e.preventDefault();
-
-              // Get the current value of the select2 input field
               var currentValue = $(this).val();
-
-              // Open the modal
               $("#myModal").fadeIn();
-
-              // Set the value back to the select2 input after the modal is open
               $(".select2-search__field").val(currentValue);
-
-              // Keep the select2 input field focused
               $(".select2-search__field").focus();
             }
           });
@@ -1749,16 +1760,6 @@
         // Close the modal when clicking on the close button
         $(".close").on("click", function () {
           $("#myModal").fadeOut();
-        });
-
-        // Close the modal if the user clicks anywhere outside of the modal but not inside select2
-        $(window).on("click", function (event) {
-          if (
-            event.target === document.getElementById("myModal") &&
-            !$(event.target).closest(".select2-container").length
-          ) {
-            $("#myModal").fadeOut();
-          }
         });
       });
     </script>
