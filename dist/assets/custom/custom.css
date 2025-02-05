@@ -90,3 +90,38 @@
 
 /* This is the modal style section */
 /* Modal styling */
+#address {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}
+#city {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}
+#country {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}
+#state {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}
+#postal-code {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}
+#number {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}
+#website {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #111;
+}

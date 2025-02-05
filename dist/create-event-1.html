@@ -549,6 +549,133 @@
             </li>
           </ul>
         </div>
+        <!-- This is the form when user write something then press the enter button the form will open -->
+        <div class="custom-form" style="display: none">
+          <form class="w-full lg:w-[700px]">
+            <!-- This is the address start -->
+            <div class="mb-5">
+              <label
+                for="address"
+                class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white"
+              >
+                Address
+              </label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter your address"
+                required
+              />
+            </div>
+            <!-- This is the address end -->
+            <!-- This is the city start -->
+            <div class="mb-5">
+              <label
+                for="city"
+                class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white"
+              >
+                City
+              </label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter your city"
+                required
+              />
+            </div>
+            <!-- This is the city end -->
+            <!-- This is the country start -->
+            <div class="mb-5">
+              <label
+                for="country"
+                class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white"
+              >
+                Country
+              </label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter your country"
+                required
+              />
+            </div>
+            <!-- This is the country end -->
+            <!-- This is the state or province start  -->
+            <div class="mb-5">
+              <label
+                for="state"
+                class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white"
+              >
+                State or Province
+              </label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter your state or province"
+                required
+              />
+            </div>
+            <!-- This is the state or province end  -->
+            <!-- This is the Postal Code start -->
+            <div class="mb-5">
+              <label
+                for="postal-code"
+                class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white"
+              >
+                Postal Code
+              </label>
+              <input
+                type="text"
+                id="postal-code"
+                name="postal-code"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter your postal code"
+                required
+              />
+            </div>
+            <!-- This is the Postal Code end -->
+            <!-- This is the Phone start -->
+            <label
+              for="phone"
+              class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white"
+            >
+              Phone
+            </label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Enter your phone number"
+              required
+            />
+            <!-- This is the Phone end -->
+            <!-- This is the website start -->
+            <label
+              for="website"
+              class="block mb-2 text-base lg:text-lg font-medium text-white dark:text-white mt-5"
+            >
+              Website
+            </label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Enter your website URL"
+              required
+            />
+            <!-- This is the website end -->
+          </form>
+        </div>
 
         <!-- organizer details -->
         <div class="">
@@ -1581,6 +1708,18 @@
     <script src="./assets/js/main.js"></script>
 
     <script>
+      $(document).ready(function () {
+        // Initialize Select2
+        $("#mySelect2").select2();
+        $(document).on("keydown", ".select2-search__field", function (event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            const searchText = $(this).val();
+            $(".custom-form").show();
+            $(this).val("");
+          }
+        });
+      });
       $(document).ready(function () {
         // Initialize select2
         $(".js-example-basic-multiple").select2();
