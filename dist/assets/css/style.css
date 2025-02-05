@@ -833,6 +833,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-24{
   margin-top: 6rem;
 }
@@ -883,14 +887,6 @@ video {
 
 .mt-\[50px\]{
   margin-top: 50px;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .block{
@@ -4559,10 +4555,6 @@ body{
 
   .lg\:mt-\[94px\]{
     margin-top: 94px;
-  }
-
-  .lg\:mt-1{
-    margin-top: 0.25rem;
   }
 
   .lg\:flex{

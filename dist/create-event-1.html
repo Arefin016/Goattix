@@ -551,7 +551,7 @@
         </div>
         <!-- This is the form when user write something then press the enter button the form will open -->
         <div class="custom-form" style="display: none">
-          <form class="w-full lg:w-[700px] mt-20 lg:mt-16">
+          <form class="w-full lg:w-[700px]">
             <!-- This is the address start -->
             <div class="mb-5">
               <label
@@ -1732,6 +1732,12 @@
               $(".js-example-basic-multiple")
                 .append(newOption)
                 .trigger("change");
+
+              // Hide the Select2 dropdown
+              $(".select2-dropdown").hide();
+
+              // Clear the search input
+              $(this).val("");
 
               // Show the form
               $(".custom-form").show();
