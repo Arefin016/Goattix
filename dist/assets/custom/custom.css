@@ -139,3 +139,13 @@
   color: #fff;
   font-size: 18px;
 }
+
+.select2-container--default .select2-selection--multiple {
+  background-color: #111;
+  border: none;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
+  background-color: #111;
+}

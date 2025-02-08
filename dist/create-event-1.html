@@ -366,15 +366,22 @@
             Event Tags
           </h3>
 
+          <!-- This is the event tags section -->
           <div class="flex flex-col gap-5 text-sm md:text-base">
             <label for="event-title ">Search from existing Tags</label>
-            <input
+            <select class="event-tags" name="states[]" multiple="multiple">
+              <option value="AL">Alabama</option>
+              <option value="WY">Wyoming</option>
+              <option value="AL">Alabama</option>
+              <option value="WY">Wyoming</option>
+            </select>
+            <!-- <input
               class="px-5 bg-transparent w-full py-[14px] md:py-5 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
               placeholder="Type here to find the tags"
               type="text"
               name="event-title"
               id="event-title"
-            />
+            /> -->
           </div>
 
           <ul
@@ -1767,6 +1774,11 @@
         $(".close").on("click", function () {
           $("#myModal").fadeOut();
         });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".event-tags").select2();
       });
     </script>
   </body>
