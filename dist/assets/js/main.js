@@ -353,19 +353,25 @@ document.addEventListener("DOMContentLoaded", function () {
   addButton.addEventListener("click", function () {
     // Create the new set of input fields
     const newInputFields = document.createElement("div");
-    newInputFields.classList.add("xl:row", "pb-6", "space-y-4", "xl:space-y-0");
+    newInputFields.classList.add(
+      "xl:row",
+      "pb-6",
+      "space-y-4",
+      "xl:space-y-0",
+      "relative"
+    ); // Add 'relative' class for positioning
 
     // Date and Time Section
     newInputFields.innerHTML = `
-      <div class="w-full col flex flex-col gap-3 md:gap-5">
+      <div class="w-full col flex flex-col gap-5 md:gap-5">
         <label for="start-date-ticket">Date</label>
         <input class="px-5 bg-transparent start-date w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="DD - MM - YYY" type="text" name="" id="start-date-ticket" />
       </div>
-      <div class="w-full col flex flex-col gap-3 md:gap-5">
+      <div class="w-full col flex flex-col gap-5 md:gap-5">
         <label for="start-time-ticket">Start Time</label>
         <input class="px-5 bg-transparent start-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="HH - MM" type="text" name="" id="start-time-ticket" />
       </div>
-      <div class="w-full col flex flex-col gap-3 md:gap-5">
+      <div class="w-full col flex flex-col gap-5 md:gap-5">
         <label for="end-time-ticket">End Time</label>
         <input class="px-5 bg-transparent end-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="HH - MM" type="text" name="" id="end-time-ticket" />
       </div>
@@ -391,6 +397,30 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
 
+    // Create a delete button
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.classList.add(
+      "delete-button",
+      "px-4",
+      "py-2",
+      "text-white",
+      "rounded-lg",
+      "absolute",
+      "top-0",
+      "right-[-718px]",
+      "mt-2",
+      "mr-2"
+    );
+
+    // Add event listener to the delete button
+    deleteButton.addEventListener("click", function () {
+      organizerList.removeChild(newInputFields); // Remove the input fields when delete is clicked
+    });
+
+    // Append the delete button to the newInputFields
+    newInputFields.appendChild(deleteButton);
+
     // Append the new input fields to the organizerList
     organizerList.appendChild(newInputFields);
   });
@@ -408,7 +438,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "xl:row",
       "pb-6",
       "space-y-4",
-      "xl:space-y-0"
+      "xl:space-y-0",
+      "relative" // Ensure the delete button is positioned relative to this container
     );
 
     ticketContainer.innerHTML = `
@@ -447,7 +478,30 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
 
-    // Append the new set of input fields
+    // Create a delete button with text
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete"; // Set the text to "Delete"
+    deleteButton.classList.add(
+      "delete-button",
+      "absolute",
+      "top-0",
+      "right-[-718px]",
+      "mt-2",
+      "mr-2",
+      "text-white",
+      "font-semibold",
+      "cursor-pointer"
+    );
+
+    // Attach delete functionality to the delete button
+    deleteButton.addEventListener("click", function () {
+      ticketContainer.remove(); // Remove the ticket container when clicked
+    });
+
+    // Append the delete button to the ticket container
+    ticketContainer.appendChild(deleteButton);
+
+    // Append the new set of input fields to the selector
     addTypeSelector.appendChild(ticketContainer);
   });
 });
