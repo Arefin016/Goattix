@@ -683,6 +683,10 @@ video {
   right: 2rem;
 }
 
+.right-\[-718px\]{
+  right: -718px;
+}
+
 .right-\[15px\]{
   right: 15px;
 }
@@ -709,14 +713,6 @@ video {
 
 .top-\[23px\]{
   top: 23px;
-}
-
-.right-\[-718px\]{
-  right: -718px;
-}
-
-.right-\[\]{
-  right: ;
 }
 
 .z-50{
@@ -817,6 +813,10 @@ video {
   margin-left: 33px;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .mr-4{
   margin-right: 1rem;
 }
@@ -891,10 +891,6 @@ video {
 
 .mt-\[50px\]{
   margin-top: 50px;
-}
-
-.mr-2{
-  margin-right: 0.5rem;
 }
 
 .block{
@@ -1807,11 +1803,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .bg-cover{
   background-size: cover;
 }
@@ -2403,11 +2394,6 @@ video {
 
 .text-white\/60{
   color: rgb(255 255 255 / 0.6);
-}
-
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -5517,12 +5503,6 @@ body{
     --tw-space-y-reverse: 0;
     margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
-  }
-
-  .xl\:space-y-5 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
   .xl\:rounded-\[20px\]{
