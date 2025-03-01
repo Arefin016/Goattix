@@ -241,7 +241,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // endDate Func
-
 document.addEventListener("DOMContentLoaded", function () {
   flatpickr(`.end-date`, {
     // Enable time picker
@@ -345,6 +344,48 @@ const newVenueSelector = document.getElementsByClassName(
 const newVenueParentContainer = document.getElementById(
   "new-organizer-parent-container"
 );
+
+// add new Date element
+document.addEventListener("DOMContentLoaded", function () {
+  const addButton = document.getElementById("create-new-date");
+  const organizerList = document.getElementById("new-date-selector");
+
+  // Initially hide the organizer list
+  organizerList.style.display = "none";
+
+  addButton.addEventListener("click", function () {
+    // Toggle the display property
+    if (
+      organizerList.style.display === "none" ||
+      organizerList.style.display === ""
+    ) {
+      organizerList.style.display = "block"; // Show the section
+    } else {
+      organizerList.style.display = "none"; // Hide the section
+    }
+  });
+});
+
+// This is the Add Type
+document.addEventListener("DOMContentLoaded", function () {
+  const addTypeButton = document.getElementById("create-add-type");
+  const addTypeSelector = document.getElementById("add-type-selector");
+
+  // Initially hide the add-type section
+  addTypeSelector.style.display = "none";
+
+  addTypeButton.addEventListener("click", function () {
+    // Toggle the display property
+    if (
+      addTypeSelector.style.display === "none" ||
+      addTypeSelector.style.display === ""
+    ) {
+      addTypeSelector.style.display = "block"; // Show the section
+    } else {
+      addTypeSelector.style.display = "none"; // Hide the section
+    }
+  });
+});
 
 // add new recurring event
 

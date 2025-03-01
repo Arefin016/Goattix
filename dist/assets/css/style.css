@@ -964,10 +964,6 @@ video {
   height: 3rem;
 }
 
-.h-16{
-  height: 4rem;
-}
-
 .h-3{
   height: 0.75rem;
 }
@@ -2992,6 +2988,7 @@ body{
     height: 50px !important;
     display: flex;
     align-items: center;
+    border-color: white !important;
   }
 
   .nice-select .current{
@@ -3003,6 +3000,9 @@ body{
     right: 0.75rem;
     height: 0.5rem;
     width: 0.5rem;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
   }
 
   /* create event:end */
@@ -3934,6 +3934,10 @@ body{
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:w-1\/3{
+    width: 33.333333%;
   }
 
   .md\:w-3\/4{

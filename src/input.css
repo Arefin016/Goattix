@@ -215,7 +215,6 @@ body {
 } */
 /* ===arefin::end== */
 
-
 /*===Responsive=== */
 
 @media (max-width: 640px) {
@@ -296,19 +295,19 @@ body {
   /* checkout:end */
 
   /* create event:start */
-
   .time-zone .nice-select {
     background-color: transparent !important;
     height: 50px !important;
     display: flex;
     align-items: center;
+    border-color: white !important;
   }
   .nice-select .current {
     @apply text-[14px] font-normal;
   }
 
   .nice-select:after {
-    @apply w-2 h-2 right-3;
+    @apply w-2 h-2 right-3 border border-white;
   }
   /* create event:end */
 
@@ -318,7 +317,6 @@ body {
   }
   /* edit venue:end */
 }
-
 
 @media only screen and (min-width: 641px) and (max-width: 991px) {
   .owl-dots {
@@ -472,7 +470,7 @@ body {
     top: 3px;
     height: 15px;
     width: 15px;
-}
+  }
 }
 /*============custom============*/
 

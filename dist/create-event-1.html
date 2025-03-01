@@ -779,6 +779,7 @@
               Tickets
             </h3>
             <div class="flex flex-wrap gap-4 items-center">
+              <!-- Add New Ticket Start -->
               <button
                 class="flex transition-all duration-200 gap-2 md:gap-4 bottom-add-btn border-white border items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
               >
@@ -810,6 +811,7 @@
                   />
                 </svg>
               </button>
+              <!-- Add New Ticket End -->
               <button
                 class="flex gap-2 md:gap-4 transition-all duration-200 bottom-add-btn border-white border items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
               >
@@ -929,144 +931,208 @@
                 id="event-description"
               ></textarea>
             </div>
-            <!-- ticket checkbox -->
-            <div class="pb-6 h-16">
-              <label
-                class="inline-flex items-center gap-2 md:gap-4 cursor-pointer relative"
-              >
-                <input
-                  type="checkbox"
-                  class="appearance-none h-fit font-bold flex justify-center items-center size-4 md:size-6 lg:size-7 focuc:h-fit text-sm md:text-base border border-white rounded md:rounded-md lg:text-xl bg-transparent checked:bg-white checked:border-white text-black checked:after:content-['✔'] focus:outline-none"
-                />
-                <span class="md:ml-2 md:text-base font-normal text-sm"
-                  >Event not Occur: Add Exception</span
-                >
-              </label>
-            </div>
-            <!-- set date and time  -->
-            <div class="xl:row pb-6 space-y-4 xl:space-y-0">
-              <div class="w-full col flex flex-col gap-3 md:gap-5">
-                <label for="start-date-ticket">Start Date</label>
-                <input
-                  class="px-5 bg-transparent start-date w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                  placeholder="DD - MM - YYY"
-                  type="text"
-                  name=""
-                  id="start-date-ticket"
-                />
-              </div>
-              <div class="w-full col flex flex-col gap-3 md:gap-5">
-                <label for="start-time-ticket">Start Time</label>
-                <input
-                  class="px-5 bg-transparent start-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                  placeholder="HH - MM"
-                  type="text"
-                  name=""
-                  id="start-time-ticket"
-                />
-              </div>
-              <div class="w-full col flex flex-col gap-3 md:gap-5">
-                <label for="end-date-ticket">End Date</label>
-                <input
-                  class="px-5 bg-transparent end-date w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                  placeholder="DD - MM - YYY"
-                  type="text"
-                  name=""
-                  id="end-date-ticket"
-                />
-              </div>
-              <div class="w-full col flex flex-col gap-3 md:gap-5">
-                <label for="end-time-ticket">End Time</label>
-                <input
-                  class="px-5 bg-transparent end-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                  placeholder="HH - MM"
-                  type="text"
-                  name=""
-                  id="end-time-ticket"
-                />
-              </div>
-            </div>
 
-            <!-- ticket price -->
-            <div class="w-full flex pb-6 flex-col gap-3 md:gap-5">
-              <label for="event-title">Ticket Price</label>
-              <input
-                class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                placeholder="$- Enter ticket price, Leave blank if free ticket "
-                type="text"
-                name="event-title"
-                id="event-title"
-              />
-            </div>
-            <!-- radio -->
-            <div
-              class="flex pb-5 md:pb-8 lg:pb-10 items-center gap-3 text-sm md:text-base"
-            >
-              <input
-                id="ticket-radio"
-                type="radio"
-                name="ticket-radio"
-                class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
-              />
-              <label for="ticket-radio"
-                >Share capacity with other tickets</label
-              >
-            </div>
-            <!-- set capacity and sell -->
-            <div class="xl:row pb-6 space-y-4 xl:space-y-0">
-              <div class="col">
-                <div
-                  class="w-full ticket-price h-full flex flex-col gap-3 md:gap-5"
+            <!-- Add Date -->
+            <div class="">
+              <div class="flex gap-2 md:items-center justify-end">
+                <button
+                  id="create-new-date"
+                  class="flex gap-2 md:gap-4 items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
                 >
-                  <label for="">Set shard to capacity</label>
-                  <div class="relative">
-                    <select class="w-full bg-white text-sm md:text-base select">
-                      <option selected>Select Capacity</option>
-                      <option value="1">Houston</option>
-                      <option value="2">Austin</option>
-                      <option value="3">Dallas</option>
-                      <option value="4">San Antonio</option>
-                    </select>
+                  <span class="text-xs md:text-base text-nowrap">Add Date</span>
+                  <svg
+                    class="size-3 md:size-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.17969 7.48364H12.6797"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.17969 1.48364L7.17969 12.9836"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <ul id="new-date-selector">
+                <!-- set date and time  -->
+                <div class="xl:row pb-6 space-y-4 xl:space-y-0">
+                  <div class="w-full col flex flex-col gap-3 md:gap-5">
+                    <label for="start-date-ticket">Date</label>
+                    <input
+                      class="px-5 bg-transparent start-date w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                      placeholder="DD - MM - YYY"
+                      type="text"
+                      name=""
+                      id="start-date-ticket"
+                    />
+                  </div>
+                  <div class="w-full col flex flex-col gap-3 md:gap-5">
+                    <label for="start-time-ticket">Start Time</label>
+                    <input
+                      class="px-5 bg-transparent start-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                      placeholder="HH - MM"
+                      type="text"
+                      name=""
+                      id="start-time-ticket"
+                    />
+                  </div>
+                  <div class="w-full col flex flex-col gap-3 md:gap-5">
+                    <label for="end-time-ticket">End Time</label>
+                    <input
+                      class="px-5 bg-transparent end-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                      placeholder="HH - MM"
+                      type="text"
+                      name=""
+                      id="end-time-ticket"
+                    />
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="w-full flex flex-col gap-5">
-                  <label for="event-title">Sell Up to</label>
-                  <input
-                    class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
-                    placeholder="Enter event title here"
-                    type="text"
-                    name="event-title"
-                    id="event-title"
-                  />
+                <!-- set capacity and sell -->
+                <div class="xl:row pb-6 space-y-4 xl:space-y-0">
+                  <div class="col">
+                    <div
+                      class="w-full ticket-price h-full flex flex-col gap-3 md:gap-5"
+                    >
+                      <label for="">Total Ticket</label>
+                      <div class="relative">
+                        <input
+                          class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                          placeholder="Total Ticket"
+                          type="number"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="w-full flex flex-col gap-5">
+                      <label for="event-title">Sell Up To</label>
+                      <input
+                        class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                        placeholder="Enter Sell Up To here"
+                        type="text"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <!-- ========================== Add Type ============================== -->
+                <!-- Add Type -->
+                <div class="">
+                  <div class="flex gap-2 md:items-center justify-end">
+                    <button
+                      id="create-add-type"
+                      class="flex gap-2 md:gap-4 items-center text-[#111] font-medium bg-white h-fit rounded-full px-6 py-2.5"
+                    >
+                      <span class="text-xs md:text-base text-nowrap"
+                        >Add Type</span
+                      >
+                      <svg
+                        class="size-3 md:size-auto"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.17969 7.48364H12.6797"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7.17969 1.48364L7.17969 12.9836"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <ul id="add-type-selector">
+                    <!-- set date and time  -->
+                    <div class="xl:row pb-6 space-y-4 xl:space-y-0">
+                      <div
+                        class="w-full col flex flex-col md:flex-row gap-3 md:gap-5"
+                      >
+                        <!-- Ticket Type -->
+                        <div
+                          class="w-full md:w-1/3 flex flex-col gap-3 md:gap-5"
+                        >
+                          <label for="ticket-type">Ticket Type</label>
+                          <div class="relative">
+                            <select
+                              class="w-full bg-white text-sm md:text-base select"
+                            >
+                              <option selected>Ticket Type</option>
+                              <option value="vip">VIP</option>
+                              <option value="general">General Admission</option>
+                              <option value="early-bird">Early Bird</option>
+                              <option value="student">Student</option>
+                              <option value="group">Group Pass</option>
+                              <option value="backstage">
+                                Backstage Access
+                              </option>
+                              <option value="premium">Premium</option>
+                              <option value="reserved">Reserved Seating</option>
+                              <option value="day-pass">Day Pass</option>
+                              <option value="weekend-pass">Weekend Pass</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Price -->
+                        <div
+                          class="w-full md:w-1/3 flex flex-col gap-3 md:gap-5"
+                        >
+                          <label for="ticket-price">Price</label>
+                          <input
+                            class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                            placeholder="Enter Price"
+                            type="text"
+                            id="ticket-price"
+                          />
+                        </div>
+
+                        <!-- Ticket No -->
+                        <div
+                          class="w-full md:w-1/3 flex flex-col gap-3 md:gap-5"
+                        >
+                          <label for="ticket-no">Ticket No</label>
+                          <input
+                            class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+                            placeholder="Enter Ticket No"
+                            type="text"
+                            id="ticket-no"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </ul>
             </div>
 
-            <!-- capacity radio -->
-            <div class="flex pb-6 md:pb-8 lg:pb-12 flex-col gap-5 md:gap-8">
-              <div class="flex items-center gap-3 text-sm md:text-base">
-                <input
-                  id="capacity-radio"
-                  type="radio"
-                  name="option"
-                  class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
-                />
-                <label for="capacity-radio"
-                  >Set capacity for this ticket only</label
-                >
-              </div>
-              <div class="flex items-center gap-3 text-sm md:text-base">
-                <input
-                  id="capacity-radio2"
-                  type="radio"
-                  name="option"
-                  class="appearance-none size-4 md:size-6 cursor-pointer ring-white border-[4px] border-[#111111] ring-2 focus:bg-white rounded-full checked:bg-white checked:border-[#111111] checked:border-[4px] focus:outline-none"
-                />
-                <label for="capacity-radio2">Unlimited capacity</label>
-              </div>
-            </div>
+            <!-- ========================================= Advance Section ==================================== -->
 
             <!-- advance -->
             <div class="pb-6 md:pb-8 lg:pb-12">
