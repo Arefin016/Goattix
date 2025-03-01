@@ -350,19 +350,49 @@ document.addEventListener("DOMContentLoaded", function () {
   const addButton = document.getElementById("create-new-date");
   const organizerList = document.getElementById("new-date-selector");
 
-  // Initially hide the organizer list
-  organizerList.style.display = "none";
-
   addButton.addEventListener("click", function () {
-    // Toggle the display property
-    if (
-      organizerList.style.display === "none" ||
-      organizerList.style.display === ""
-    ) {
-      organizerList.style.display = "block"; // Show the section
-    } else {
-      organizerList.style.display = "none"; // Hide the section
-    }
+    // Create the new set of input fields
+    const newInputFields = document.createElement("div");
+    newInputFields.classList.add("xl:row", "pb-6", "space-y-4", "xl:space-y-0");
+
+    // Date and Time Section
+    newInputFields.innerHTML = `
+      <div class="w-full col flex flex-col gap-3 md:gap-5">
+        <label for="start-date-ticket">Date</label>
+        <input class="px-5 bg-transparent start-date w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="DD - MM - YYY" type="text" name="" id="start-date-ticket" />
+      </div>
+      <div class="w-full col flex flex-col gap-3 md:gap-5">
+        <label for="start-time-ticket">Start Time</label>
+        <input class="px-5 bg-transparent start-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="HH - MM" type="text" name="" id="start-time-ticket" />
+      </div>
+      <div class="w-full col flex flex-col gap-3 md:gap-5">
+        <label for="end-time-ticket">End Time</label>
+        <input class="px-5 bg-transparent end-time w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="HH - MM" type="text" name="" id="end-time-ticket" />
+      </div>
+    `;
+
+    // Capacity and Sell Section
+    newInputFields.innerHTML += `
+      <div class="xl:row pb-6 space-y-4 xl:space-y-0">
+        <div class="col">
+          <div class="w-full ticket-price h-full flex flex-col gap-3 md:gap-5">
+            <label for="">Total Ticket</label>
+            <div class="relative">
+              <input class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="Total Ticket" type="number" name="" id="" />
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="w-full flex flex-col gap-5">
+            <label for="event-title">Sell Up To</label>
+            <input class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white" placeholder="Enter Sell Up To here" type="text" name="" id="" />
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new input fields to the organizerList
+    organizerList.appendChild(newInputFields);
   });
 });
 
@@ -371,19 +401,54 @@ document.addEventListener("DOMContentLoaded", function () {
   const addTypeButton = document.getElementById("create-add-type");
   const addTypeSelector = document.getElementById("add-type-selector");
 
-  // Initially hide the add-type section
-  addTypeSelector.style.display = "none";
-
   addTypeButton.addEventListener("click", function () {
-    // Toggle the display property
-    if (
-      addTypeSelector.style.display === "none" ||
-      addTypeSelector.style.display === ""
-    ) {
-      addTypeSelector.style.display = "block"; // Show the section
-    } else {
-      addTypeSelector.style.display = "none"; // Hide the section
-    }
+    // Create a new div container for ticket input fields
+    const ticketContainer = document.createElement("div");
+    ticketContainer.classList.add(
+      "xl:row",
+      "pb-6",
+      "space-y-4",
+      "xl:space-y-0"
+    );
+
+    ticketContainer.innerHTML = `
+      <div class="w-full col flex flex-col md:flex-row gap-3 md:gap-5">
+        <!-- Ticket Type -->
+        <div class="w-full md:w-1/3 flex flex-col gap-3 md:gap-5">
+          <label>Ticket Type</label>
+          <div class="relative">
+            <input
+              class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+              placeholder="Enter Ticket Type"
+              type="text"
+            />
+          </div>
+        </div>
+
+        <!-- Price -->
+        <div class="w-full md:w-1/3 flex flex-col gap-3 md:gap-5">
+          <label>Price</label>
+          <input
+            class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+            placeholder="Enter Price"
+            type="text"
+          />
+        </div>
+
+        <!-- Ticket No -->
+        <div class="w-full md:w-1/3 flex flex-col gap-3 md:gap-5">
+          <label>Ticket No</label>
+          <input
+            class="px-5 bg-transparent w-full text-sm md:text-base py-[14px] md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white"
+            placeholder="Enter Ticket No"
+            type="text"
+          />
+        </div>
+      </div>
+    `;
+
+    // Append the new set of input fields
+    addTypeSelector.appendChild(ticketContainer);
   });
 });
 
