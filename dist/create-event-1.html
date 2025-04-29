@@ -27,10 +27,10 @@
     <header
       class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
     >
-      <div class="container relative h-full flex items-center">
-        <div class="flex items-center justify-between w-full">
+      <div class="container relative mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
           <!-- Logo -->
-          <div class="w-[123px] flex items-center">
+          <div class="flex-shrink-0">
             <a href="index.html">
               <img
                 class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
@@ -40,84 +40,118 @@
             </a>
           </div>
 
-          <!-- Navigation -->
-          <div class="hidden xl:flex">
+          <!-- Navigation Menu -->
+          <div class="hidden xl:flex flex-1 justify-center">
             <ul class="menu flex items-center gap-8 2xl:gap-12">
               <li>
                 <a
                   href="index.html"
-                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   href="events.html"
-                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Events</a
                 >
               </li>
               <li>
                 <a
                   href="organizer.html"
-                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Organizer</a
                 >
               </li>
               <li>
                 <a
                   href="promoters.html"
-                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Promoters</a
                 >
               </li>
               <li>
                 <a
                   href="marketing.html"
-                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Blogs</a
                 >
               </li>
               <li>
                 <a
                   href="my-events.html"
-                  class="nav-link active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Host</a
                 >
               </li>
               <li>
                 <a
                   href="venue.html"
-                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Venue</a
                 >
               </li>
             </ul>
           </div>
-
-          <!-- Sign-in Button -->
-          <div class="hidden xl:flex">
-            <a href="login.html" class="button">Sign in</a>
-          </div>
-
-          <!-- Hamburger Menu (Mobile) -->
-          <div class="xl:hidden">
-            <div id="openMenu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M3 6h18M3 12h18M3 18h18"
-                  stroke="#8F8F8F"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+          <!-- Profile and Sign-in Button -->
+          <div class="flex items-center gap-4 flex-shrink-0">
+            <!-- Profile Button -->
+            <div class="relative hidden xl:block">
+              <div id="user-btn" class="flex items-center gap-2 cursor-pointer">
+                <p class="text-menuColor font-medium text-xl">Liza Smith</p>
+                <img
+                  src="../dist/assets/images/dashboard-img.png"
+                  alt="Profile Image"
+                  class="w-10 h-10 rounded-full"
                 />
-              </svg>
+              </div>
+              <!-- Popover -->
+              <div
+                id="popover"
+                class="hidden absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg z-50"
+              >
+                <ul class="flex flex-col">
+                  <a
+                    href="profile.html"
+                    class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer block"
+                  >
+                    Profile
+                  </a>
+
+                  <li
+                    class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
+                  >
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Sign-in Button -->
+            <div class="hidden xl:flex">
+              <a href="login.html" class="button">Sign in</a>
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="xl:hidden">
+              <div id="openMenu" class="cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M3 6h18M3 12h18M3 18h18"
+                    stroke="#8F8F8F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>

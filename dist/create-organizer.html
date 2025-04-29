@@ -15,10 +15,10 @@
     <header
       class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
     >
-      <div class="container relative">
-        <div class="2xl:row lg:items-center flex items-center justify-between">
-          <div class="2xl:col-3">
-            <!-- logo  -->
+      <div class="container relative mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
             <a href="index.html">
               <img
                 class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
@@ -27,7 +27,9 @@
               />
             </a>
           </div>
-          <div class="2xl:col-6 hidden xl:flex">
+
+          <!-- Navigation Menu -->
+          <div class="hidden xl:flex flex-1 justify-center">
             <ul class="menu flex items-center gap-8 2xl:gap-12">
               <li>
                 <a
@@ -80,33 +82,66 @@
               </li>
             </ul>
           </div>
-          <div class="2xl:col-3 hidden xl:flex 2xl:block">
-            <div class="text-right">
+          <!-- Profile and Sign-in Button -->
+          <div class="flex items-center gap-4 flex-shrink-0">
+            <!-- Profile Button -->
+            <div class="relative hidden xl:block">
+              <div id="user-btn" class="flex items-center gap-2 cursor-pointer">
+                <p class="text-menuColor font-medium text-xl">Liza Smith</p>
+                <img
+                  src="../dist/assets/images/dashboard-img.png"
+                  alt="Profile Image"
+                  class="w-10 h-10 rounded-full"
+                />
+              </div>
+              <!-- Popover -->
+              <div
+                id="popover"
+                class="hidden absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg z-50"
+              >
+                <ul class="flex flex-col">
+                  <a
+                    href="profile.html"
+                    class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer block"
+                  >
+                    Profile
+                  </a>
+
+                  <li
+                    class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
+                  >
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Sign-in Button -->
+            <div class="hidden xl:flex">
               <a href="login.html" class="button">Sign in</a>
             </div>
-          </div>
 
-          <!-- hamburger icons::start -->
-          <div class="transition duration-500 xl:hidden">
-            <div id="openMenu" class="transition duration-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M3 6h18M3 12h18M3 18h18"
-                  stroke="#8F8F8F"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="xl:hidden">
+              <div id="openMenu" class="cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M3 6h18M3 12h18M3 18h18"
+                    stroke="#8F8F8F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-          <!-- hamburger icons::end -->
         </div>
       </div>
       <!-- sidebar::start -->

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Promoters</title>
+    <title>Profile</title>
     <!-- all css links  -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
@@ -15,10 +15,10 @@
     <header
       class="fixed top-0 left-0 bg-blackv1 z-50 w-full py-2 xl:py-7 2xl:py-[37px]"
     >
-      <div class="container relative mx-auto px-4">
-        <div class="flex items-center justify-between py-4">
+      <div class="container relative h-full flex items-center">
+        <div class="flex items-center justify-between w-full">
           <!-- Logo -->
-          <div class="flex-shrink-0">
+          <div class="w-[123px] flex items-center">
             <a href="index.html">
               <img
                 class="xl:w-[123px] xl:h-[54px] size-16 md:size-20 lg:size-24"
@@ -28,85 +28,85 @@
             </a>
           </div>
 
-          <!-- Navigation Menu -->
-          <div class="hidden xl:flex flex-1 justify-center">
+          <!-- Navigation -->
+          <div class="hidden xl:flex">
             <ul class="menu flex items-center gap-8 2xl:gap-12">
               <li>
                 <a
                   href="index.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   href="events.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Events</a
                 >
               </li>
               <li>
                 <a
                   href="organizer.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Organizer</a
                 >
               </li>
               <li>
                 <a
                   href="promoters.html"
-                  class="active text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Promoters</a
                 >
               </li>
               <li>
                 <a
                   href="marketing.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Blogs</a
                 >
               </li>
               <li>
                 <a
                   href="my-events.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Host</a
                 >
               </li>
               <li>
                 <a
                   href="venue.html"
-                  class="text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
+                  class="nav-link text-[20px] text-menuColor font-medium hover:text-white duration-300 ease-in-out"
                   >Venue</a
                 >
               </li>
             </ul>
           </div>
-          <!-- Profile and Sign-in Button -->
-          <div class="flex items-center gap-4 flex-shrink-0">
-            <!-- Profile Button -->
-            <div class="relative hidden xl:block">
+          <!-- This is the sign in button and popover -->
+          <div class="flex items-center gap-2">
+            <!-- This is the profile button -->
+            <div class="relative">
+              <!-- Button to open popover -->
               <div id="user-btn" class="flex items-center gap-2 cursor-pointer">
                 <p class="text-menuColor font-medium text-xl">Liza Smith</p>
                 <img
                   src="../dist/assets/images/dashboard-img.png"
-                  alt="Profile Image"
+                  alt=""
                   class="w-10 h-10 rounded-full"
                 />
               </div>
+
               <!-- Popover -->
               <div
                 id="popover"
                 class="hidden absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg z-50"
               >
                 <ul class="flex flex-col">
-                  <a
-                    href="profile.html"
-                    class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer block"
+                  <li
+                    class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
                   >
                     Profile
-                  </a>
-
+                  </li>
                   <li
                     class="px-4 py-2 text-black hover:bg-gray-100 cursor-pointer"
                   >
@@ -115,31 +115,30 @@
                 </ul>
               </div>
             </div>
-
             <!-- Sign-in Button -->
             <div class="hidden xl:flex">
               <a href="login.html" class="button">Sign in</a>
             </div>
+          </div>
 
-            <!-- Hamburger Menu for Mobile -->
-            <div class="xl:hidden">
-              <div id="openMenu" class="cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M3 6h18M3 12h18M3 18h18"
-                    stroke="#8F8F8F"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
+          <!-- Hamburger Menu (Mobile) -->
+          <div class="xl:hidden">
+            <div id="openMenu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3 6h18M3 12h18M3 18h18"
+                  stroke="#8F8F8F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -182,13 +181,9 @@
           <a class="text-sm md:text-base text-menuColor" href="organizer.html"
             >Organizer</a
           >
-          <div class="sidebar--menu--active">
-            <a
-              class="active text-sm md:text-base text-menuColor"
-              href="promoters.html"
-              >Promoter</a
-            >
-          </div>
+          <a class="text-sm md:text-base text-menuColor" href="promoters.html"
+            >Promoters</a
+          >
           <a class="text-sm md:text-base text-menuColor" href="marketing.html"
             >Blogs</a
           >
@@ -213,203 +208,123 @@
       <!-- sidebar::end -->
     </header>
     <!-- end header  -->
+    <main class="overflow-x-hidden">
+      <!-- start organizer area  -->
+      <!-- Update Profile Section -->
+      <section
+        class="container organizer--area pt-24 md:pt-28 lg:pt-40 pb-8 md:pb-10 lg:pb-12 2xl:pt-[190px] 2xl:pb-[60px]"
+      >
+        <h2 class="text-center text-3xl font-bold mb-6">Update Profile</h2>
 
-    <main>
-      <!-- Promoter Dashboard Section -->
-      <section class="lg:mt-20 mt-28">
-        <!-- This is the title section start-->
         <div
-          class="container flex flex-col space-y-7 md:space-y-9 lg:space-y-10 xl:space-y-14"
+          class="p-6 rounded-lg shadow-md w-full max-w-2xl mx-auto space-y-6"
         >
-          <!-- event time and date container -->
-          <h3
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white pb-4 md:pb-8 lg:pb-10 lg:mt-[120px]"
-          >
-            Promoter Dashboard
-          </h3>
-
-          <!-- date and time picker  -->
-          <div class="xl:row space-y-4 lg:space-y-0 md:space-y-3">
-            <div class="w-full col flex flex-col gap-5">
-              <label class="md:text-[16px] lg:text-[28px]" for="start-date"
-                >Total Referrals</label
-              >
-              <input
-                class="px-5 bg-transparent w-full py-[14px] md:py-6 rounded-lg focus:outline-none md:rounded-xl text-sm md:text-base text-gray-400 border border-white"
-                placeholder="0"
-                type="number"
-                name="event-title"
-                id="event-title"
-              />
-            </div>
-            <div class="w-full col flex flex-col gap-5">
-              <label class="md:text-[16px] lg:text-[28px]" for="start-time"
-                >Total Visits</label
-              >
-              <input
-                class="px-4 md:px-5 start-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                placeholder="0"
-                type="number"
-                name=""
-                id=""
-              />
-            </div>
-            <div class="w-full col flex flex-col gap-5">
-              <label class="md:text-[16px] lg:text-[28px]" for="end-date"
-                >Total Unpaid Earnings</label
-              >
-              <input
-                class="px-4 md:px-5 start-date bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                placeholder="0"
-                type="number"
-                name=""
-                id=""
-              />
-            </div>
-            <div class="w-full col flex flex-col gap-5">
-              <label class="md:text-[16px] lg:text-[28px]" for="end-time"
-                >Total Paid</label
-              >
-              <input
-                class="px-4 md:px-5 end-time bg-transparent w-full py-3 md:py-4 lg:py-6 rounded-lg md:rounded-xl text-gray-400 border border-white text-sm md:text-base"
-                placeholder="0"
-                type="number"
-                name=""
-                id=""
-              />
-            </div>
+          <!-- Profile Image Upload -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Profile Image</label
+            >
+            <input
+              type="file"
+              accept="image/*"
+              onchange="previewImage(event, 'profilePreview')"
+              class="w-full border border-[rgba(255,255,255,0.6)] px-3 py-5 rounded-md"
+            />
+            <img
+              id="profilePreview"
+              class="mt-2 w-24 h-24 object-cover rounded-full border"
+            />
           </div>
 
-          <!-- This is the input field end  -->
-
-          <!-- This is the coupon section start -->
-          <section class="lg:pt-0 pt-[50px] lg:mt-[58px]">
-            <!-- First Coupon -->
-            <div class="flex flex-col lg:ml-0">
-              <label
-                for="input1"
-                class="text-white font-inter text-sm md:text-base font-normal leading-none mb-3 md:mb-5"
-              >
-                Coupon Code
-              </label>
-              <div
-                class="flex flex-col md:flex-row md:items-center md:space-x-4 lg:space-x-[38px] space-y-4 md:space-y-0"
-              >
-                <input
-                  type="number"
-                  id="input1"
-                  placeholder="Code"
-                  class="rounded-[12px] w-full border border-white md:w-[570px] lg:w-[390px] h-[48px] md:h-[58px] pt-2 md:pt-[26.3px] pb-2 md:pb-[16.39px] pl-3 md:pl-5 text-white font-inter text-sm md:text-[18px] font-normal leading-none focus:outline-none bg-[#111]"
-                />
-                <button
-                  class="bg-[#FFF] w-[127px] md:w-[150px] lg:w-[202px] text-[#111] text-center font-inter font-medium leading-none px-6 md:px-[34px] py-3 md:py-4 rounded-[62px] text-sm md:text-[20px] focus:outline-none"
-                >
-                  Update
-                </button>
-              </div>
-            </div>
-            <!-- Second Coupon -->
-            <div class="flex flex-col lg:ml-0 mt-6 md:mt-6">
-              <label
-                for="input2"
-                class="text-white font-inter text-sm md:text-base font-normal leading-none mb-3 md:mb-5"
-              >
-                Payment Email
-              </label>
-              <div
-                class="flex flex-col md:flex-row md:items-center md:space-x-4 lg:space-x-[38px] space-y-4 md:space-y-0"
-              >
-                <input
-                  type="number"
-                  id="input2"
-                  placeholder="Code"
-                  class="rounded-[12px] border w-full border-white md:w-[570px] lg:w-[390px] h-[50px] md:h-[58px] pt-2 md:pt-[26.3px] pb-2 md:pb-[16.39px] pl-3 md:pl-5 text-white font-inter text-sm md:text-[18px] font-normal leading-none focus:outline-none bg-[#111]"
-                />
-                <button
-                  class="bg-[#FFF] w-[127px] md:w-[150px] lg:w-[202px] text-[#111] text-center font-inter font-medium leading-none px-6 md:px-[34px] py-3 md:py-4 rounded-[62px] text-sm md:text-[20px] focus:outline-none"
-                >
-                  Update
-                </button>
-              </div>
-            </div>
-          </section>
-          <!-- This is the coupon section end -->
-
-          <!-- This is the table section start -->
-          <section
-            class="bg-[#121212] w-[90%] md:w-[735px] lg:max-w-[874px] pb-[60px] mt-8 lg:mt-[58px] mb-[60px] lg:mb-[358px]"
-          >
-            <h1
-              class="text-white font-inter text-[16px] lg:text-2xl font-medium leading-normal"
+          <!-- Banner Image Upload -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Banner Image</label
             >
-              Event Referral Links
-            </h1>
-            <div
-              class="border border-[#333333] rounded-lg mt-4 lg:mt-6 overflow-hidden"
+            <input
+              type="file"
+              accept="image/*"
+              onchange="previewImage(event, 'bannerPreview')"
+              class="w-full border px-3 py-5 rounded-md"
+            />
+            <img
+              id="bannerPreview"
+              class="mt-2 w-full h-40 object-cover border rounded-md"
+            />
+          </div>
+
+          <!-- Name -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Name</label
             >
-              <table class="w-full">
-                <thead>
-                  <tr>
-                    <th
-                      class="pl-4 lg:pl-[37px] pt-4 lg:pt-[25px] pb-4 lg:pb-[21px] text-left bg-[#1C1C1C] rounded-t-lg text-white font-semibold border-b border-r border-[#333333] text-sm lg:text-[20px]"
-                    >
-                      Event Title
-                    </th>
-                    <th
-                      class="pl-4 lg:pl-[37px] pt-4 lg:pt-[25px] pb-4 lg:pb-[21px] text-left bg-[#1C1C1C] rounded-t-lg text-white font-semibold border-b border-[#333333] text-sm lg:text-[20px]"
-                    >
-                      Link
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td
-                      class="pl-4 lg:pl-[37px] pt-4 lg:pt-[25px] pb-4 lg:pb-[21px] text-left text-white font-normal border-b border-r border-[#333333] text-sm lg:text-[18px] opacity-68"
-                    >
-                      Need for beats
-                    </td>
-                    <td
-                      class="py-3 px-4 text-gray-300 border-b border-[#333333]"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="pl-4 lg:pl-[37px] pt-4 lg:pt-[25px] pb-4 lg:pb-[21px] text-left text-white font-normal border-b border-r border-[#333333] text-sm lg:text-[18px] opacity-68"
-                    >
-                      T5879347-5-8998FH
-                    </td>
-                    <td
-                      class="py-3 px-4 text-gray-300 border-b border-[#333333]"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="pl-4 lg:pl-[37px] pt-4 lg:pt-[25px] pb-4 lg:pb-[21px] text-left text-white font-normal border-b border-r border-[#333333] text-sm lg:text-[18px] opacity-68"
-                    >
-                      T5879347-5-8998FH
-                    </td>
-                    <td
-                      class="py-3 px-4 text-gray-300 border-b border-[#333333]"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="pl-4 lg:pl-[37px] pt-4 lg:pt-[25px] pb-4 lg:pb-[21px] text-left text-white font-normal border-b border-r border-[#333333] text-sm lg:text-[18px] opacity-68"
-                    >
-                      T5879347-5-8998FH
-                    </td>
-                    <td class="py-3 px-4 text-gray-300"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-          <!-- This is the table section end -->
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full border px-3 py-5 rounded-md bg-black"
+            />
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Phone</label
+            >
+            <input
+              type="tel"
+              placeholder="Phone number"
+              class="w-full border px-3 py-5 rounded-md bg-black"
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Email</label
+            >
+            <input
+              type="email"
+              placeholder="Email address"
+              class="w-full border px-3 py-5 rounded-md bg-black"
+            />
+          </div>
+
+          <!-- Description -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Description</label
+            >
+            <textarea
+              rows="4"
+              placeholder="Short description"
+              class="w-full border px-3 py-5 rounded-md bg-black"
+            ></textarea>
+          </div>
+
+          <!-- Website -->
+          <div>
+            <label class="block text-[rgba(255,255,255,0.6)] font-semibold mb-1"
+              >Website</label
+            >
+            <input
+              type="url"
+              placeholder="https://yourwebsite.com"
+              class="w-full border px-3 py-5 rounded-md bg-black"
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button
+              class="bg-white text-black font-semibold px-6 py-2 rounded-md"
+            >
+              Update
+            </button>
+          </div>
         </div>
       </section>
+      <!-- end organizer area  -->
     </main>
-
     <!-- start footer  -->
     <footer class="py-6 md:py-10 bg-blackv2 overflow-hidden">
       <div class="container">
@@ -595,6 +510,7 @@
     <!-- end footer  -->
 
     <!-- all js scripts  -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

@@ -831,3 +831,33 @@ function updateInputValue() {
   const input = document.getElementById("cityInput");
   input.value = select.value;
 }
+
+// This is the navbar popover functionality
+const userBtn = document.getElementById("user-btn");
+const popover = document.getElementById("popover");
+
+userBtn.addEventListener("click", () => {
+  popover.classList.toggle("hidden");
+});
+
+// Optional: Close the popover when clicking outside
+document.addEventListener("click", (e) => {
+  if (!userBtn.contains(e.target) && !popover.contains(e.target)) {
+    popover.classList.add("hidden");
+  }
+});
+
+// This is the update profile js
+function previewImage(event, previewId) {
+  const input = event.target;
+  const file = input.files[0];
+  const preview = document.getElementById(previewId);
+
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function () {
+      preview.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  }
+}
